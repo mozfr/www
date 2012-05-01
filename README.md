@@ -4,6 +4,6 @@
  * un dossier `custom/` spécifique (forcément !)
  * deux pages fixes : `manifesto.php` et `config.php`
 
- Les pages fixes réutilisent des bouts de `*.tpl` de `custom/` : en-tête, barre
+Les pages fixes réutilisent des bouts de `*.tpl` de `custom/` : en-tête, barre
  latérale, pied de page.
 
