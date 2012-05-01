@@ -1,6 +1,4 @@
- Ceci est le portail Mozilla francophone: <http://mozfr.org/>.
-
- C’est une installation MoonMoon standard avec :
+Ceci est le portail Mozilla francophone: <http://mozfr.org/>. C’est une installation MoonMoon standard avec :
  * un dossier `custom/` spécifique (forcément !)
  * deux pages fixes : `manifesto.php` et `config.php`
 
