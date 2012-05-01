@@ -81,9 +81,9 @@
   <div class="section">
     <h2>Billets</h2>
     <ul>
-      <li class="feed"><a href="?type=atom10">Flux atom</a></li>
-      <li class="feed"><a href="?type=rss10">Flux rss</a></li>
-      <li class="more"><a href="?type=archive">Archives</a></li>
+      <li class="feed"><a href="./?type=atom10">Flux atom</a></li>
+      <li class="feed"><a href="./?type=rss10">Flux rss</a></li>
+      <li class="more"><a href="./?type=archive">Archives</a></li>
     </ul>
   </div>
 </div>
