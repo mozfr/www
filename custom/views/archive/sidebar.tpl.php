@@ -16,14 +16,15 @@
     </ul>
     <p>
       <img src="custom/img/opml.png" alt="feed" height="12" width="12" />
-      <a href="custom/people.opml">All feeds in OPML format</a>
+      <a href="custom/people.opml">Tous les flux au format OPML</a>
     </p>
   </div>
 
   <div class="section">
     <h2>Syndicate</h2>
     <ul>
-      <li><img src="custom/img/feed.png" alt="feed" height="12" width="12" />&nbsp;<a href="?type=atom10">Feed (ATOM)</a></li>
+      <li><img src="custom/img/feed.png" alt="feed" height="12" width="12" />&nbsp;<a href="./atom.xml">Flux atom</a></li>
+      <li><img src="custom/img/feed.png" alt="feed" height="12" width="12" />&nbsp;<a href="./rss.xml">Flux rss</a></li>
     </ul>
   </div>
 

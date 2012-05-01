@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^archives /index.php?type=archive
+RewriteRule ^atom.xml /index.php?type=atom10
+RewriteRule ^rss.xml  /index.php?type=rss10
+
