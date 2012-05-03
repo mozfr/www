@@ -52,7 +52,7 @@
         <a href="http://geckozone.org/" title="aide et support technique des utilisateurs Mozilla">Geckozone</a>
       </li>
       <li class="more">
-        <a href="./contrib">Contribuer !</a>
+        <a href="./participer">Participer&nbsp;!</a>
       </li>
     </ul>
   </div>

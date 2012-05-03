@@ -6,7 +6,7 @@
 <html xml:lang="fr" lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Mozilla Francophone :: contribuer</title>
+  <title>Mozilla Francophone :: Participer</title>
   <link rel="stylesheet" type="text/css" href="custom/style/mozfr.css" />
 </head>
 <body>
