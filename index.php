@@ -39,7 +39,7 @@ if (0 < $Planet->loadOpml(dirname(__FILE__).'/custom/people.opml')) {
 $bench['contentloaded'] = microtime(true);
 
 //Prepare output cache
-Cache::$enabled = false;
+Cache::$enabled = true;
 $cache_key = (count($items)) ? $items[0]->get_id() : '';
 $last_modified = (count($items)) ? $items[0]->get_date() : '';
 $cache_duration = $PlanetConfig->getOutputTimeout()*60;
