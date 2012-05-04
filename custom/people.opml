@@ -6,6 +6,7 @@
 <dateModified>2012-04-04T10:26:41+02:00</dateModified>
 </head>
 <body>
+<outline text="Mozilla Francophone" htmlUrl="http://blog.mozfr.org/" xmlUrl="http://blog.mozfr.org/feed/atom"/>
 <outline text="Carnet Web de Pascal" htmlUrl="http://www.chevrel.org/fr/carnet/index.php" xmlUrl="http://www.chevrel.org/fr/carnet/index.php?feed/tag/mozfr/atom"/>
 <outline text="FrenchMozilla" htmlUrl="http://blog.frenchmozilla.fr/index/" xmlUrl="http://blog.frenchmozilla.org/index/feed/rss2"/>
 <outline text="Standblog" htmlUrl="http://standblog.org/blog/" xmlUrl="http://standblog.org/blog/feed/category/Mozillaeurope/atom"/>
