@@ -8,10 +8,12 @@
   <meta charset="UTF-8" />
   <title><?php echo $PlanetConfig->getName(); ?></title>
   <link rel="stylesheet" type="text/css" href="custom/style/mozfr.css" />
+  <link rel="stylesheet" type="text/css" href="http://mozfr.org/mozfrtab/mozfrtab.css" />
   <link rel="alternate" type="application/atom+xml" title="atom" href="./atom.xml" />
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
 </head>
 <body>
+  <div id="mozfrtab"><a href="http://mozfr.org" title="Retour au portail Mozilla Francophone">MozFR</a></div>
   <?php include(dirname(__FILE__).'/header.tpl.php'); ?>
   <?php include(dirname(__FILE__).'/articles.tpl.php'); ?>
   <?php include(dirname(__FILE__).'/sidebar.tpl.php'); ?>
