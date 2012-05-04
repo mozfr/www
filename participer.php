@@ -8,6 +8,7 @@
   <meta charset="UTF-8" />
   <title>Mozilla Francophone :: Participer</title>
   <link rel="stylesheet" type="text/css" href="custom/style/mozfr.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
 </head>
 <body>
   <?php include($tplRoot.'/header.tpl.php'); ?>
