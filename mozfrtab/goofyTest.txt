@@ -1,4 +1,0 @@
-ce finchier peut être détruit sans dommage
-Il me sert de test pour quelques manœuvres laborieuses avec git
-
-- Goofy
