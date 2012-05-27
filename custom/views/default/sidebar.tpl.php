@@ -1,25 +1,37 @@
-<?php function getTweets($screen_name, $nb_tweets=5) {
-  $tweets = file_get_contents('https://www.twitter.com/statuses/user_timeline.json?screen_name=' . $screen_name .'&include_rts=false&exclude_replies=true&contributor_details=false' );
-  if ($tweets) {
-    $tweets = json_decode($tweets);
-    $rv = '';
-    $nb_displayed = 0;
-    foreach ($tweets as $status) { // don't display answers to tweets
-      if ($status->in_reply_to_user_id_str != '') continue;
-      $nb_displayed++;
-      if ($nb_displayed > $nb_tweets) break;
-      $link = '<a href="https://twitter.com/#!/' . $screen_name . '/status/' .
-                $status->id_str . '">' . $status->text . '</a>';
-      $rv .= '<li>' . $link . '</li>';
+<?php
+
+function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
+    $source = 'https://www.twitter.com/statuses/user_timeline.json?screen_name='
+            . $screen_name
+            . '&include_rts=false&exclude_replies=true&contributor_details=false';
+    $ctx    = stream_context_create(array('http' => array('timeout' => $timeout)));
+    $tweets = json_decode(@file_get_contents($source, 0, $ctx));
+    $output = '';
+
+    if ($tweets) {
+        foreach ($tweets as $status) {
+            if ($status->in_reply_to_user_id_str != '') {
+                continue; # don't display answers to tweets
+            } else {
+                $output .= '<li><a href="https://twitter.com/#!/'
+                            . $screen_name . '/status/' . $status->id_str . '">'
+                            . $status->text . '</a></li>';
+                --$nb_tweets;
+            }
+            if($nb_tweets == 0) break;
+        }
+    } else {
+        $output = '<li>Twitter est indisponible pour le moment.</li>';
     }
-  }
-  return $rv;
-} ?>
+    return $output;
+}
+
+?>
 <div id="sidebar" class="aside">
   <div class="section">
     <h2>Gazouillis</h2>
     <ul id="twitter">
-      <?=getTweets('mozilla_fr', 5)?>
+      <?=getTweets('mozilla_fr', 5, 2)?>
       <li class="more"><a href="https://twitter.com/#!/mozilla_fr/">plus…</a></li>
     </ul>
   </div>
