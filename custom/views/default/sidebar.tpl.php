@@ -32,7 +32,14 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
     <h2>Gazouillis</h2>
     <ul id="twitter">
       <?=getTweets('mozilla_fr', 5, 2)?>
-      <li class="more"><a href="https://twitter.com/#!/mozilla_fr/">plus…</a></li>
+      <li class="more"><a href="https://twitter.com/#!/mozilla_fr/">Plus…</a></li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2>MozFR ailleurs</h2>
+    <ul id="sns">
+      <li id="twitterlogo"><a href="https://twitter.com/mozilla_fr/">Twitter</a></li>
+      <li id="diasporalogo"><a href="https://free-beer.ch/u/mozfr">Diaspora</a></li>
     </ul>
   </div>
 
@@ -46,7 +53,7 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
         <a href="http://www.mozilla.org/fr/thunderbird/?from=mozfr">Thunderbird</a>
       </li>
       <li class="more">
-        <a href="http://frenchmozilla.org/downloads">plus…</a>
+        <a href="http://frenchmozilla.org/downloads">Autres…</a>
       </li>
     </ul>
   </div>
