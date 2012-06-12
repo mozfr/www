@@ -114,7 +114,7 @@ h2, h2 a {
 #sidebar ul {
   list-style: none;
   padding: 0;
-  margin: 1em 0;
+  margin: 1em 0 0 0;
 }
 
 #sidebar .more {
@@ -122,50 +122,60 @@ h2, h2 a {
 }
 
 /* twitter */
-#twitter li {
+#sidebar #twitter li a {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   margin: 5px 0;
+  padding:0;
   padding-top: 5px;
   line-height: 1em;
   font-family: Ubuntu, sans-serif;
-  font-size: 90%;
-}
-#twitter li a {
-  text-decoration: none;
+  font-size: 12px;
 }
 
 /* downloads */
-#downloads li a {
+#sidebar li a {
   display: block;
   margin: 5px 0 0;
-  padding-left: 54px;
+  padding-left: 44px;
   vertical-align: middle;
   background-repeat: no-repeat;
   background-position: top left;
+  font-size: 16px;
+  line-height: 32px;
+  min-height: 32px;
+  text-decoration:none;
 }
+
+li#thunderbird a,
 li#firefox a {
   line-height: 48px;
   min-height: 48px;
-  font-size: 18px;
+  padding-left: 54px;
+}
+
+li#firefox a {
   background-image: url(icons/firefox_48px.png);
 }
+
 li#thunderbird a {
-  line-height: 48px;
-  min-height: 48px;
-  font-size: 18px;
   background-image: url(icons/thunderbird_48px.png);
+}
+
+li#twitterlogo a {
+  background-image: url(icons/twitter_logo_32.png);
+}
+
+li#diasporalogo a {
+  background-image: url(icons/diaspora_asterisk_32.png);
 }
 
 /* activities | communities */
 #activities li a,
 #communities li a {
   display: block;
-  /*font-size: 14px;*/
-  /*margin: 5px 16px 0;*/
   margin: 5px 0 0;
   line-height: 32px;
   min-height: 32px;
-  padding-left: 38px;
   vertical-align: middle;
   background-repeat: no-repeat;
   background-position: center left;
@@ -199,12 +209,12 @@ li#community-tn a {
 }
 
 /* activities | communities */
-li.feed a {
+#sidebar li.feed a {
   display: block;
   margin: 5px 0 0;
   line-height: 24px;
   min-height: 24px;
-  padding-left: 30px;
+  padding-left: 32px;
   vertical-align: middle;
   background-repeat: no-repeat;
   background-position: center left;
