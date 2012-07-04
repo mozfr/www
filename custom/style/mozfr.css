@@ -1,47 +1,53 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    border: 0;
+}
+
 html {
-  width: 100%;
-  min-height: 100%;
-  background-image: url(img/bg_dino.png), url(img/bg_body_0.jpg), url(img/bg_body_2.jpg);
-  background-position: top left, top left, bottom left;
-  background-repeat: no-repeat;
-  color: #111;
-  font-family: Ubuntu, sans-serif;
-  font-size: 62.5%;
+    color: #111;
+    font-family: Georgia;
+    font-size: 70%;
 }
-body {
-  width: 890px;
-  margin: 0 auto;
-  padding: 0;
-  font-size: 1.3em;
-  line-height: 1.5em;
+
+#meta-wrap {
+    background-image: url(img/bg_dino.png), 
+                      url(img/bg_body_0.jpg), 
+                      url(img/bg_body_2.jpg);
+    background-position: top left, top left, bottom left;
+    background-repeat: no-repeat;  
 }
-a         { color: #669; }
+
+#wrapper {
+    width: 890px;
+    font-size: 1.3em;
+    line-height: 1.5em; 
+}
+
+a  { color: #669; }
+a img { border: none; }
+a:hover { color: #000; }
 a:visited { color: #444; }
-a:hover   { color: #000; }
-a img {
-  border: none;
-}
+
+h1, h2 { font-family: Ubuntu, Helvetica, Arial, sans-serif; }
+
 pre, code {
   max-height: 100%;
   width: 100%;
   font-size: 1.2em;
   overflow: auto;
 }
-h1, h2 {
-  font-family: Ubuntu, Helvetica, Arial, sans-serif;
-}
-h2 {
-  margin: 0;
-}
+
 
 /* Header
 *******************************************************************************/
+
 header {
   background: rgba(0, 0, 0, 0.7);
   border-bottom: 10px solid #a11;
   border-radius: 10px 10px 0 0;
   height: 50px;
-  margin: 20px 0;
+  margin: 80px 0 20px 0;
   padding-top: 20px;
   position: relative;
 }
