@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <opml version="1.1">
 <head>
-<title>Planète Mozilla francophone</title>
-<dateCreated>2012-04-04T10:26:41+02:00</dateCreated>
-<dateModified>2012-04-04T10:26:41+02:00</dateModified>
+<title>Mozilla Francophone</title>
+<dateCreated>2012-06-01T13:40:04+02:00</dateCreated>
+<dateModified>2012-06-01T13:40:04+02:00</dateModified>
 </head>
 <body>
 <outline text="Mozilla Francophone" htmlUrl="http://blog.mozfr.org/" xmlUrl="http://blog.mozfr.org/feed/atom"/>
@@ -12,7 +12,6 @@
 <outline text="Standblog" htmlUrl="http://standblog.org/blog/" xmlUrl="http://standblog.org/blog/feed/category/Mozillaeurope/atom"/>
 <outline text="Antoine TURMEL" htmlUrl="http://blog.geekshadow.com" xmlUrl="http://blog.geekshadow.com/tag/mozilla/feed/"/>
 <outline text="FrenchBirds" htmlUrl="http://www.frenchbirds.org" xmlUrl="http://www.frenchbirds.org/tag/mozilla/feed/"/>
-<outline text="Geckozone" htmlUrl="http://www.geckozone.org" xmlUrl="http://www.geckozone.org/xml/"/>
 <outline text="BeFox" htmlUrl="http://www.befox.be" xmlUrl="http://feeds.feedburner.com/befox"/>
 <outline text="Le Weblog de Frederic Bezies" htmlUrl="http://frederic.bezies.free.fr/blog" xmlUrl="http://frederic.bezies.free.fr/blog/?tag=mozilla&amp;feed=rss2"/>
 <outline text="Itinéraire Libre" htmlUrl="http://artis-tic.com/blog/index.php" xmlUrl="http://artis-tic.com/blog/index.php?feed/category/Mozilla/atom"/>
@@ -23,12 +22,10 @@
 <outline text="Thomas Bassetto" htmlUrl="http://tb4.fr/blog/" xmlUrl="http://tb4.fr/blog/feed/tag/planet-mozfr/atom"/>
 <outline text="News Xulfr" htmlUrl="http://xulfr.org/news/" xmlUrl="http://xulfr.org/dotclear/rss.php"/>
 <outline text="BlogZiNet" htmlUrl="http://blogzinet.free.fr/blog/" xmlUrl="http://blogzinet.free.fr/blog/index.php?feed/tag/MozFr/atom"/>
-<outline text="Le Delphinarium" htmlUrl="http://blog.lebedel.net/index.php" xmlUrl="http://blog.lebedel.net/index.php?feed/category/Mozilla-Europe/rss2"/>
 <outline text="Kaz'hack" htmlUrl="http://kazhack.org/" xmlUrl="http://kazhack.org/?feed/tag/mozfr/atom"/>
 <outline text="Lagon Libre" htmlUrl="http://lagonlibre.net/" xmlUrl="http://lagonlibre.net/feed/tag/mozfr/atom"/>
 <outline text="Florian Lainez" htmlUrl="http://www.nouslesgeeks.fr" xmlUrl="http://www.nouslesgeeks.fr/category/mozilla/feed/"/>
 <outline text="Mounir Lamouri" htmlUrl="http://blog.oldworld.fr/index.php" xmlUrl="http://blog.oldworld.fr/index.php?feed/planet/MozFr/atom"/>
-<outline text="Le Blog de Genma" htmlUrl="http://genma.free.fr/" xmlUrl="http://genma.free.fr/spip.php?page=backend&amp;id_rubrique=31"/>
 <outline text="Hanblog" htmlUrl="http://hanblog.info/blog/" xmlUrl="http://hanblog.info/blog/feed/tag/planetmozfr/rss2"/>
 <outline text="Bonjour Mozilla" htmlUrl="http://bonjourmozilla.fr/" xmlUrl="http://bonjourmozilla.fr/?feed/atom"/>
 <outline text="Le blog de mmkmou - Mozilla" htmlUrl="http://blog.mmkmou.net/index.php" xmlUrl="http://blog.mmkmou.net/index.php?feed/category/Mozilla/atom"/>
@@ -42,5 +39,6 @@
 <outline text="Eric Moreau - Freedom Fries" htmlUrl="http://www.ericmoreau.net/freedomfries" xmlUrl="http://www.ericmoreau.net/freedomfries/tag/mozilla/feed/"/>
 <outline text="Clarista Mozilla" htmlUrl="http://claristamozilla.wordpress.com" xmlUrl="http://claristamozilla.wordpress.com/feed/"/>
 <outline text="Théo Chevalier" htmlUrl="http://www.theochevalier.fr" xmlUrl="http://www.theochevalier.fr/fr_rss.xml"/>
+<outline text="Blog technique de MozFR" htmlUrl="http://tech.mozfr.org/" xmlUrl="http://tech.mozfr.org/feed/atom"/>
 </body>
 </opml>
