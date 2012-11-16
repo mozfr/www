@@ -201,6 +201,9 @@ li#community-be a {
 li#community-ma a {
   background-image: url(icons/flag_ma_32px.png);
 }
+li#community-qc-ca a {
+  background-image: url(icons/flag_qc-ca_32px.png);
+}
 li#community-sn a {
   background-image: url(icons/flag_sn_32px.png);
 }
