@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /archive
+Disallow: /rss.xml
+Disallow: /atom.xml
