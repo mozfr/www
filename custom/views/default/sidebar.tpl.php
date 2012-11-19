@@ -88,6 +88,9 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
       <li id="community-ma">
         <a href="http://mozilla.ma/" title="site de la communauté marocaine">Mozilla Morocco</a>
       </li>
+      <li id="community-qc-ca">
+        <a href="http://mozillaquebec.org/web/fr/" title="site de la communauté québecoise">Mozilla Québec</a>
+      </li>
       <li id="community-sn">
         <a href="http://mozilla-senegal.org/" title="site de la communauté sénégalaise">Mozilla Senegal</a>
       </li>
