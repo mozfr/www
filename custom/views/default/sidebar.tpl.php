@@ -68,7 +68,7 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
         <a href="http://frenchmozilla.org/" title="le site des traducteurs francophones">French Mozilla</a>
       </li>
       <li id="geckozone">
-        <a href="http://geckozone.org/" title="aide et support technique des utilisateurs Mozilla">Geckozone</a>
+        <a href="http://forums.mozfr.org/" title="aide et support technique des utilisateurs Mozilla">Forums Geckozone</a>
       </li>
       <li class="more">
         <a href="./participer">Participer&nbsp;!</a>
