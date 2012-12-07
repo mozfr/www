@@ -1,3 +1,5 @@
+<a href="http://mozilla.org" id="tabzilla">mozilla</a>
+
 <header>
   <h1><a href="./">Mozilla Francophone</a></h1>
   <nav>
