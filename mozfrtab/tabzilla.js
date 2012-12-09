@@ -404,7 +404,7 @@ Tabzilla.content =
     + '        <ul>'
     + '          <li><a href="http://wiki.mozfr.org/Contribuer_aux_traductions">Traduction</a></li>'
     + '          <li><a href="http://wiki.mozfr.org/Cat%C3%A9gorie:Devops">Développement</a></li>'
-    + '          <li><a href="http://www.geckozone.org/forum/">Assistance</a></li>'
+    + '          <li><a href="http://forums.mozfr.org/">Forums d\'assistance</a></li>'
     + '          <li><a href="http://wiki.mozfr.org/Cat%C3%A9gorie:Techno">Éducation et promotion technique</a></li>'
     + '          <li><a href="http://wiki.mozfr.org/Cat%C3%A9gorie:Communication">Communication</a></li>'
     + '        </ul>'
