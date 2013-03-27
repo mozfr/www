@@ -181,6 +181,12 @@ li#diasporalogo a {
   background-position: center left;
 }
 li#bonjourMozilla a {
+  background-image: url(icons/bonjourmozilla_32px.png);
+}
+li#bidouilleux a {
+  background-image: url(icons/bidouilleux_32px.png);
+}
+li#mozfr a {
   background-image: url(icons/mozfr_32px.png);
 }
 li#frenchMozilla a {
