@@ -65,10 +65,10 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
         <a href="http://bonjourmozilla.fr/" title="tous les jours, un membre de la communauté francophone est présenté">Bonjour Mozilla</a>
       </li>
       <li id="mozfr">
-		  <a href=" " title="Blog généraliste de la communauté francophone">Blog de MozFr</a>
+		  <a href="http://blog.mozfr.org/" title="Blog généraliste de la communauté francophone">Blog de MozFr</a>
 		</li>
-		<li id="bidouille">
-		  <a href=" " title="Blog technique de la communauté Mozilla francophone">Bidouilleux d'Web</a>
+		<li id="bidouilleux">
+		  <a href="http://tech.mozfr.org/" title="Blog technique de la communauté Mozilla francophone">Bidouilleux d'Web</a>
 		</li>
       <li id="frenchMozilla">
         <a href="http://frenchmozilla.org/" title="le site des traducteurs francophones">French Mozilla</a>
