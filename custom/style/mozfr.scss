@@ -168,43 +168,66 @@ header {
 #sidebar {
   width: 250px;
   float: left;
-}
-#sidebar div {
-  padding: 1em;
-  margin: 0 0 1.5em 1.5em;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-#sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 1em 0 0 0;
-}
+  background-color: $colorDown;
+  margin-left: 3em;
+  margin-top: 7em;
+  opacity:.5;
+  -webkit-transition:all linear .25s;
+  -moz-transition:all linear .25s;
+  -o-transition:all linear .25s;
+  -ms-transition:all linear .25s;
+  transition:all linear .25s;
 
-#sidebar .more {
-  text-align: right;
-}
+  &:hover {
+    opacity:1;
+    -webkit-transition:all linear .25s;
+    -moz-transition:all linear .25s;
+    -o-transition:all linear .25s;
+    -ms-transition:all linear .25s;
+    transition:all linear .25s
+  }     
+  .section {
+    padding: 1em;
+    /* margin: 0 0 1.5em 1.5em; */
+    border-bottom: 1px solid #666;
+  }
+  h2 {
+    font-size:1.5em;
+  } 
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+  }
 
-/* twitter */
-#sidebar #twitter li a {
-  margin: 5px 0;
-  padding:0;
-  padding-top: 5px;
-  line-height: 1em;
-  font-size: 12px;
-}
+  .more {
+    text-align: right;
+  }
 
-/* downloads */
-#sidebar li a {
-  display: block;
-  margin: 5px 0 0;
-  padding-left: 44px;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-position: top left;
-  font-size: 16px;
-  line-height: 32px;
-  min-height: 32px;
-  text-decoration:none;
+  #twitter li a {
+    margin: 5px 0;
+    padding:0;
+    padding-top: 5px;
+    line-height: 1em;
+    font-size: 12px;
+  }
+
+  li a {
+    display: block;
+    color: #666;
+    margin: 5px 0 0;
+    padding-left: 44px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: top left;
+    font-size: 16px;
+    line-height: 32px;
+    min-height: 32px;
+    text-decoration:none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 li#thunderbird a,
