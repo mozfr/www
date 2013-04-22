@@ -13,21 +13,12 @@ $body: #333333;
  * Mixins
  *
  * ***************************************/
-
-@mixin gradient($from-color, $to-color) {
-    background-color: mix($from-color, $to-color); /* Fallback */
-    background-image: -webkit-gradient
-      (linear, 0% 0%, 0% 100%, from($from-color), to($to-color));
-    background-image: -webkit-linear-gradient
-      (top, $from-color, $to-color); 
-    background-image:    -moz-linear-gradient
-      (top, $from-color, $to-color);
-    background-image:     -ms-linear-gradient
-      (top, $from-color, $to-color);
-    background-image:      -o-linear-gradient
-      (top, $from-color, $to-color);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient
-      (startColorStr='#{$from-color}', EndColorStr='#{$to-color}')";
+@mixin gradient($baseColor, $toColor){
+  background-color:$baseColor;
+  background-image: -moz-linear-gradient(top, $baseColor, $toColor); /* FF3.6 */
+  background-image: -webkit-gradient(linear,left top,left bottom, color-stop(0, $baseColor),color-stop(1, $toColor)); /* Saf4+, Chrome */
+  background-image: linear-gradient(top,$baseColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6â��IE9 */
 }
 
 /*******************************************
