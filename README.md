@@ -5,3 +5,5 @@ Ceci est le portail Mozilla francophone: <http://mozfr.org/>. C’est une instal
 Les pages fixes réutilisent des bouts de `*.tpl` de `custom/` : en-tête, barre
  latérale, pied de page.
 
+Les feuilles de style ont été générées avec le préprocesseur SASS http://sass-lang.com/
+

@@ -1,0 +1,452 @@
+/*******************************************
+ * SandStone colors by MozillaFR
+ *
+ * ***************************************/
+$link: #0095DD;
+$hover: #00539F;
+$colorTop: #D7D3C8;
+$colorDown: #F6F4EC;
+$titles: #484848;
+$body: #333333;
+
+/*******************************************
+ * Mixins
+ *
+ * ***************************************/
+@mixin gradient($baseColor, $toColor){
+  background-color:$baseColor;
+  background-image: url('img/grain.png') -moz-linear-gradient(top, $baseColor, $toColor); /* FF3.6 */
+  background-image: url('img/grain.png') -webkit-gradient(linear,left top,left bottom, color-stop(0, $baseColor),color-stop(1, $toColor)); /* Saf4+, Chrome */
+  background-image: url('img/grain.png') linear-gradient(top,$baseColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6â��IE9 */
+}
+
+/*******************************************
+ * Media Queries - breakpoints
+ *
+ * ***************************************/
+$tablet: 769px;
+$smartphoneHor: 481px;
+$smartphoneVert: 321px;
+
+/*******************************************
+ *  Fonts
+ *
+ * ***************************************/
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Light-webfont.woff') format('woff'), url('fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('fonts/OpenSans-Light-webfont.svg#OpenSansLightItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Bold-webfont.eot');
+    src: url('fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Bold-webfont.woff') format('woff'), url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: 600;
+}
+
+@import "normalize";
+
+/*******************************************
+ * Css style
+ *
+ * ***************************************/
+
+html {
+  width: 100%;
+  min-height: 100%;
+  @include gradient($colorTop, $colorDown);
+}
+body {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 20px;
+  color: $body;
+
+  @media screen and (max-width: 939px) {
+    width: 90%;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 90%;
+  }
+  @media screen and (max-width: $smartphoneHor) {
+    width: 90%;
+    font-size:12px;
+  }
+  @media screen and (max-width: $smartphoneVert) {
+    width: 90%;
+    font-size:11px
+  }
+}
+pre, code {
+  max-height: 100%;
+  width: 100%;
+  font-size: 1.2em;
+  overflow: auto;
+}
+.large {
+  font-size: 72px;
+  letter-spacing: -3px;
+  line-height: 100%;
+}
+h1 {
+  font-size: 48px;
+  font-family: 'Open Sans Light';
+  letter-spacing: -2px;
+  line-height: 100%;
+  text-shadow: 0px 1px 0px #000;
+  color: $titles;
+  a {
+    color: $titles;
+    text-decoration: none;
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: 4em;
+  }
+}
+h2 {
+  color: $titles;
+  font-size: 32px;
+  font-family: 'Open Sans Light';
+  letter-spacing: -1px;
+  line-height: 100%;
+  a {
+    color: $titles;
+    text-decoration: none;
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: 3em;
+  }
+}
+h3 {
+  color: $titles;
+  font-size: 28px;
+  font-family: 'Open Sans Light';
+  letter-spacing: -0.5px;
+  line-height: 100%;
+  @media screen and (max-width: $tablet) {
+    font-size: 2em;
+  }
+}
+h4 {
+  color: $titles;
+  font-size: 24px;
+  font-family: 'Open Sans Light';
+  letter-spacing: -0.25px;
+  line-height: 100%;
+  @media screen and (max-width: $tablet) {
+    font-size: 1.5em;
+  }
+}
+.small, small {
+  font-size: 12px;
+  line-height: 100%;
+}
+
+/* Header
+*******************************************************************************/
+header {
+  height: 50px;
+  margin: 20px 0;
+  padding-top: 20px;
+  position: relative;
+  
+  h1 {
+  margin-bottom: 2em;
+  }
+  nav {
+    ul {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      list-style: none;
+      padding: 0;
+      margin: 1em 0;
+    }
+    li {
+      display: inline;
+      margin-right: 1em;
+
+      a:hover {
+        text-decoration: underline;
+        $color: $hover;
+      }
+    }
+    a, a:visited {
+      text-decoration: none;
+      color: $link; 
+    }
+  }
+}
+
+/*******************************************************************************
+/* Content
+*******************************************************************************/
+#content {
+  width: 640px;
+  float: left;
+
+  @media screen and (max-width: $tablet) {
+    width: 90%;
+  }
+  @media screen and (max-width: $smartphoneHor) {
+    width: 90%;
+    font-size:12px;
+  }
+  @media screen and (max-width: $smartphoneVert) {
+    width: 90%;
+    font-size:12px
+  }
+  a {
+    color: $link; 
+
+    &:visited {
+      color: $link;
+    }
+    &:hover{
+      color: $hover;
+    }
+  }
+}
+/*******************************************************************************
+/* Sidebar
+*******************************************************************************/
+#sidebar {
+  width: 250px;
+  float: left;
+  background-color: $colorDown;
+  margin-left: 3em;
+  margin-top: 7em;
+  opacity:.5;
+  -webkit-transition:all linear .25s;
+  -moz-transition:all linear .25s;
+  -o-transition:all linear .25s;
+  -ms-transition:all linear .25s;
+  transition:all linear .25s;
+
+  @media screen and (max-width: $tablet) {
+    width: 90%;
+  }
+
+  &:hover {
+    opacity:1;
+    -webkit-transition:all linear .25s;
+    -moz-transition:all linear .25s;
+    -o-transition:all linear .25s;
+    -ms-transition:all linear .25s;
+    transition:all linear .25s
+  }     
+  .section {
+    padding: 1em;
+    /* margin: 0 0 1.5em 1.5em; */
+    border-bottom: 1px solid #666;
+  }
+  h2 {
+    font-size:1.5em;
+  } 
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+  }
+
+  .more {
+    text-align: right;
+  }
+
+  #twitter li a {
+    margin: 5px 0;
+    padding:0;
+    padding-top: 5px;
+    line-height: 1em;
+    font-size: 12px;
+  }
+
+  li a {
+    display: block;
+    color: #666;
+    margin: 5px 0 0;
+    padding-left: 44px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: top left;
+    font-size: 16px;
+    line-height: 32px;
+    min-height: 32px;
+    text-decoration:none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+li#thunderbird a,
+li#firefox a {
+  line-height: 48px;
+  min-height: 48px;
+  padding-left: 54px;
+}
+
+li#firefox a {
+  background-image: url(icons/firefox_48px.png);
+}
+
+li#thunderbird a {
+  background-image: url(icons/thunderbird_48px.png);
+}
+
+li#twitterlogo a {
+  background-image: url(icons/twitter_logo_32.png);
+}
+
+li#diasporalogo a {
+  background-image: url(icons/diaspora_asterisk_32.png);
+}
+
+/* activities | communities */
+#activities li a,
+#communities li a {
+  display: block;
+  margin: 5px 0 0;
+  line-height: 32px;
+  min-height: 32px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+li#bonjourMozilla a {
+  background-image: url(icons/bonjourmozilla_32px.png);
+}
+li#bidouilleux a {
+  background-image: url(icons/bidouilleux_32px.png);
+}
+li#mozfr a {
+  background-image: url(icons/mozfr_32px.png);
+}
+li#frenchMozilla a {
+  background-image: url(icons/frenchmoz_32px.png);
+}
+li#geckozone a {
+  background-image: url(icons/geckozone_32px.png);
+}
+#communities li a {
+  margin-top: 0;
+}
+li#community-dz a {
+  background-image: url(icons/flag_dz_32px.png);
+}
+li#community-be a {
+  background-image: url(icons/flag_be_32px.png);
+}
+li#community-ma a {
+  background-image: url(icons/flag_ma_32px.png);
+}
+li#community-qc-ca a {
+  background-image: url(icons/flag_qc-ca_32px.png);
+}
+li#community-sn a {
+  background-image: url(icons/flag_sn_32px.png);
+}
+li#community-tn a {
+  background-image: url(icons/flag_tn_32px.png);
+}
+
+/* activities | communities */
+#sidebar li.feed a {
+  display: block;
+  margin: 5px 0 0;
+  line-height: 24px;
+  min-height: 24px;
+  padding-left: 32px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-image: url(icons/feed_24px.png);
+}
+
+/*******************************************************************************
+/* Articles
+*******************************************************************************/
+article {
+  h2 {
+    margin-top: 3em;
+  }
+  .info {
+    margin: 0 0 1em 0;
+  }
+  img, iframe, .image {
+    @media screen and (max-width: $tablet) {
+      max-width: $tablet;
+    }
+    @media screen and (max-width: $smartphoneHor) {
+      max-width: 100%;
+    }
+    @media screen and (max-width: $smartphoneVert) {
+      max-width: $smartphoneVert - 40px;
+    }
+  }
+  .collapsed {
+    display: none;
+  }
+  #content > section {
+    margin-bottom: 2em;
+    padding: 30px;
+  }
+}
+
+/*******************************************************************************
+/* Contrib
+*******************************************************************************/
+div#promos {
+  text-align: center;
+}
+div.boite {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 10px;
+  width: 30%;
+  min-width: 220px;
+  max-width: 400px;
+  min-height: 320px;
+  background-color: #fff;
+  vertical-align: bottom;
+  text-align: left;
+}
+div.boite:hover {
+  opacity: 1;
+}
+div.boite p {
+  text-align: center;
+}
+div.boite img {
+  max-width: 200px;
+}
+
+/*******************************************************************************
+* Footer
+*******************************************************************************/
+footer {
+  clear: both;
+  display: block;
+  min-height: 84px;
+  padding: 10px 30px;
+  background: url(img/logo_communities.png) right center no-repeat;
+  border-top: 1px solid #666;
+  @media screen and (max-width: $tablet) {
+    font-size:12px;
+  }
+  @media screen and (max-width: $smartphoneHor) {
+    font-size:11px;
+    background: none;
+  }
+  @media screen and (max-width: $smartphoneVert) {
+    font-size:11px;
+    background: none;
+  }
+}
