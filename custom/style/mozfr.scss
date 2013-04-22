@@ -28,8 +28,8 @@ $body: #333333;
 
 @font-face {
     font-family: 'Open Sans Light';
-    src: url('fonts/OpenSans-LightItalic-webfont.eot');
-    src: url('fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-LightItalic-webfont.woff') format('woff'), url('fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Light-webfont.woff') format('woff'), url('fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('fonts/OpenSans-Light-webfont.svg#OpenSansLightItalic') format('svg');
     font-weight: normal;
     font-style: italic;
 }
@@ -50,7 +50,7 @@ $body: #333333;
 html {
   width: 100%;
   min-height: 100%;
-  /* @include gradient($colorTop, $colorDown); */
+  @include gradient($colorTop, $colorDown);
 }
 body {
   width: 940px;
@@ -74,6 +74,7 @@ pre, code {
 }
 h1 {
   font-size: 48px;
+  font-family: 'Open Sans Light';
   letter-spacing: -2px;
   line-height: 100%;
   text-shadow: 0px 1px 0px #000;
@@ -86,18 +87,21 @@ h1 {
 h2 {
   color: $titles;
   font-size: 32px;
+  font-family: 'Open Sans Light';
   letter-spacing: -1px;
   line-height: 100%;
 }
 h3 {
   color: $titles;
   font-size: 28px;
+  font-family: 'Open Sans Light';
   letter-spacing: -0.5px;
   line-height: 100%;
 }
 h4 {
   color: $titles;
   font-size: 24px;
+  font-family: 'Open Sans Light';
   letter-spacing: -0.25px;
   line-height: 100%;
 }
@@ -113,30 +117,33 @@ header {
   margin: 20px 0;
   padding-top: 20px;
   position: relative;
-}
+  
+  h1 {
+  margin-bottom: 2em;
+  }
+  nav {
+    ul {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      list-style: none;
+      padding: 0;
+      margin: 1em 0;
+    }
+    li {
+      display: inline;
+      margin-right: 1em;
 
-
-/* navigation */
-header nav ul {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  list-style: none;
-  padding: 0;
-  margin: 1em 0;
-}
-header nav li {
-  display: inline;
-  margin-right: 1em;
-}
-header nav li a,
-header nav li a:visited {
-  text-decoration: none;
-  color: $link; 
-}
-header nav li a:hover {
-  text-decoration: underline;
-  $color: $hover;
+      a:hover {
+        text-decoration: underline;
+        $color: $hover;
+      }
+    }
+    a, a:visited {
+      text-decoration: none;
+      color: $link; 
+    }
+  }
 }
 
 /* Content
@@ -155,9 +162,6 @@ header nav li a:hover {
     }
   }
 }
-h2, h2 a {
-  text-decoration: none;
-}
 
 /* Sidebar
 *******************************************************************************/
@@ -169,12 +173,6 @@ h2, h2 a {
   padding: 1em;
   margin: 0 0 1.5em 1.5em;
   background-color: rgba(255, 255, 255, 0.6);
-}
-#sidebar div.section {
-  border: 1px solid #888;
-  border-top: 2px solid #a11;
-  border-radius: 10px;
-  box-shadow: 0 1px 10px 1px #888;
 }
 #sidebar ul {
   list-style: none;
@@ -188,7 +186,6 @@ h2, h2 a {
 
 /* twitter */
 #sidebar #twitter li a {
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
   margin: 5px 0;
   padding:0;
   padding-top: 5px;
@@ -296,24 +293,23 @@ li#community-tn a {
 
 /* Articles
 *******************************************************************************/
-article, #content > section {
-  margin-bottom: 2em;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.6);
-  border: 1px solid #888;
-  border-top: 2px solid #a11;
-  border-radius: 10px;
-  box-shadow: 0 1px 10px 1px #888;
-}
-article .info {
-  margin: 0 0 1em 0;
-  color: #666;
-}
-article img {
-  max-width: 440px;
-}
-article .collapsed {
-  display: none;
+article {
+  h2 {
+    margin-top: 3em;
+  }
+  .info {
+    margin: 0 0 1em 0;
+  }
+  img {
+    max-width: 440px;
+  }
+  .collapsed {
+    display: none;
+  }
+  #content > section {
+    margin-bottom: 2em;
+    padding: 30px;
+  }
 }
 
 /* Contrib
@@ -330,12 +326,6 @@ div.boite {
   max-width: 400px;
   min-height: 320px;
   background-color: #fff;
-  border: 1px solid #fff;
-  border-bottom: 3px solid #6ac;
-  border-top: 3px solid #6ac;
-  border-radius: 3px;
-  box-shadow: 0 1px 5px #888;
-  opacity: 0.7;
   vertical-align: bottom;
   text-align: left;
 }
@@ -357,7 +347,6 @@ footer {
   min-height: 84px;
   padding: 10px 30px;
   background: url(img/logo_communities.png) rgba(0, 0, 0, 0.7) right center no-repeat;
-  border-top: 10px solid #a11;
 }
 footer p {
   color: #ccc;
