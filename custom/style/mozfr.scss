@@ -369,13 +369,7 @@ footer {
   display: block;
   min-height: 84px;
   padding: 10px 30px;
-  background: url(img/logo_communities.png) rgba(0, 0, 0, 0.7) right center no-repeat;
-}
-footer p {
-  color: #ccc;
-}
-footer a,
-footer a:visited {
-  color: orange;
+  background: url(img/logo_communities.png) right center no-repeat;
+  border-top: 1px solid #666;
 }
 
