@@ -22,6 +22,14 @@ $body: #333333;
 }
 
 /*******************************************
+ * Media Queries - breakpoints
+ *
+ * ***************************************/
+$tablet: 769px;
+$smartphoneHor: 481px;
+$smartphoneVert: 321px;
+
+/*******************************************
  *  Fonts
  *
  * ***************************************/
@@ -60,6 +68,21 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: $body;
+
+  @media screen and (max-width: 939px) {
+    width: 90%;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 90%;
+  }
+  @media screen and (max-width: $smartphoneHor) {
+    width: 90%;
+    font-size:12px;
+  }
+  @media screen and (max-width: $smartphoneVert) {
+    width: 90%;
+    font-size:11px
+  }
 }
 pre, code {
   max-height: 100%;
@@ -83,6 +106,9 @@ h1 {
     color: $titles;
     text-decoration: none;
   }
+  @media screen and (max-width: $tablet) {
+    font-size: 4em;
+  }
 }
 h2 {
   color: $titles;
@@ -94,6 +120,9 @@ h2 {
     color: $titles;
     text-decoration: none;
   }
+  @media screen and (max-width: $tablet) {
+    font-size: 3em;
+  }
 }
 h3 {
   color: $titles;
@@ -101,6 +130,9 @@ h3 {
   font-family: 'Open Sans Light';
   letter-spacing: -0.5px;
   line-height: 100%;
+  @media screen and (max-width: $tablet) {
+    font-size: 2em;
+  }
 }
 h4 {
   color: $titles;
@@ -108,6 +140,9 @@ h4 {
   font-family: 'Open Sans Light';
   letter-spacing: -0.25px;
   line-height: 100%;
+  @media screen and (max-width: $tablet) {
+    font-size: 1.5em;
+  }
 }
 .small, small {
   font-size: 12px;
@@ -149,12 +184,38 @@ header {
     }
   }
 }
+#tabzilla-contents {
+  @media screen and (max-width: $tablet) {
+    width: 90%;
+  }
+  @media screen and (max-width: $smartphoneHor) {
+    width: 90%;
+    font-size:12px;
+  }
+  @media screen and (max-width: $smartphoneVert) {
+    width: 90%;
+    font-size:12px
+  }
+}
 
+/*******************************************************************************
 /* Content
 *******************************************************************************/
 #content {
   width: 640px;
   float: left;
+
+  @media screen and (max-width: $tablet) {
+    width: 90%;
+  }
+  @media screen and (max-width: $smartphoneHor) {
+    width: 90%;
+    font-size:12px;
+  }
+  @media screen and (max-width: $smartphoneVert) {
+    width: 90%;
+    font-size:12px
+  }
   a {
     color: $link; 
 
@@ -166,7 +227,7 @@ header {
     }
   }
 }
-
+/*******************************************************************************
 /* Sidebar
 *******************************************************************************/
 #sidebar {
@@ -181,6 +242,10 @@ header {
   -o-transition:all linear .25s;
   -ms-transition:all linear .25s;
   transition:all linear .25s;
+
+  @media screen and (max-width: $tablet) {
+    width: 90%;
+  }
 
   &:hover {
     opacity:1;
@@ -318,6 +383,7 @@ li#community-tn a {
   background-image: url(icons/feed_24px.png);
 }
 
+/*******************************************************************************
 /* Articles
 *******************************************************************************/
 article {
@@ -327,8 +393,16 @@ article {
   .info {
     margin: 0 0 1em 0;
   }
-  img {
-    max-width: 440px;
+  img, iframe, .image {
+    @media screen and (max-width: $tablet) {
+      max-width: $tablet;
+    }
+    @media screen and (max-width: $smartphoneHor) {
+      max-width: $smartphoneHor;
+    }
+    @media screen and (max-width: $smartphoneVert) {
+      max-width: $smartphoneVert - 40px;
+    }
   }
   .collapsed {
     display: none;
@@ -339,6 +413,7 @@ article {
   }
 }
 
+/*******************************************************************************
 /* Contrib
 *******************************************************************************/
 div#promos {
@@ -366,7 +441,8 @@ div.boite img {
   max-width: 200px;
 }
 
-/* Footer
+/*******************************************************************************
+* Footer
 *******************************************************************************/
 footer {
   clear: both;
@@ -375,5 +451,15 @@ footer {
   padding: 10px 30px;
   background: url(img/logo_communities.png) right center no-repeat;
   border-top: 1px solid #666;
+  @media screen and (max-width: $tablet) {
+    font-size:12px;
+  }
+  @media screen and (max-width: $smartphoneHor) {
+    font-size:11px;
+    background: none;
+  }
+  @media screen and (max-width: $smartphoneVert) {
+    font-size:11px;
+    background: none;
+  }
 }
-
