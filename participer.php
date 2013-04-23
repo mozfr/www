@@ -9,6 +9,7 @@
   <title>Mozilla Francophone :: Participer</title>
   <link rel="stylesheet" type="text/css" href="custom/style/mozfr.css" />
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="http://mozfr.org/mozfrtab/tabzilla.css" />
     <style>
 /* Définitions */
 dt {
@@ -50,6 +51,7 @@ dt {
     </style>
 </head>
 <body>
+  <a href="http://www.mozilla.org/" id="tabzilla">mozilla</a>
   <?php include($tplRoot.'/header.tpl.php'); ?>
   <div id="content">
     <?php include($incRoot.'/contrib.inc.html'); ?>
@@ -83,6 +85,7 @@ dt {
   }
   document.head.appendChild(newStyle);
   </script>
+  <script src="http://mozfr.org/mozfrtab/tabzilla.js"></script>
 </body>
 </html>
 
