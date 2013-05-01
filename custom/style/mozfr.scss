@@ -382,6 +382,7 @@ article {
     margin: 0 0 1em 0;
   }
   img, iframe, .image {
+    max-width: 100%;
     @media screen and (max-width: $tablet) {
       max-width: $tablet;
     }

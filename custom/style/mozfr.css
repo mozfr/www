@@ -660,15 +660,17 @@ article h2 {
   margin-top: 3em; }
 article .info {
   margin: 0 0 1em 0; }
-@media screen and (max-width: 769px) {
-  article img, article iframe, article .image {
-    max-width: 769px; } }
-@media screen and (max-width: 481px) {
-  article img, article iframe, article .image {
-    max-width: 100%; } }
-@media screen and (max-width: 321px) {
-  article img, article iframe, article .image {
-    max-width: 281px; } }
+article img, article iframe, article .image {
+  max-width: 100%; }
+  @media screen and (max-width: 769px) {
+    article img, article iframe, article .image {
+      max-width: 769px; } }
+  @media screen and (max-width: 481px) {
+    article img, article iframe, article .image {
+      max-width: 100%; } }
+  @media screen and (max-width: 321px) {
+    article img, article iframe, article .image {
+      max-width: 281px; } }
 article .collapsed {
   display: none; }
 article #content > section {
