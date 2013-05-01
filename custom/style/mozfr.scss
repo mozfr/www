@@ -383,8 +383,9 @@ article {
   }
   img, iframe, .image {
     max-width: 100%;
+
     @media screen and (max-width: $tablet) {
-      max-width: $tablet;
+      max-width: 100%;
     }
     @media screen and (max-width: $smartphoneHor) {
       max-width: 100%;

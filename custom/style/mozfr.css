@@ -664,7 +664,7 @@ article img, article iframe, article .image {
   max-width: 100%; }
   @media screen and (max-width: 769px) {
     article img, article iframe, article .image {
-      max-width: 769px; } }
+      max-width: 100%; } }
   @media screen and (max-width: 481px) {
     article img, article iframe, article .image {
       max-width: 100%; } }
