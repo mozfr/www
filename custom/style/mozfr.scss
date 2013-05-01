@@ -13,14 +13,16 @@ $body: #333333;
  * Mixins
  *
  * ***************************************/
-@mixin gradient($baseColor, $toColor){
-  background-color:$baseColor;
-  background-image: url('img/grain.png') -moz-linear-gradient(top, $baseColor, $toColor); /* FF3.6 */
-  background-image: url('img/grain.png') -webkit-gradient(linear,left top,left bottom, color-stop(0, $baseColor),color-stop(1, $toColor)); /* Saf4+, Chrome */
-  background-image: url('img/grain.png') linear-gradient(top,$baseColor, $toColor);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6â��IE9 */
+@mixin gradient($from, $to, $fallback) {
+    background: $to;
+    background-image: url($fallback);
+    background: -moz-linear-gradient(top, $from 0%, $to 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+    background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+    background: -o-linear-gradient(top, $from 0%,$to 100%);
+    background: -ms-linear-gradient(top, $from 0%,$to 100%);
+    background: linear-gradient(to bottom, $from 0%,$to 100%);
 }
-
 /*******************************************
  * Media Queries - breakpoints
  *
@@ -58,7 +60,7 @@ $smartphoneVert: 321px;
 html {
   width: 100%;
   min-height: 100%;
-  @include gradient($colorTop, $colorDown);
+  @include gradient(#D7D3C8, #F6F4EC, 'img/grain.png');
 }
 body {
   width: 940px;
