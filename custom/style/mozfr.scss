@@ -57,12 +57,12 @@ $smartphoneVert: 321px;
  *
  * ***************************************/
 
-html {
+body {
   width: 100%;
   min-height: 100%;
   @include gradient(#D7D3C8, #F6F4EC, 'img/grain.png');
 }
-body {
+#wrapper {
   width: 940px;
   margin: 0 auto;
   padding: 0;

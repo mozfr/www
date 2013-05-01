@@ -371,7 +371,7 @@ table {
  * Css style
  *
  * ***************************************/
-html {
+body {
   width: 100%;
   min-height: 100%;
   background: #f6f4ec;
@@ -383,7 +383,7 @@ html {
   background: -ms-linear-gradient(top, #d7d3c8 0%, #f6f4ec 100%);
   background: linear-gradient(to bottom, #d7d3c8 0%, #f6f4ec 100%); }
 
-body {
+#wrapper {
   width: 940px;
   margin: 0 auto;
   padding: 0;
@@ -392,17 +392,17 @@ body {
   line-height: 20px;
   color: #333333; }
   @media screen and (max-width: 939px) {
-    body {
+    #wrapper {
       width: 90%; } }
   @media screen and (max-width: 769px) {
-    body {
+    #wrapper {
       width: 90%; } }
   @media screen and (max-width: 481px) {
-    body {
+    #wrapper {
       width: 90%;
       font-size: 12px; } }
   @media screen and (max-width: 321px) {
-    body {
+    #wrapper {
       width: 90%;
       font-size: 11px; } }
 

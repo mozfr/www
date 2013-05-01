@@ -14,11 +14,13 @@
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
 </head>
 <body>
+  <div id="wrapper">
   <a href="http://mozfr.org" title="Retour au portail Mozilla Francophone" id="tabzilla">MozFR</a>
   <?php include(dirname(__FILE__).'/header.tpl.php'); ?>
   <?php include(dirname(__FILE__).'/articles.tpl.php'); ?>
   <?php include(dirname(__FILE__).'/sidebar.tpl.php'); ?>
   <?php include(dirname(__FILE__).'/footer.tpl.php'); ?>
   <script src="app/js/mm.js" type="text/javascript"></script>
+  </div> <!-- #wrapper -->
 </body>
 </html>
