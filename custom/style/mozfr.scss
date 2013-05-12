@@ -55,7 +55,6 @@ body {
 #wrapper {
   width: 940px;
   margin: 0 auto;
-  padding: 0;
   font-family: 'Open Sans';
   font-size: 14px;
   line-height: 20px;
@@ -151,10 +150,18 @@ header {
     ul {
       position: absolute;
       bottom: 0;
+      top: 0;
       right: 0;
       list-style: none;
       padding: 0;
       margin: 1em 0;
+      margin: -3em 10em;
+      @media screen and (max-width: $tablet) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: $smartphoneHor) {
+        display:none;
+      }
     }
     li {
       display: inline;
@@ -171,6 +178,17 @@ header {
   }
 }
 
+.phoneList {
+  display:none;
+  @media screen and (max-width: $smartphoneHor) {
+    width: 220px;
+    display: block;
+    background: $titles;
+    color: #fff;
+    float: center;
+    margin: auto;
+  }
+}
 /*******************************************************************************
 /* Content
 *******************************************************************************/
