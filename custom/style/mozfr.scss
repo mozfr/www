@@ -154,7 +154,7 @@ header {
       right: 0;
       list-style: none;
       padding: 0;
-      margin: -3em 10em;
+      margin: -2.5em 11em;
       @media screen and (max-width: $tablet) {
         font-size: 12px;
       }
@@ -183,7 +183,7 @@ header {
     display: block;
     background: $titles;
     float: center;
-    color: $titles;
+    color: #fff;
     margin: auto;
   }
 }

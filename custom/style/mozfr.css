@@ -471,7 +471,7 @@ header {
     right: 0;
     list-style: none;
     padding: 0;
-    margin: -3em 10em; }
+    margin: -2.5em 11em; }
     @media screen and (max-width: 769px) {
       header nav ul {
         font-size: 12px; } }
@@ -495,7 +495,7 @@ header {
       display: block;
       background: #41596b;
       float: center;
-      color: #41596b;
+      color: #fff;
       margin: auto; } }
 
 /*******************************************************************************
