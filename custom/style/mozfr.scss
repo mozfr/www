@@ -27,6 +27,7 @@ $body: #333333;
  * Media Queries - breakpoints
  *
  * ***************************************/
+$min_wrapper: 939px;
 $tablet: 769px;
 $smartphoneHor: 481px;
 $smartphoneVert: 321px;
@@ -76,7 +77,7 @@ body {
   line-height: 20px;
   color: $body;
 
-  @media screen and (max-width: 939px) {
+  @media screen and (max-width: $min_wrapper) {
     width: 90%;
   }
   @media screen and (max-width: $tablet) {
@@ -465,40 +466,30 @@ footer {
 * Tabzilla
 *******************************************************************************/
 #tabzilla-contents {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $min_wrapper) {
     height:90%;
     left: 0;
     margin: 0;
   }
-  @media screen and (max-width: $smartphoneHor) {
-    left: 0;
-    margin: 0;
-  }
-  @media screen and (max-width: $smartphoneVert) {
-    left: 0;
-    margin: 0;
-  }
+  // @media screen and (max-width: $smartphoneHor) {
+  //   left: 0;
+  //   margin: 0;
+  // }
+  // @media screen and (max-width: $smartphoneVert) {
+  //   left: 0;
+  //   margin: 0;
+  // }
 }
 #tabzilla-panel #tabzilla-nav ul li {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $min_wrapper) {
     width: 19%;
     margin:0;
-  }
-  @media screen and (max-width: $smartphoneHor) {
-  }
-  @media screen and (max-width: $smartphoneVert) {
   }
 }
 
 #tabzilla-promo {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $min_wrapper) {
     height: 0;
-    display:none;
-  }
-  @media screen and (max-width: $smartphoneHor) {
-    display:none;
-  }
-  @media screen and (max-width: $smartphoneVert) {
     display:none;
   }
 }
