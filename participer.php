@@ -51,11 +51,13 @@ dt {
     </style>
 </head>
 <body>
-  <a href="http://www.mozilla.org/" id="tabzilla">mozilla</a>
-  <?php include($tplRoot.'/header.tpl.php'); ?>
-  <div id="content">
-    <?php include($incRoot.'/contrib.inc.html'); ?>
-  </div>
+    <div id="wrapper">
+      <a href="http://www.mozilla.org/" id="tabzilla">mozilla</a>
+      <?php include($tplRoot.'/header.tpl.php'); ?>
+      <div id="content">
+        <?php include($incRoot.'/contrib.inc.html'); ?>
+      </div>
+    </div>
   <?php include($tplRoot.'/sidebar.tpl.php'); ?>
   <?php include($tplRoot.'/footer.tpl.php'); ?>
   <script type="text/javascript">

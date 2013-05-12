@@ -1,36 +1,30 @@
 /*******************************************
- * SandStone colors by MozillaFR
+ * #SandStone colors by MozillaFR
  *
  * ***************************************/
 $link: #0095DD;
 $hover: #00539F;
-$colorTop: #D7D3C8;
-$colorDown: #F6F4EC;
-$titles: #484848;
+$colorTop: #D4DDE4;
+$sidebar: #fff;
+$titles: #41596b;
 $body: #333333;
 
 /*******************************************
- * Mixins
+ * #Media Queries - breakpoints
  *
  * ***************************************/
-@mixin gradient($baseColor, $toColor){
-  background-color:$baseColor;
-  background-image: url('img/grain.png') -moz-linear-gradient(top, $baseColor, $toColor); /* FF3.6 */
-  background-image: url('img/grain.png') -webkit-gradient(linear,left top,left bottom, color-stop(0, $baseColor),color-stop(1, $toColor)); /* Saf4+, Chrome */
-  background-image: url('img/grain.png') linear-gradient(top,$baseColor, $toColor);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6â��IE9 */
-}
-
-/*******************************************
- * Media Queries - breakpoints
- *
- * ***************************************/
+$min_wrapper: 939px;
 $tablet: 769px;
 $smartphoneHor: 481px;
 $smartphoneVert: 321px;
 
 /*******************************************
- *  Fonts
+ * Import files
+ *
+ * ***************************************/
+@import "../../mozfrtab/tabzilla.css";
+/*******************************************
+ *  #Fonts
  *
  * ***************************************/
 
@@ -38,8 +32,6 @@ $smartphoneVert: 321px;
     font-family: 'Open Sans Light';
     src: url('fonts/OpenSans-Light-webfont.eot');
     src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Light-webfont.woff') format('woff'), url('fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('fonts/OpenSans-Light-webfont.svg#OpenSansLightItalic') format('svg');
-    font-weight: normal;
-    font-style: italic;
 }
 @font-face {
     font-family: 'Open Sans';
@@ -51,38 +43,14 @@ $smartphoneVert: 321px;
 @import "normalize";
 
 /*******************************************
- * Css style
+ * #main
  *
  * ***************************************/
 
-html {
+body {
   width: 100%;
   min-height: 100%;
-  @include gradient($colorTop, $colorDown);
-}
-body {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0;
-  font-family: 'Open Sans';
-  font-size: 14px;
-  line-height: 20px;
-  color: $body;
-
-  @media screen and (max-width: 939px) {
-    width: 90%;
-  }
-  @media screen and (max-width: $tablet) {
-    width: 90%;
-  }
-  @media screen and (max-width: $smartphoneHor) {
-    width: 90%;
-    font-size:12px;
-  }
-  @media screen and (max-width: $smartphoneVert) {
-    width: 90%;
-    font-size:11px
-  }
+  background: #eee url('img/bg-sky.png') center top repeat-x;
 }
 pre, code {
   max-height: 100%;
@@ -96,7 +64,7 @@ pre, code {
   line-height: 100%;
 }
 h1 {
-  font-size: 48px;
+  font-size: 60px;
   font-family: 'Open Sans Light';
   letter-spacing: -2px;
   line-height: 100%;
@@ -148,8 +116,27 @@ h4 {
   font-size: 12px;
   line-height: 100%;
 }
+#wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 20px;
+  color: $body;
 
-/* Header
+  @media screen and (max-width: $min_wrapper) {
+    width: 90%;
+  }
+  @media screen and (max-width: $smartphoneHor) {
+    font-size:12px;
+  }
+  @media screen and (max-width: $smartphoneVert) {
+    font-size:11px
+  }
+}
+/****************************************************************************
+/* #Header
 *******************************************************************************/
 header {
   height: 50px;
@@ -163,16 +150,21 @@ header {
   nav {
     ul {
       position: absolute;
-      bottom: 0;
+      top: 0;
       right: 0;
       list-style: none;
       padding: 0;
-      margin: 1em 0;
+      margin: -2.5em 11em;
+      @media screen and (max-width: $tablet) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: $smartphoneHor) {
+        display:none;
+      }
     }
     li {
       display: inline;
       margin-right: 1em;
-
       a:hover {
         text-decoration: underline;
         $color: $hover;
@@ -180,11 +172,21 @@ header {
     }
     a, a:visited {
       text-decoration: none;
-      color: $link; 
+      color: $titles;
     }
   }
 }
-
+.phoneList {
+  display:none;
+  @media screen and (max-width: $smartphoneHor) {
+    width: 220px;
+    display: block;
+    background: $titles;
+    float: center;
+    color: #fff;
+    margin: auto;
+  }
+}
 /*******************************************************************************
 /* Content
 *******************************************************************************/
@@ -196,12 +198,7 @@ header {
     width: 90%;
   }
   @media screen and (max-width: $smartphoneHor) {
-    width: 90%;
     font-size:12px;
-  }
-  @media screen and (max-width: $smartphoneVert) {
-    width: 90%;
-    font-size:12px
   }
   a {
     color: $link; 
@@ -215,12 +212,12 @@ header {
   }
 }
 /*******************************************************************************
-/* Sidebar
+/* #Sidebar
 *******************************************************************************/
 #sidebar {
   width: 250px;
   float: left;
-  background-color: $colorDown;
+  background-color: $sidebar;
   margin-left: 3em;
   margin-top: 7em;
   opacity:.5;
@@ -244,8 +241,7 @@ header {
   }     
   .section {
     padding: 1em;
-    /* margin: 0 0 1.5em 1.5em; */
-    border-bottom: 1px solid #666;
+    border-bottom: 1px dotted #ccc;
   }
   h2 {
     font-size:1.5em;
@@ -371,7 +367,7 @@ li#community-tn a {
 }
 
 /*******************************************************************************
-/* Articles
+/* #Articles
 *******************************************************************************/
 
 article {
@@ -382,10 +378,9 @@ article {
     margin: 0 0 1em 0;
   }
   img, iframe, .image {
+    max-width: 100%;
+
     @media screen and (max-width: $tablet) {
-      max-width: $tablet;
-    }
-    @media screen and (max-width: $smartphoneHor) {
       max-width: 100%;
     }
     @media screen and (max-width: $smartphoneVert) {
@@ -430,7 +425,7 @@ div.boite img {
 }
 
 /*******************************************************************************
-* Footer
+* #Footer
 *******************************************************************************/
 
 footer {
@@ -438,17 +433,53 @@ footer {
   display: block;
   min-height: 84px;
   padding: 10px 30px;
-  background: url(img/logo_communities.png) right center no-repeat;
-  border-top: 1px solid #666;
+  background: #fff url(img/logo_communities.png) right center no-repeat;
+  border-top: 1px dotted #ccc;
+  opacity:.5;
+  -webkit-transition:all linear .25s;
+  -moz-transition:all linear .25s;
+  -o-transition:all linear .25s;
+  -ms-transition:all linear .25s;
+  transition:all linear .25s;
+
+  &:hover {
+    opacity:1;
+    -webkit-transition:all linear .25s;
+    -moz-transition:all linear .25s;
+    -o-transition:all linear .25s;
+    -ms-transition:all linear .25s;
+    transition:all linear .25s
+  }     
+  /* border-top: 1px solid #666; */
+  @media screen and (max-width: $min_wrapper) {
+    background:none;
+  }
   @media screen and (max-width: $tablet) {
     font-size:12px;
   }
   @media screen and (max-width: $smartphoneHor) {
     font-size:11px;
-    background: none;
   }
-  @media screen and (max-width: $smartphoneVert) {
-    font-size:11px;
-    background: none;
+}
+/*******************************************************************************
+* #Tabzilla
+*******************************************************************************/
+#tabzilla-contents {
+  @media screen and (max-width: $min_wrapper) {
+    height:90%;
+    left: 0;
+    margin: 0;
+  }
+}
+#tabzilla-panel #tabzilla-nav ul li {
+  @media screen and (max-width: $min_wrapper) {
+    width: 19%;
+  }
+}
+
+#tabzilla-promo {
+  @media screen and (max-width: $min_wrapper) {
+    height: 0;
+    display:none;
   }
 }
