@@ -4,6 +4,8 @@
  * ***************************************/
 $link: #0095DD;
 $hover: #00539F;
+$colorTop: #D4DDE4;
+$sidebar: #fff;
 $titles: #41596b;
 $body: #333333;
 
@@ -49,24 +51,6 @@ body {
   width: 100%;
   min-height: 100%;
   background: #eee url('img/bg-sky.png') center top repeat-x;
-}
-#wrapper {
-  width: 940px;
-  margin: 0 auto;
-  font-family: 'Open Sans';
-  font-size: 14px;
-  line-height: 20px;
-  color: $body;
-
-  @media screen and (max-width: $min_wrapper) {
-    width: 90%;
-  }
-  @media screen and (max-width: $smartphoneHor) {
-    font-size:12px;
-  }
-  @media screen and (max-width: $smartphoneVert) {
-    font-size:11px
-  }
 }
 pre, code {
   max-height: 100%;
@@ -132,6 +116,25 @@ h4 {
   font-size: 12px;
   line-height: 100%;
 }
+#wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 20px;
+  color: $body;
+
+  @media screen and (max-width: $min_wrapper) {
+    width: 90%;
+  }
+  @media screen and (max-width: $smartphoneHor) {
+    font-size:12px;
+  }
+  @media screen and (max-width: $smartphoneVert) {
+    font-size:11px
+  }
+}
 /****************************************************************************
 /* #Header
 *******************************************************************************/
@@ -147,12 +150,10 @@ header {
   nav {
     ul {
       position: absolute;
-      bottom: 0;
       top: 0;
       right: 0;
       list-style: none;
       padding: 0;
-      margin: 1em 0;
       margin: -3em 10em;
       @media screen and (max-width: $tablet) {
         font-size: 12px;
@@ -175,15 +176,14 @@ header {
     }
   }
 }
-
 .phoneList {
   display:none;
   @media screen and (max-width: $smartphoneHor) {
     width: 220px;
     display: block;
     background: $titles;
-    color: #fff;
     float: center;
+    color: $titles;
     margin: auto;
   }
 }
@@ -217,7 +217,6 @@ header {
 #sidebar {
   width: 250px;
   float: left;
-  background-color: $colorDown;
   background-color: $sidebar;
   margin-left: 3em;
   margin-top: 7em;
@@ -242,8 +241,6 @@ header {
   }     
   .section {
     padding: 1em;
-    /* margin: 0 0 1.5em 1.5em; */
-    border-bottom: 1px solid #666;
     border-bottom: 1px dotted #ccc;
   }
   h2 {
@@ -437,6 +434,22 @@ footer {
   min-height: 84px;
   padding: 10px 30px;
   background: #fff url(img/logo_communities.png) right center no-repeat;
+  border-top: 1px dotted #ccc;
+  opacity:.5;
+  -webkit-transition:all linear .25s;
+  -moz-transition:all linear .25s;
+  -o-transition:all linear .25s;
+  -ms-transition:all linear .25s;
+  transition:all linear .25s;
+
+  &:hover {
+    opacity:1;
+    -webkit-transition:all linear .25s;
+    -moz-transition:all linear .25s;
+    -o-transition:all linear .25s;
+    -ms-transition:all linear .25s;
+    transition:all linear .25s
+  }     
   /* border-top: 1px solid #666; */
   @media screen and (max-width: $min_wrapper) {
     background:none;

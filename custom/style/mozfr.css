@@ -4,10 +4,6 @@
  *
  * ***************************************/
 /*******************************************
- * #Mixins
- *
- * ***************************************/
-/*******************************************
  * #Media Queries - breakpoints
  *
  * ***************************************/
@@ -22,9 +18,7 @@
 @font-face {
   font-family: 'Open Sans Light';
   src: url("fonts/OpenSans-Light-webfont.eot");
-  src: url("fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Light-webfont.woff") format("woff"), url("fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("fonts/OpenSans-Light-webfont.svg#OpenSansLightItalic") format("svg");
-  font-weight: normal;
-  font-style: italic; }
+  src: url("fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Light-webfont.woff") format("woff"), url("fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("fonts/OpenSans-Light-webfont.svg#OpenSansLightItalic") format("svg"); }
 
 @font-face {
   font-family: 'Open Sans';
@@ -379,14 +373,69 @@ table {
 body {
   width: 100%;
   min-height: 100%;
-  background: #f6f4ec;
-  background-image: url("img/grain.png");
-  background: -moz-linear-gradient(top, #d7d3c8 0%, #f6f4ec 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d7d3c8), color-stop(100%, #f6f4ec));
-  background: -webkit-linear-gradient(top, #d7d3c8 0%, #f6f4ec 100%);
-  background: -o-linear-gradient(top, #d7d3c8 0%, #f6f4ec 100%);
-  background: -ms-linear-gradient(top, #d7d3c8 0%, #f6f4ec 100%);
-  background: linear-gradient(to bottom, #d7d3c8 0%, #f6f4ec 100%); }
+  background: #eeeeee url("img/bg-sky.png") center top repeat-x; }
+
+pre, code {
+  max-height: 100%;
+  width: 100%;
+  font-size: 1.2em;
+  overflow: auto; }
+
+.large {
+  font-size: 72px;
+  letter-spacing: -3px;
+  line-height: 100%; }
+
+h1 {
+  font-size: 48px;
+  font-family: 'Open Sans Light';
+  letter-spacing: -2px;
+  line-height: 100%;
+  text-shadow: 0px 1px 0px #000;
+  color: #41596b; }
+  h1 a {
+    color: #41596b;
+    text-decoration: none; }
+  @media screen and (max-width: 769px) {
+    h1 {
+      font-size: 4em; } }
+
+h2 {
+  color: #41596b;
+  font-size: 32px;
+  font-family: 'Open Sans Light';
+  letter-spacing: -1px;
+  line-height: 100%; }
+  h2 a {
+    color: #41596b;
+    text-decoration: none; }
+  @media screen and (max-width: 769px) {
+    h2 {
+      font-size: 3em; } }
+
+h3 {
+  color: #41596b;
+  font-size: 28px;
+  font-family: 'Open Sans Light';
+  letter-spacing: -0.5px;
+  line-height: 100%; }
+  @media screen and (max-width: 769px) {
+    h3 {
+      font-size: 2em; } }
+
+h4 {
+  color: #41596b;
+  font-size: 24px;
+  font-family: 'Open Sans Light';
+  letter-spacing: -0.25px;
+  line-height: 100%; }
+  @media screen and (max-width: 769px) {
+    h4 {
+      font-size: 1.5em; } }
+
+.small, small {
+  font-size: 12px;
+  line-height: 100%; }
 
 #wrapper {
   width: 940px;
@@ -406,68 +455,6 @@ body {
     #wrapper {
       font-size: 11px; } }
 
-pre, code {
-  max-height: 100%;
-  width: 100%;
-  font-size: 1.2em;
-  overflow: auto; }
-
-.large {
-  font-size: 72px;
-  letter-spacing: -3px;
-  line-height: 100%; }
-
-h1 {
-  font-size: 48px;
-  font-family: 'Open Sans Light';
-  letter-spacing: -2px;
-  line-height: 100%;
-  text-shadow: 0px 1px 0px #000;
-  color: #484848; }
-  h1 a {
-    color: #484848;
-    text-decoration: none; }
-  @media screen and (max-width: 769px) {
-    h1 {
-      font-size: 4em; } }
-
-h2 {
-  color: #484848;
-  font-size: 32px;
-  font-family: 'Open Sans Light';
-  letter-spacing: -1px;
-  line-height: 100%; }
-  h2 a {
-    color: #484848;
-    text-decoration: none; }
-  @media screen and (max-width: 769px) {
-    h2 {
-      font-size: 3em; } }
-
-h3 {
-  color: #484848;
-  font-size: 28px;
-  font-family: 'Open Sans Light';
-  letter-spacing: -0.5px;
-  line-height: 100%; }
-  @media screen and (max-width: 769px) {
-    h3 {
-      font-size: 2em; } }
-
-h4 {
-  color: #484848;
-  font-size: 24px;
-  font-family: 'Open Sans Light';
-  letter-spacing: -0.25px;
-  line-height: 100%; }
-  @media screen and (max-width: 769px) {
-    h4 {
-      font-size: 1.5em; } }
-
-.small, small {
-  font-size: 12px;
-  line-height: 100%; }
-
 /****************************************************************************
 /* #Header
 *******************************************************************************/
@@ -480,11 +467,17 @@ header {
     margin-bottom: 2em; }
   header nav ul {
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 0;
     list-style: none;
     padding: 0;
-    margin: 1em 0; }
+    margin: -3em 10em; }
+    @media screen and (max-width: 769px) {
+      header nav ul {
+        font-size: 12px; } }
+    @media screen and (max-width: 481px) {
+      header nav ul {
+        display: none; } }
   header nav li {
     display: inline;
     margin-right: 1em; }
@@ -492,7 +485,18 @@ header {
       text-decoration: underline; }
   header nav a, header nav a:visited {
     text-decoration: none;
-    color: #0095dd; }
+    color: #41596b; }
+
+.phoneList {
+  display: none; }
+  @media screen and (max-width: 481px) {
+    .phoneList {
+      width: 220px;
+      display: block;
+      background: #41596b;
+      float: center;
+      color: #41596b;
+      margin: auto; } }
 
 /*******************************************************************************
 /* Content
@@ -519,7 +523,7 @@ header {
 #sidebar {
   width: 250px;
   float: left;
-  background-color: #f6f4ec;
+  background-color: white;
   margin-left: 3em;
   margin-top: 7em;
   opacity: .5;
@@ -540,8 +544,7 @@ header {
     transition: all linear 0.25s; }
   #sidebar .section {
     padding: 1em;
-    /* margin: 0 0 1.5em 1.5em; */
-    border-bottom: 1px solid #666; }
+    border-bottom: 1px dotted #ccc; }
   #sidebar h2 {
     font-size: 1.5em; }
   #sidebar ul {
@@ -704,8 +707,22 @@ footer {
   display: block;
   min-height: 84px;
   padding: 10px 30px;
-  background: url(img/logo_communities.png) right center no-repeat;
-  border-top: 1px solid #666; }
+  background: white url(img/logo_communities.png) right center no-repeat;
+  border-top: 1px dotted #ccc;
+  opacity: .5;
+  -webkit-transition: all linear .25s;
+  -moz-transition: all linear .25s;
+  -o-transition: all linear .25s;
+  -ms-transition: all linear .25s;
+  transition: all linear .25s;
+  /* border-top: 1px solid #666; */ }
+  footer:hover {
+    opacity: 1;
+    -webkit-transition: all linear .25s;
+    -moz-transition: all linear .25s;
+    -o-transition: all linear .25s;
+    -ms-transition: all linear .25s;
+    transition: all linear 0.25s; }
   @media screen and (max-width: 939px) {
     footer {
       background: none; } }
