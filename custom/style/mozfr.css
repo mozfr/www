@@ -744,7 +744,8 @@ footer {
 
 @media screen and (max-width: 939px) {
   #tabzilla-panel #tabzilla-nav ul li {
-    width: 19%; } }
+    width: 19%;
+    margin: 1em 0 0 0; } }
 
 @media screen and (max-width: 939px) {
   #tabzilla-promo {
