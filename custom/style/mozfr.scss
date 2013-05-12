@@ -461,3 +461,44 @@ footer {
     background: none;
   }
 }
+/*******************************************************************************
+* Tabzilla
+*******************************************************************************/
+#tabzilla-contents {
+  @media screen and (max-width: $tablet) {
+    height:90%;
+    left: 0;
+    margin: 0;
+  }
+  @media screen and (max-width: $smartphoneHor) {
+    left: 0;
+    margin: 0;
+  }
+  @media screen and (max-width: $smartphoneVert) {
+    left: 0;
+    margin: 0;
+  }
+}
+#tabzilla-panel #tabzilla-nav ul li {
+  @media screen and (max-width: $tablet) {
+    width: 19%;
+    margin:0;
+  }
+  @media screen and (max-width: $smartphoneHor) {
+  }
+  @media screen and (max-width: $smartphoneVert) {
+  }
+}
+
+#tabzilla-promo {
+  @media screen and (max-width: $tablet) {
+    height: 0;
+    display:none;
+  }
+  @media screen and (max-width: $smartphoneHor) {
+    display:none;
+  }
+  @media screen and (max-width: $smartphoneVert) {
+    display:none;
+  }
+}
