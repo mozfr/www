@@ -1,5 +1,5 @@
 /*******************************************
- * SandStone colors by MozillaFR
+ * #SandStone colors by MozillaFR
  *
  * ***************************************/
 $link: #0095DD;
@@ -10,7 +10,7 @@ $titles: #484848;
 $body: #333333;
 
 /*******************************************
- * Mixins
+ * #Mixins
  *
  * ***************************************/
 @mixin gradient($from, $to, $fallback) {
@@ -24,7 +24,7 @@ $body: #333333;
     background: linear-gradient(to bottom, $from 0%,$to 100%);
 }
 /*******************************************
- * Media Queries - breakpoints
+ * #Media Queries - breakpoints
  *
  * ***************************************/
 $min_wrapper: 939px;
@@ -38,7 +38,7 @@ $smartphoneVert: 321px;
  * ***************************************/
 @import "../../mozfrtab/tabzilla.css";
 /*******************************************
- *  Fonts
+ *  #Fonts
  *
  * ***************************************/
 
@@ -59,7 +59,7 @@ $smartphoneVert: 321px;
 @import "normalize";
 
 /*******************************************
- * Css style
+ * #main
  *
  * ***************************************/
 
@@ -80,15 +80,10 @@ body {
   @media screen and (max-width: $min_wrapper) {
     width: 90%;
   }
-  @media screen and (max-width: $tablet) {
-    width: 90%;
-  }
   @media screen and (max-width: $smartphoneHor) {
-    width: 90%;
     font-size:12px;
   }
   @media screen and (max-width: $smartphoneVert) {
-    width: 90%;
     font-size:11px
   }
 }
@@ -156,8 +151,8 @@ h4 {
   font-size: 12px;
   line-height: 100%;
 }
-
-/* Header
+/****************************************************************************
+/* #Header
 *******************************************************************************/
 header {
   height: 50px;
@@ -204,12 +199,7 @@ header {
     width: 90%;
   }
   @media screen and (max-width: $smartphoneHor) {
-    width: 90%;
     font-size:12px;
-  }
-  @media screen and (max-width: $smartphoneVert) {
-    width: 90%;
-    font-size:12px
   }
   a {
     color: $link; 
@@ -223,7 +213,7 @@ header {
   }
 }
 /*******************************************************************************
-/* Sidebar
+/* #Sidebar
 *******************************************************************************/
 #sidebar {
   width: 250px;
@@ -379,7 +369,7 @@ li#community-tn a {
 }
 
 /*******************************************************************************
-/* Articles
+/* #Articles
 *******************************************************************************/
 
 article {
@@ -393,9 +383,6 @@ article {
     max-width: 100%;
 
     @media screen and (max-width: $tablet) {
-      max-width: 100%;
-    }
-    @media screen and (max-width: $smartphoneHor) {
       max-width: 100%;
     }
     @media screen and (max-width: $smartphoneVert) {
@@ -440,7 +427,7 @@ div.boite img {
 }
 
 /*******************************************************************************
-* Footer
+* #Footer
 *******************************************************************************/
 
 footer {
@@ -450,20 +437,18 @@ footer {
   padding: 10px 30px;
   background: url(img/logo_communities.png) right center no-repeat;
   border-top: 1px solid #666;
+  @media screen and (max-width: $min_wrapper) {
+    background:none;
+  }
   @media screen and (max-width: $tablet) {
     font-size:12px;
   }
   @media screen and (max-width: $smartphoneHor) {
     font-size:11px;
-    background: none;
-  }
-  @media screen and (max-width: $smartphoneVert) {
-    font-size:11px;
-    background: none;
   }
 }
 /*******************************************************************************
-* Tabzilla
+* #Tabzilla
 *******************************************************************************/
 #tabzilla-contents {
   @media screen and (max-width: $min_wrapper) {
@@ -471,19 +456,10 @@ footer {
     left: 0;
     margin: 0;
   }
-  // @media screen and (max-width: $smartphoneHor) {
-  //   left: 0;
-  //   margin: 0;
-  // }
-  // @media screen and (max-width: $smartphoneVert) {
-  //   left: 0;
-  //   margin: 0;
-  // }
 }
 #tabzilla-panel #tabzilla-nav ul li {
   @media screen and (max-width: $min_wrapper) {
     width: 19%;
-    margin:0;
   }
 }
 
