@@ -12,10 +12,12 @@
   <link rel="stylesheet" type="text/css" href="http://mozfr.org/mozfrtab/tabzilla.css" />
 </head>
 <body>
-  <a href="http://www.mozilla.org/" id="tabzilla">mozilla</a>
-  <?php include($tplRoot.'/header.tpl.php'); ?>
-  <div id="content">
+  <div id="wrapper">
+    <a href="http://www.mozilla.org/" id="tabzilla">mozilla</a>
+    <?php include($tplRoot.'/header.tpl.php'); ?>
+    <div id="content">
     <?php include($incRoot.'/manifesto.inc.html'); ?>
+    </div>
   </div>
   <?php include($tplRoot.'/sidebar.tpl.php'); ?>
   <?php include($tplRoot.'/footer.tpl.php'); ?>
