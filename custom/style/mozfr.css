@@ -1,17 +1,22 @@
+@import url(../../mozfrtab/tabzilla.css);
 /*******************************************
- * SandStone colors by MozillaFR
+ * #SandStone colors by MozillaFR
  *
  * ***************************************/
 /*******************************************
- * Mixins
+ * #Mixins
  *
  * ***************************************/
 /*******************************************
- * Media Queries - breakpoints
+ * #Media Queries - breakpoints
  *
  * ***************************************/
 /*******************************************
- *  Fonts
+ * Import files
+ *
+ * ***************************************/
+/*******************************************
+ *  #Fonts
  *
  * ***************************************/
 @font-face {
@@ -236,7 +241,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -368,7 +373,7 @@ table {
   border-spacing: 0; }
 
 /*******************************************
- * Css style
+ * #main
  *
  * ***************************************/
 body {
@@ -394,16 +399,11 @@ body {
   @media screen and (max-width: 939px) {
     #wrapper {
       width: 90%; } }
-  @media screen and (max-width: 769px) {
-    #wrapper {
-      width: 90%; } }
   @media screen and (max-width: 481px) {
     #wrapper {
-      width: 90%;
       font-size: 12px; } }
   @media screen and (max-width: 321px) {
     #wrapper {
-      width: 90%;
       font-size: 11px; } }
 
 pre, code {
@@ -422,7 +422,7 @@ h1 {
   font-family: 'Open Sans Light';
   letter-spacing: -2px;
   line-height: 100%;
-  text-shadow: 0px 1px 0px black;
+  text-shadow: 0px 1px 0px #000;
   color: #484848; }
   h1 a {
     color: #484848;
@@ -468,7 +468,8 @@ h4 {
   font-size: 12px;
   line-height: 100%; }
 
-/* Header
+/****************************************************************************
+/* #Header
 *******************************************************************************/
 header {
   height: 50px;
@@ -504,11 +505,6 @@ header {
       width: 90%; } }
   @media screen and (max-width: 481px) {
     #content {
-      width: 90%;
-      font-size: 12px; } }
-  @media screen and (max-width: 321px) {
-    #content {
-      width: 90%;
       font-size: 12px; } }
   #content a {
     color: #0095dd; }
@@ -518,7 +514,7 @@ header {
       color: #00539f; }
 
 /*******************************************************************************
-/* Sidebar
+/* #Sidebar
 *******************************************************************************/
 #sidebar {
   width: 250px;
@@ -527,25 +523,25 @@ header {
   margin-left: 3em;
   margin-top: 7em;
   opacity: .5;
-  -webkit-transition: all linear 0.25s;
-  -moz-transition: all linear 0.25s;
-  -o-transition: all linear 0.25s;
-  -ms-transition: all linear 0.25s;
-  transition: all linear 0.25s; }
+  -webkit-transition: all linear .25s;
+  -moz-transition: all linear .25s;
+  -o-transition: all linear .25s;
+  -ms-transition: all linear .25s;
+  transition: all linear .25s; }
   @media screen and (max-width: 769px) {
     #sidebar {
       width: 90%; } }
   #sidebar:hover {
     opacity: 1;
-    -webkit-transition: all linear 0.25s;
-    -moz-transition: all linear 0.25s;
-    -o-transition: all linear 0.25s;
-    -ms-transition: all linear 0.25s;
+    -webkit-transition: all linear .25s;
+    -moz-transition: all linear .25s;
+    -o-transition: all linear .25s;
+    -ms-transition: all linear .25s;
     transition: all linear 0.25s; }
   #sidebar .section {
     padding: 1em;
     /* margin: 0 0 1.5em 1.5em; */
-    border-bottom: 1px solid #666666; }
+    border-bottom: 1px solid #666; }
   #sidebar h2 {
     font-size: 1.5em; }
   #sidebar ul {
@@ -653,7 +649,7 @@ li#community-tn a {
   background-image: url(icons/feed_24px.png); }
 
 /*******************************************************************************
-/* Articles
+/* #Articles
 *******************************************************************************/
 article h2 {
   margin-top: 3em; }
@@ -662,9 +658,6 @@ article .info {
 article img, article iframe, article .image {
   max-width: 100%; }
   @media screen and (max-width: 769px) {
-    article img, article iframe, article .image {
-      max-width: 100%; } }
-  @media screen and (max-width: 481px) {
     article img, article iframe, article .image {
       max-width: 100%; } }
   @media screen and (max-width: 321px) {
@@ -704,7 +697,7 @@ div.boite img {
   max-width: 200px; }
 
 /*******************************************************************************
-* Footer
+* #Footer
 *******************************************************************************/
 footer {
   clear: both;
@@ -712,15 +705,31 @@ footer {
   min-height: 84px;
   padding: 10px 30px;
   background: url(img/logo_communities.png) right center no-repeat;
-  border-top: 1px solid #666666; }
+  border-top: 1px solid #666; }
+  @media screen and (max-width: 939px) {
+    footer {
+      background: none; } }
   @media screen and (max-width: 769px) {
     footer {
       font-size: 12px; } }
   @media screen and (max-width: 481px) {
     footer {
-      font-size: 11px;
-      background: none; } }
-  @media screen and (max-width: 321px) {
-    footer {
-      font-size: 11px;
-      background: none; } }
+      font-size: 11px; } }
+
+/*******************************************************************************
+* #Tabzilla
+*******************************************************************************/
+@media screen and (max-width: 939px) {
+  #tabzilla-contents {
+    height: 90%;
+    left: 0;
+    margin: 0; } }
+
+@media screen and (max-width: 939px) {
+  #tabzilla-panel #tabzilla-nav ul li {
+    width: 19%; } }
+
+@media screen and (max-width: 939px) {
+  #tabzilla-promo {
+    height: 0;
+    display: none; } }
