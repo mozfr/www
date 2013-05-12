@@ -4,25 +4,9 @@
  * ***************************************/
 $link: #0095DD;
 $hover: #00539F;
-$colorTop: #D7D3C8;
-$colorDown: #F6F4EC;
-$titles: #484848;
+$titles: #41596b;
 $body: #333333;
 
-/*******************************************
- * #Mixins
- *
- * ***************************************/
-@mixin gradient($from, $to, $fallback) {
-    background: $to;
-    background-image: url($fallback);
-    background: -moz-linear-gradient(top, $from 0%, $to 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
-    background: -webkit-linear-gradient(top, $from 0%,$to 100%);
-    background: -o-linear-gradient(top, $from 0%,$to 100%);
-    background: -ms-linear-gradient(top, $from 0%,$to 100%);
-    background: linear-gradient(to bottom, $from 0%,$to 100%);
-}
 /*******************************************
  * #Media Queries - breakpoints
  *
@@ -66,7 +50,7 @@ $smartphoneVert: 321px;
 body {
   width: 100%;
   min-height: 100%;
-  @include gradient(#D7D3C8, #F6F4EC, 'img/grain.png');
+  background: #eee url('img/bg-sky.png') center top repeat-x;
 }
 #wrapper {
   width: 940px;
@@ -175,7 +159,6 @@ header {
     li {
       display: inline;
       margin-right: 1em;
-
       a:hover {
         text-decoration: underline;
         $color: $hover;
@@ -183,7 +166,7 @@ header {
     }
     a, a:visited {
       text-decoration: none;
-      color: $link; 
+      color: $titles;
     }
   }
 }
@@ -435,8 +418,8 @@ footer {
   display: block;
   min-height: 84px;
   padding: 10px 30px;
-  background: url(img/logo_communities.png) right center no-repeat;
-  border-top: 1px solid #666;
+  background: #fff url(img/logo_communities.png) right center no-repeat;
+  /* border-top: 1px solid #666; */
   @media screen and (max-width: $min_wrapper) {
     background:none;
   }
