@@ -419,34 +419,42 @@ div.boite img {
 footer {
   clear: both;
   display: block;
-  min-height: 84px;
-  padding: 10px 30px;
-  background: #fff url(img/logo_communities.png) right center no-repeat;
-  border-top: 1px dotted #ccc;
-  opacity:.5;
-  -webkit-transition:all linear .25s;
-  -moz-transition:all linear .25s;
-  -o-transition:all linear .25s;
-  -ms-transition:all linear .25s;
-  transition:all linear .25s;
+  min-height: 10em;
+  padding: 1em 10em;
+ /* background: #fff ;/*url(img/logo_communities.png) right center no-repeat;*/
+  background: url("http://www.mozillabolivia.org/wp-content/uploads/2012/06/backfoot.png") repeat scroll 0 0 transparent;
 
-  &:hover {
-    opacity:1;
-    -webkit-transition:all linear .25s;
-    -moz-transition:all linear .25s;
-    -o-transition:all linear .25s;
-    -ms-transition:all linear .25s;
-    transition:all linear .25s
-  }     
-  /* border-top: 1px solid #666; */
-  @media screen and (max-width: $min_wrapper) {
-    background:none;
-  }
   @media screen and (max-width: $tablet) {
     font-size:12px;
   }
   @media screen and (max-width: $smartphoneHor) {
     font-size:11px;
+  }
+
+  p {
+    display: block;
+    width: 50%;
+    float: left;
+    color: #111; 
+    font-family: 'Open Sans';
+    margin-top: 5%;
+
+    @media screen and (max-width: $tablet) {
+      width: 90%;
+    }
+  } 
+  a {
+    color: #333;
+  }
+  img {
+    display: block;
+    width:200px;
+    float: right;
+    margin-top: 2%;
+
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
   }
 }
 /*******************************************************************************
