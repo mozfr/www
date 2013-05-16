@@ -491,7 +491,8 @@ header {
 *******************************************************************************/
 #content {
   width: 640px;
-  float: left; }
+  float: left;
+  margin-top: 2em; }
   @media screen and (max-width: 769px) {
     #content {
       width: 90%; } }
