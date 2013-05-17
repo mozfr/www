@@ -64,7 +64,7 @@ pre, code {
   line-height: 100%;
 }
 h1 {
-  font-size: 60px;
+  font-size: 4em;
   font-family: 'Open Sans Light';
   letter-spacing: -2px;
   line-height: 100%;
@@ -80,37 +80,25 @@ h1 {
 }
 h2 {
   color: $titles;
-  font-size: 32px;
+  font-size: 2em;
   font-family: 'Open Sans Light';
-  letter-spacing: -1px;
   line-height: 100%;
   a {
     color: $titles;
     text-decoration: none;
   }
-  @media screen and (max-width: $tablet) {
-    font-size: 3em;
-  }
 }
 h3 {
   color: $titles;
-  font-size: 28px;
+  font-size: 1.5em;
   font-family: 'Open Sans Light';
-  letter-spacing: -0.5px;
   line-height: 100%;
-  @media screen and (max-width: $tablet) {
-    font-size: 2em;
-  }
 }
 h4 {
   color: $titles;
-  font-size: 24px;
+  font-size: 1.2em;
   font-family: 'Open Sans Light';
-  letter-spacing: -0.25px;
   line-height: 100%;
-  @media screen and (max-width: $tablet) {
-    font-size: 1.5em;
-  }
 }
 .small, small {
   font-size: 12px;
@@ -193,6 +181,7 @@ header {
 #content {
   width: 640px;
   float: left;
+  margin-top: 2em;
 
   @media screen and (max-width: $tablet) {
     width: 90%;
@@ -431,34 +420,41 @@ div.boite img {
 footer {
   clear: both;
   display: block;
-  min-height: 84px;
-  padding: 10px 30px;
-  background: #fff url(img/logo_communities.png) right center no-repeat;
-  border-top: 1px dotted #ccc;
-  opacity:.5;
-  -webkit-transition:all linear .25s;
-  -moz-transition:all linear .25s;
-  -o-transition:all linear .25s;
-  -ms-transition:all linear .25s;
-  transition:all linear .25s;
+  min-height: 10em;
+  padding: 1em 10em;
+  background: url("img/backfoot.png") repeat scroll 0 0 transparent;
 
-  &:hover {
-    opacity:1;
-    -webkit-transition:all linear .25s;
-    -moz-transition:all linear .25s;
-    -o-transition:all linear .25s;
-    -ms-transition:all linear .25s;
-    transition:all linear .25s
-  }     
-  /* border-top: 1px solid #666; */
-  @media screen and (max-width: $min_wrapper) {
-    background:none;
-  }
   @media screen and (max-width: $tablet) {
     font-size:12px;
   }
   @media screen and (max-width: $smartphoneHor) {
     font-size:11px;
+  }
+
+  p {
+    display: block;
+    width: 50%;
+    float: left;
+    color: #111; 
+    font-family: 'Open Sans';
+    margin-top: 5%;
+
+    @media screen and (max-width: $tablet) {
+      width: 90%;
+    }
+  } 
+  a {
+    color: #333;
+  }
+  img {
+    display: block;
+    width:200px;
+    float: right;
+    margin-top: 2%;
+
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
   }
 }
 /*******************************************************************************
@@ -474,6 +470,7 @@ footer {
 #tabzilla-panel #tabzilla-nav ul li {
   @media screen and (max-width: $min_wrapper) {
     width: 19%;
+    margin: 1em 0 0 0;
   }
 }
 

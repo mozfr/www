@@ -7,5 +7,6 @@
     Ce site est maintenu par des bénévoles et n'est pas un site officiel de la
     <a href="http://www.mozilla.org/">fondation Mozilla</a>.
   </p>
+    <img src="custom/style/img/logo_communities.png" alt="Mozilla Communities" />
 </footer>
 
