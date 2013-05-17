@@ -422,8 +422,7 @@ footer {
   display: block;
   min-height: 10em;
   padding: 1em 10em;
- /* background: #fff ;/*url(img/logo_communities.png) right center no-repeat;*/
-  background: url("http://www.mozillabolivia.org/wp-content/uploads/2012/06/backfoot.png") repeat scroll 0 0 transparent;
+  background: url("img/backfoot.png") repeat scroll 0 0 transparent;
 
   @media screen and (max-width: $tablet) {
     font-size:12px;
