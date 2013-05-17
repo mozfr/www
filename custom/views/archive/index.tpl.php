@@ -35,8 +35,8 @@
     <?php include($tplRoot.'/header.tpl.php'); ?>
     <?php include(dirname(__FILE__).'/archives.tpl.php'); ?>
     <?php include(dirname(__FILE__).'/sidebar.tpl.php'); ?>
-    <?php include($tplRoot.'/footer.tpl.php'); ?>
   </div> <!-- #wrapper -->
+  <?php include($tplRoot.'/footer.tpl.php'); ?>
   <script src="app/js/mm.js" type="text/javascript"></script>
 </body>
 </html>

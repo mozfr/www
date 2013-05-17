@@ -387,7 +387,7 @@ pre, code {
   line-height: 100%; }
 
 h1 {
-  font-size: 60px;
+  font-size: 4em;
   font-family: 'Open Sans Light';
   letter-spacing: -2px;
   line-height: 100%;
@@ -402,36 +402,24 @@ h1 {
 
 h2 {
   color: #41596b;
-  font-size: 32px;
+  font-size: 2em;
   font-family: 'Open Sans Light';
-  letter-spacing: -1px;
   line-height: 100%; }
   h2 a {
     color: #41596b;
     text-decoration: none; }
-  @media screen and (max-width: 769px) {
-    h2 {
-      font-size: 3em; } }
 
 h3 {
   color: #41596b;
-  font-size: 28px;
+  font-size: 1.5em;
   font-family: 'Open Sans Light';
-  letter-spacing: -0.5px;
   line-height: 100%; }
-  @media screen and (max-width: 769px) {
-    h3 {
-      font-size: 2em; } }
 
 h4 {
   color: #41596b;
-  font-size: 24px;
+  font-size: 1.2em;
   font-family: 'Open Sans Light';
-  letter-spacing: -0.25px;
   line-height: 100%; }
-  @media screen and (max-width: 769px) {
-    h4 {
-      font-size: 1.5em; } }
 
 .small, small {
   font-size: 12px;
@@ -503,7 +491,8 @@ header {
 *******************************************************************************/
 #content {
   width: 640px;
-  float: left; }
+  float: left;
+  margin-top: 2em; }
   @media screen and (max-width: 769px) {
     #content {
       width: 90%; } }
@@ -705,33 +694,35 @@ div.boite img {
 footer {
   clear: both;
   display: block;
-  min-height: 84px;
-  padding: 10px 30px;
-  background: white url(img/logo_communities.png) right center no-repeat;
-  border-top: 1px dotted #ccc;
-  opacity: .5;
-  -webkit-transition: all linear .25s;
-  -moz-transition: all linear .25s;
-  -o-transition: all linear .25s;
-  -ms-transition: all linear .25s;
-  transition: all linear .25s;
-  /* border-top: 1px solid #666; */ }
-  footer:hover {
-    opacity: 1;
-    -webkit-transition: all linear .25s;
-    -moz-transition: all linear .25s;
-    -o-transition: all linear .25s;
-    -ms-transition: all linear .25s;
-    transition: all linear 0.25s; }
-  @media screen and (max-width: 939px) {
-    footer {
-      background: none; } }
+  min-height: 10em;
+  padding: 1em 10em;
+  background: url("img/backfoot.png") repeat scroll 0 0 transparent; }
   @media screen and (max-width: 769px) {
     footer {
       font-size: 12px; } }
   @media screen and (max-width: 481px) {
     footer {
       font-size: 11px; } }
+  footer p {
+    display: block;
+    width: 50%;
+    float: left;
+    color: #111;
+    font-family: 'Open Sans';
+    margin-top: 5%; }
+    @media screen and (max-width: 769px) {
+      footer p {
+        width: 90%; } }
+  footer a {
+    color: #333; }
+  footer img {
+    display: block;
+    width: 200px;
+    float: right;
+    margin-top: 2%; }
+    @media screen and (max-width: 769px) {
+      footer img {
+        display: none; } }
 
 /*******************************************************************************
 * #Tabzilla
@@ -744,7 +735,8 @@ footer {
 
 @media screen and (max-width: 939px) {
   #tabzilla-panel #tabzilla-nav ul li {
-    width: 19%; } }
+    width: 19%;
+    margin: 1em 0 0 0; } }
 
 @media screen and (max-width: 939px) {
   #tabzilla-promo {
