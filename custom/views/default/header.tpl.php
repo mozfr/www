@@ -17,6 +17,5 @@
   <option value="./archives">Archives</option>
   </select>
 
-  <h1><a href="./">Mozilla Francophone</a></h1>
+  <h1 id="site-title"><a href="./">Mozilla Francophone</a></h1>
 </header>
-
