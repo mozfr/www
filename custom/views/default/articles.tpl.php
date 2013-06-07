@@ -31,5 +31,10 @@
       <?php if (++$count == $limit) { break; } ?>
     <?php endforeach; ?>
   <?php endif; ?>
+  <nav class="nav-paging">
+    <ul role="navigation">
+      <li class="prev"><a href="./archives" >Archives</a></li>
+    </ul>
+  </nav>
 </div>
 
