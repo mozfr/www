@@ -14,7 +14,7 @@
 </head>
 <body>
   <div id="wrapper">
-  <a href="http://mozfr.org" title="Retour au portail Mozilla Francophone" id="tabzilla">MozFR</a>
+  <a href="http://mozfr.org" title="Retour au portail Mozilla Francophone" id="tabzilla">mozFR</a>
   <?php include(dirname(__FILE__).'/header.tpl.php'); ?>
   <?php include(dirname(__FILE__).'/articles.tpl.php'); ?>
   <?php include(dirname(__FILE__).'/sidebar.tpl.php'); ?>

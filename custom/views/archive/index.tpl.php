@@ -28,10 +28,12 @@
   <meta charset="UTF-8" />
   <title><?php echo $PlanetConfig->getName(); ?></title>
   <link rel="stylesheet" type="text/css" href="custom/style/mozfr.css" />
+  <script src="http://mozfr.org/mozfrtab/tabzilla.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
 </head>
 <body>
   <div id="wrapper">
+    <a href="http://mozfr.org" title="Retour au portail Mozilla Francophone" id="tabzilla">mozFR</a>
     <?php include($tplRoot.'/header.tpl.php'); ?>
     <?php include(dirname(__FILE__).'/archives.tpl.php'); ?>
     <?php include(dirname(__FILE__).'/sidebar.tpl.php'); ?>
