@@ -53,18 +53,8 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
         <a href="http://www.mozilla.org/fr/thunderbird/?from=mozfr">Thunderbird</a>
       </li>
       <li class="more">
-        <a href="http://frenchmozilla.org/downloads">Autres…</a>
+        <a href="http://frenchmozilla.org/downloads">Autres</a>
       </li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Lettre d'informations</h2>
-    <ul id="newsletter">
-      <li id="newsletterlogo">
-        <a href="http://www.mozilla.org/fr/newsletter/"></a>
-      </li>
-      <a href="http://www.mozilla.org/fr/newsletter/">Abonnez-vous</a> à Firefox &amp; vous, notre lettre d'informations mensuelle.
     </ul>
   </div>
 
@@ -87,7 +77,7 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
         <a href="http://forums.mozfr.org/" title="aide et support technique des utilisateurs Mozilla">Forums Geckozone</a>
       </li>
       <li class="more">
-        <a href="./participer">Participer&nbsp;!</a>
+        <a href="./participer">Participer</a>
       </li>
     </ul>
   </div>
@@ -113,6 +103,16 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
       <li id="community-tn">
         <a href="http://mozilla-tunisia.org/" title="site de la communauté tunisienne">Mozilla Tunisia</a>
       </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Lettre d'informations</h2>
+    <ul id="newsletter">
+      <li id="newsletterlogo">
+        <a href="http://www.mozilla.org/fr/newsletter/"></a>
+      </li>
+      <a href="http://www.mozilla.org/fr/newsletter/">Abonnez-vous</a> à Firefox &amp; vous, notre lettre d'informations mensuelle.
     </ul>
   </div>
 

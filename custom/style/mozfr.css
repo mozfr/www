@@ -428,6 +428,12 @@ a:hover, a:focus, a:active { color: #4090c4; }
   transition: font-size, letter-spacing .5s linear;
 }
 
+.more a {
+  margin: 24px 0;
+  font: 1em/1 'Open Sans Light', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  color
+}
+.more a:after { content: "\00A0\00BB"; font-size: 1.2em; }
 
 
 .small, small {
@@ -666,6 +672,11 @@ li#community-tn a {
   background-position: center left;
   background-image: url(icons/feed_24px.png); }
 
+/* Sidebar fixes for archive page*/
+#sidebar-people li a, #sidebar-syndicate li a {
+  display: inline;
+  padding-left: 0;
+}
 /*******************************************************************************
 /* #Articles
 *******************************************************************************/

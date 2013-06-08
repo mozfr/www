@@ -5,7 +5,7 @@
 <div id="sidebar" class="aside">
 
   <div class="section" id="sidebar-people">
-    <h2>People (<?php echo count($all_people); ?>)</h2>
+    <h2>Personnes (<?php echo count($all_people); ?>)</h2>
     <ul>
       <?php foreach ($all_people as $person) : ?>
       <li>
@@ -20,8 +20,8 @@
     </p>
   </div>
 
-  <div class="section">
-    <h2>Syndicate</h2>
+  <div id="sidebar-syndicate" class="section">
+    <h2>S'abonner</h2>
     <ul>
       <li><img src="custom/img/feed.png" alt="feed" height="12" width="12" />&nbsp;<a href="./atom.xml">Flux atom</a></li>
       <li><img src="custom/img/feed.png" alt="feed" height="12" width="12" />&nbsp;<a href="./rss.xml">Flux rss</a></li>
