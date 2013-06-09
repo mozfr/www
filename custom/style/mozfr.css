@@ -374,6 +374,7 @@ table {
 /* Tabzilla border*/
 html {
   border-top: 2px solid rgb(255, 255, 255);
+  background-color: #eeeeee;
 }
 
 body {
