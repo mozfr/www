@@ -88,7 +88,6 @@ dt {
   </script>
   <script src="mozfrtab/tabzilla.js"></script>
   <script src="custom/js/nav-main.js" type="text/javascript"></script>
-  <script src="app/js/mm.js" type="text/javascript"></script>
 </body>
 </html>
 

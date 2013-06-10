@@ -11,8 +11,6 @@
   <link rel="stylesheet" type="text/css" href="custom/style/mozfr.css" />
   <link rel="alternate" type="application/atom+xml" title="atom" href="./atom.xml" />
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-  <script src="mozfrtab/tabzilla.js"></script>
-  <script src="app/js/mm.js" type="text/javascript"></script>
 </head>
 <body>
   <div id="wrapper">
@@ -21,5 +19,7 @@
   <?php include(dirname(__FILE__).'/sidebar.tpl.php'); ?>
   </div> <!-- #wrapper -->
   <?php include(dirname(__FILE__).'/footer.tpl.php'); ?>
+  <script src="mozfrtab/tabzilla.js"></script>
+  <script src="app/js/mm.js" type="text/javascript"></script>
 </body>
 </html>
