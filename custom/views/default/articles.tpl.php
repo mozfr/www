@@ -1,3 +1,4 @@
+<?php setlocale(LC_TIME, 'fr_FR'); ?>
 <div id="content">
   <?php if (0 == count($items)) : ?>
     <article>
@@ -9,21 +10,19 @@
       <?php
         $arParsedUrl = parse_url($item->get_feed()->get_link());
         $host = preg_replace('/[^a-zA-Z]/i', '-', $arParsedUrl['host']);
+        $feed = $item->get_feed();
       ?>
       <article class="<?php echo $host; ?>">
-        <h2>
-          <a href="<?php echo $item->get_permalink(); ?>" title="Go to original place"><?php echo $item->get_title(); ?></a>
-        </h2>
-        <p class="info">
-          <?php echo ($item->get_author()? $item->get_author()->get_name() : 'Anonymous'); ?>,
-          <?php
-            $ago = time() - $item->get_date('U');
-            echo '<span id="post'.$item->get_date('U').'" class="date">'.$item->get_date('d/m/Y').'</span>';
-          ?> | Source: <?php
-            $feed = $item->get_feed();
-            echo '<a href="'.$feed->getWebsite().'" class="source">'.$feed->getName().'</a>';
-          ?>
+        <header class="entry-header">
+          <h2 class="entry-title"><a href="<?php echo $item->get_permalink(); ?>" title="Se rendre sur l'article original"><?php echo $item->get_title(); ?></a></h2>
+        <p class="entry-posted">
+          <time class="published" title="<?php echo $item->get_date('U');?>" datetime="<?php echo $item->get_date('U');?>">
+            <span class="posted-date"><?php echo $item->get_date('d'); ?></span>
+            <span class="posted-month"><?php echo strftime("%b", mktime(0, 0, 0, $item->get_date('m'))); ?></span>
+            <span class="posted-year" ><?php echo $item->get_date('Y'); ?></span>
+          </time>
         </p>
+        <address class="vcard"><cite class="author fn"><a class="url" href="<?php echo $feed->getWebsite(); ?>" title="Source"><?php echo $feed->getName(); ?></a></cite></address>
         <div class="content">
           <?php echo $item->get_content(); ?>
         </div>
