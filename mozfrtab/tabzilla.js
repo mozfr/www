@@ -1,77 +1,77 @@
 ﻿/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
 /**
- * Tabzilla global navigation for Mozilla projects
- *
- * This code is licensed under the Mozilla Public License 1.1.
- *
- * Event handling portions adapted from the YUI Event component used under
- * the following license:
- *
- *   Copyright © 2012 Yahoo! Inc. All rights reserved.
- *
- *   Redistribution and use of this software in source and binary forms,
- *   with or without modification, are permitted provided that the following conditions
- *   are met:
- *
- *   - Redistributions of source code must retain the above copyright notice,
- *     this list of conditions and the following disclaimer.
- *   - Redistributions in binary form must reproduce the above copyright
- *     notice, this list of conditions and the following disclaimer in the
- *     documentation and/or other materials provided with the distribution.
- *   - Neither the name of Yahoo! Inc. nor the names of YUI's contributors may
- *     be used to endorse or promote products derived from this software
- *     without specific prior written permission of Yahoo! Inc.
- *
- *   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- *   "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
- *   TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
- *   PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
- *   CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *   EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- *   PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- *   PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- *   LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *   NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- *   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- * Portions adapted from the jQuery Easing plugin written by Robert Penner and
- * used under the following license:
- *
- *   Copyright 2001 Robert Penner
- *   All rights reserved.
- *
- *   Redistribution and use in source and binary forms, with or without
- *   modification, are permitted provided that the following conditions are
- *   met:
- *
- *   - Redistributions of source code must retain the above copyright notice,
- *     this list of conditions and the following disclaimer.
- *   - Redistributions in binary form must reproduce the above copyright
- *     notice, this list of conditions and the following disclaimer in the
- *     documentation and/or other materials provided with the distribution.
- *   - Neither the name of the author nor the names of contributors may be
- *     used to endorse or promote products derived from this software without
- *    specific prior written permission.
- *
- *   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- *   "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
- *   TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
- *   PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
- *   CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *   EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- *   PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- *   PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- *   LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *   NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- *   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * @copyright 2012 silverorange Inc.
- * @license   http://www.mozilla.org/MPL/MPL-1.1.html Mozilla Public License 1.1
- * @author    Michael Gauthier <mike@silverorange.com>
- * @author    Steven Garrity <steven@silverorange.com>
- */
+* Tabzilla global navigation for Mozilla projects
+*
+* This code is licensed under the Mozilla Public License 1.1.
+*
+* Event handling portions adapted from the YUI Event component used under
+* the following license:
+*
+* Copyright © 2012 Yahoo! Inc. All rights reserved.
+*
+* Redistribution and use of this software in source and binary forms,
+* with or without modification, are permitted provided that the following conditions
+* are met:
+*
+* - Redistributions of source code must retain the above copyright notice,
+* this list of conditions and the following disclaimer.
+* - Redistributions in binary form must reproduce the above copyright
+* notice, this list of conditions and the following disclaimer in the
+* documentation and/or other materials provided with the distribution.
+* - Neither the name of Yahoo! Inc. nor the names of YUI's contributors may
+* be used to endorse or promote products derived from this software
+* without specific prior written permission of Yahoo! Inc.
+*
+* THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+* "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+* TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+* PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+* CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+* EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+* PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+* PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+* LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+* NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+* SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*
+* Portions adapted from the jQuery Easing plugin written by Robert Penner and
+* used under the following license:
+*
+* Copyright 2001 Robert Penner
+* All rights reserved.
+*
+* Redistribution and use in source and binary forms, with or without
+* modification, are permitted provided that the following conditions are
+* met:
+*
+* - Redistributions of source code must retain the above copyright notice,
+* this list of conditions and the following disclaimer.
+* - Redistributions in binary form must reproduce the above copyright
+* notice, this list of conditions and the following disclaimer in the
+* documentation and/or other materials provided with the distribution.
+* - Neither the name of the author nor the names of contributors may be
+* used to endorse or promote products derived from this software without
+* specific prior written permission.
+*
+* THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+* "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+* TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+* PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+* CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+* EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+* PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+* PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+* LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+* NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+* SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*
+*
+* @copyright 2012 silverorange Inc.
+* @license http://www.mozilla.org/MPL/MPL-1.1.html Mozilla Public License 1.1
+* @author Michael Gauthier <mike@silverorange.com>
+* @author Steven Garrity <steven@silverorange.com>
+*/
 
 function Tabzilla()
 {
@@ -86,39 +86,37 @@ Tabzilla.READY_POLL_INTERVAL = 40;
 Tabzilla.readyInterval = null;
 Tabzilla.jQueryCDNSrc =
     '//www.mozilla.org/media/js/libs/jquery-1.7.1.min.js';
+
 Tabzilla.LINK_TITLE = {
-    CLOSED: "Mozilla links",
-    OPENED: "Close (Esc)"
+    CLOSED: 'Mozilla links',
+    OPENED: 'Close (Esc)'
 }
 
-Tabzilla.hasCSSTransitions = (function() {
-    var div = document.createElement('div');
-    div.innerHTML = '<div style="'
-        + '-webkit-transition: color 1s linear;'
-        + '-moz-transition: color 1s linear;'
-        + '-ms-transition: color 1s linear;'
-        + '-o-transition: color 1s linear;'
-        + '"></div>';
+/**
+* Whether or not Tabzilla is in small mode
+*
+* @var Boolean
+*/
+Tabzilla.smallMode = false;
 
-    var hasTransitions = (
-           (div.firstChild.style.webkitTransition !== undefined)
-        || (div.firstChild.style.MozTransition !== undefined)
-        || (div.firstChild.style.msTransition !== undefined)
-        || (div.firstChild.style.OTransition !== undefined)
-    );
-
-    delete div;
-
-    return hasTransitions;
+/**
+* Whether or not min/max width media queries are supported in CSS
+*
+* If not supported, the small mode is never triggered.
+*
+* @var Boolean
+*/
+Tabzilla.hasMediaQueryWidths = (function(){
+    return !(/MSIE\ (4|5|6|7|8)/.test(navigator.userAgent));
 })();
 
 /**
- * Sets up the DOMReady event for Tabzilla
- *
- * Adapted from the YUI Event component. Defined in Tabzilla so we do not
- * depend on YUI or jQuery. The YUI DOMReady implementation is based on work
- * Dean Edwards, John Resig, Matthias Miller and Diego Perini.
- */
+* Sets up the DOMReady event for Tabzilla
+*
+* Adapted from the YUI Event component. Defined in Tabzilla so we do not
+* depend on YUI or jQuery. The YUI DOMReady implementation is based on work
+* Dean Edwards, John Resig, Matthias Miller and Diego Perini.
+*/
 Tabzilla.run = function()
 {
     var webkit = 0, isIE = false, ua = navigator.userAgent;
@@ -176,7 +174,7 @@ Tabzilla.run = function()
         }, Tabzilla.READY_POLL_INTERVAL);
 
     // FireFox and Opera: These browsers provide a event for this
-    // moment.  The latest WebKit releases now support this event.
+    // moment. The latest WebKit releases now support this event.
     } else {
         Tabzilla.addEventListener(document, 'DOMContentLoaded', Tabzilla.ready);
     }
@@ -206,7 +204,7 @@ Tabzilla.ready = function()
             if (script.readyState) {
                 // IE
                 script.onreadystatechange = function() {
-                    if (   script.readyState == 'loaded'
+                    if ( script.readyState == 'loaded'
                         || script.readyState == 'complete'
                     ) {
                         onLoad();
@@ -224,19 +222,17 @@ Tabzilla.ready = function()
 
 Tabzilla.init = function()
 {
-    if (!Tabzilla.hasCSSTransitions) {
-        // add easing functions
-        jQuery.extend(jQuery.easing, {
-            'easeInOut':  function (x, t, b, c, d) {
-                if (( t /= d / 2) < 1) {
-                    return c / 2 * t * t + b;
-                }
-                return -c / 2 * ((--t) * (t - 2) - 1) + b;
+    // add easing functions
+    jQuery.extend(jQuery.easing, {
+        'easeInOut': function (x, t, b, c, d) {
+            if (( t /= d / 2) < 1) {
+                return c / 2 * t * t + b;
             }
-        });
-    }
+            return -c / 2 * ((--t) * (t - 2) - 1) + b;
+        }
+    });
 
-    Tabzilla.link  = document.getElementById('tabzilla');
+    Tabzilla.link = document.getElementById('tabzilla');
     Tabzilla.panel = Tabzilla.buildPanel();
 
     // add panel as first element of body element
@@ -250,19 +246,21 @@ Tabzilla.init = function()
     });
 
     Tabzilla.$panel = jQuery(Tabzilla.panel);
-    Tabzilla.$link  = jQuery(Tabzilla.link);
+    Tabzilla.$link = jQuery(Tabzilla.link);
 
     Tabzilla.$panel.addClass('tabzilla-closed');
     Tabzilla.$link.addClass('tabzilla-closed');
     Tabzilla.$panel.removeClass('tabzilla-opened');
     Tabzilla.$link.removeClass('tabzilla-opened');
 
-    Tabzilla.$panel.attr("tabindex","-1");
+    // make panel unfocusable
+    Tabzilla.$panel.attr('tabindex', '-1');
+
     Tabzilla.$link.attr({
-        "role": "button",
-        "aria-expanded": "false",
-        "aria-controls": Tabzilla.$panel.attr("id"),
-        "title": Tabzilla.LINK_TITLE.CLOSED
+        'role' : 'button',
+        'aria-expanded' : 'false',
+        'aria-controls' : Tabzilla.$panel.attr('id'),
+        'title' : Tabzilla.LINK_TITLE.CLOSED
     });
 
     Tabzilla.opened = false;
@@ -279,11 +277,16 @@ Tabzilla.init = function()
         }
     });
     Tabzilla.$panel.keypress(function(e) {
-        if (e.which === 13) {
+        if (e.which === 13 && !Tabzilla.smallMode) {
             Tabzilla.toggle();
             Tabzilla.$link.focus();
         }
     });
+
+    if (Tabzilla.hasMediaQueryWidths) {
+        jQuery(window).resize(Tabzilla.handleResize);
+        Tabzilla.handleResize();
+    }
 };
 
 Tabzilla.buildPanel = function()
@@ -327,20 +330,24 @@ Tabzilla.open = function()
         return;
     }
 
-    if (Tabzilla.hasCSSTransitions) {
-        Tabzilla.$panel.addClass('tabzilla-opened');
-        Tabzilla.$link.addClass('tabzilla-opened');
-        Tabzilla.$panel.removeClass('tabzilla-closed');
-        Tabzilla.$link.removeClass('tabzilla-closed');
-    } else {
-        // jQuery animation fallback
-        jQuery(Tabzilla.panel).animate({ height: 200 }, 200, 'easeInOut').toggleClass("open");;
-    }
+    Tabzilla.$panel.toggleClass('open');
 
-    Tabzilla.$link.attr({
-        "aria-expanded": "true",
-        "title": Tabzilla.LINK_TITLE.OPENED
-    });
+    var $content = Tabzilla.$panel.children('#tabzilla-contents');
+    var height = $content.height();
+
+    Tabzilla.$panel
+        .animate({ 'height' : height }, 200, 'easeInOut', function() {
+            Tabzilla.$panel.css('height', 'auto');
+        });
+
+    Tabzilla.$link
+        .attr({
+            'aria-expanded' : 'true',
+            'title' : Tabzilla.LINK_TITLE.OPENED
+        })
+        .addClass('tabzilla-opened')
+        .removeClass('tabzilla-closed');
+
     Tabzilla.$panel.focus();
     Tabzilla.opened = true;
 };
@@ -351,23 +358,21 @@ Tabzilla.close = function()
         return;
     }
 
-    if (Tabzilla.hasCSSTransitions) {
-        Tabzilla.$panel.removeClass('tabzilla-opened');
-        Tabzilla.$link.removeClass('tabzilla-opened');
-        Tabzilla.$panel.addClass('tabzilla-closed');
-        Tabzilla.$link.addClass('tabzilla-closed');
-    } else {
-        // jQuery animation fallback
-        jQuery(Tabzilla.panel).animate({ height: 0 }, 200, 'easeInOut', function(){
-            $(this).toggleClass("open");
+    // jQuery animation fallback
+    Tabzilla.$panel
+        .animate({ height: 0 }, 200, 'easeInOut', function() {
+            Tabzilla.$panel.toggleClass('open');
         });
 
-    }
+    Tabzilla.$link
+        .attr({
+            'aria-expanded' : 'false',
+            'title' : Tabzilla.LINK_TITLE.CLOSED
+        })
+        .addClass('tabzilla-closed')
+        .removeClass('tabzilla-opened');
 
-    Tabzilla.$link.attr({
-        "aria-expanded": "false",
-        "title": Tabzilla.LINK_TITLE.CLOSED
-    });
+
     Tabzilla.opened = false;
 };
 
@@ -378,6 +383,146 @@ Tabzilla.preventDefault = function(ev)
     } else {
         ev.returnValue = false;
     }
+};
+
+Tabzilla.handleResize = function(e)
+{
+    var width = jQuery(window).width();
+    if (width <= 719 && !Tabzilla.smallMode) {
+        Tabzilla.enterSmallMode();
+    }
+
+    if (width > 719 && Tabzilla.smallMode) {
+        Tabzilla.leaveSmallMode();
+    }
+};
+
+Tabzilla.toggleSmallMode = function()
+{
+    if (Tabzilla.smallMode) {
+        Tabzilla.leaveSmallMode();
+    } else {
+        Tabzilla.enterSmallMode();
+    }
+};
+
+Tabzilla.enterSmallMode = function()
+{
+    // add focusability to menu headers
+    jQuery('#tabzilla-nav h2')
+        .attr({
+            'role' : 'menuitem',
+            'tabindex' : '0',
+            'aria-expanded' : 'false',
+            'aria-haspopup' : 'true'
+        })
+        .each(function(i, e) {
+            var $menu = jQuery(e).siblings('ul');
+            var $item = jQuery(e);
+            Tabzilla.initSubmenu($item, $menu);
+            Tabzilla.closeSubmenu($item, $menu);
+        });
+
+    Tabzilla.smallMode = true;
+};
+
+Tabzilla.leaveSmallMode = function()
+{
+    // remove focusability from menu headers
+    jQuery('#tabzilla-nav h2')
+        .removeAttr('role')
+        .removeAttr('tabindex')
+        .removeAttr('aria-haspopup')
+        .removeAttr('aria-expanded')
+        .each(function(i, e) {
+            var $menu = jQuery(e).siblings('ul');
+            var $item = jQuery(e);
+            Tabzilla.denitSubmenu($item, $menu);
+
+        });
+
+    Tabzilla.smallMode = false;
+};
+
+Tabzilla.initSubmenu = function($item, $menu)
+{
+    $item.click(function(e) {
+        Tabzilla.toggleSubmenu($item, $menu);
+    });
+    $item.keyup(function(e) {
+        if (e.keyCode === 13) {
+            Tabzilla.preventDefault(e);
+            Tabzilla.toggleSubmenu($item, $menu);
+        }
+        if (e.keyCode === 39) {
+            Tabzilla.preventDefault(e);
+            Tabzilla.openSubmenu($item, $menu);
+        }
+        if (e.keyCode === 37) {
+            Tabzilla.preventDefault(e);
+            Tabzilla.closeSubmenu($item, $menu);
+        }
+    });
+    $menu.attr('role', 'menu');
+
+    var $items = $menu.find('a');
+    $items.attr('role', 'menuitem');
+};
+
+Tabzilla.denitSubmenu = function($item, $menu)
+{
+    $item.unbind('click');
+    $menu.removeAttr('role');
+    $menu.css('height', 'auto');
+
+    var $items = $menu.find('a');
+    $items
+        .removeAttr('role')
+        .removeAttr('tabindex')
+        .unbind('keypress');
+};
+
+Tabzilla.toggleSubmenu = function($item, $menu)
+{
+    if ($item.attr('aria-expanded') === 'true') {
+        Tabzilla.closeSubmenu($item, $menu);
+    } else {
+        Tabzilla.openSubmenu($item, $menu);
+    }
+};
+
+Tabzilla.openSubmenu = function($item, $menu)
+{
+    $item.attr('aria-expanded', 'true');
+
+    var $items = $menu.find('a');
+    $items.attr('tabindex', '0');
+
+    // get natural menu height
+    var height = 0;
+    $menu.find('li').each(function(i, e) {
+        height += jQuery(e).height() + 1;
+    });
+    height--;
+
+    $menu
+        .css('height', height + 'px')
+        .attr('aria-hidden', 'false');
+};
+
+Tabzilla.closeSubmenu = function($item, $menu)
+{
+    $item.attr('aria-expanded', 'false');
+
+    $menu
+        .css({
+            'overflow' : 'hidden',
+            'height' : '0'
+        })
+        .attr('aria-hidden', 'true');
+
+    var $items = $menu.find('a');
+    $items.attr('tabindex', '-1');
 };
 
 Tabzilla.content =
