@@ -606,32 +606,6 @@ nav.menu-bar ol li:first-child a,nav.menu-bar ul li:first-child a{
     font-size:.9375em
   }
 
-  .sidebar{
-    float:left;
-    width:160px;
-    margin:0 10px;
-    margin-left:70px
-  }
-
-  #footer-email-form h3,#newsletter-form h3{
-    float:left;
-    width:220px;
-    margin:0 10px;
-    padding-top:4px
-  }
-
-  #footer-email-form .form-contents,#newsletter-form .form-contents{
-    float:left;
-    width:280px;
-    margin:0 10px
-  }
-
-  #footer-email-form .form-submit,#newsletter-form .form-submit{
-    float:left;
-    width:160px;
-    margin:0 10px
-  }
-
   #colophon .row{
     width:720px
   }
@@ -770,15 +744,6 @@ nav.menu-bar ol li:first-child a,nav.menu-bar ul li:first-child a{
 
   nav.menu-bar ul li:first-child a{
     border-top:0
-  }
-
-  #footer-email-form h3,#newsletter-form h3,#footer-email-form .form-contents,#newsletter-form .form-contents,#footer-email-form .form-submit,#newsletter-form .form-submit{
-    width:auto;
-    float:none
-  }
-
-  #footer-email-form .form-submit,#newsletter-form .form-submit{
-    margin-top:10px
   }
 
   #colophon .row{
@@ -1255,6 +1220,7 @@ div.boite img {
   float: left;
   margin-right: 24px;
   width: 252px;
+  margin-top: 0;
 }
 #site-info a:link, 
 #site-info a:visited {
