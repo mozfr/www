@@ -1,6 +1,7 @@
 <footer id="site-info" role="contentinfo">
   <div class="wrap">
     <p id="foot-logo">
+      <a class="top" href="#wrapper">Retour en haut</a>
       <a class="logo" href="http://mozilla.org" rel="external">Mozilla</a>
     </p>
     
