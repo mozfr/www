@@ -422,7 +422,7 @@ a:hover, a:focus, a:active { color: #4090c4; text-decoration: underline; }
 #site-title {
   font-size: 4.5em;
   letter-spacing: -3px;
-  margin: 0 0 .15em -5px;
+  margin: .2em 0 0 -5px;
   -moz-transition: font-size, letter-spacing .5s linear;
   -webkit-transition: font-size, letter-spacing .5s linear;
   -o-transition: font-size, letter-spacing .5s linear;
@@ -898,7 +898,7 @@ nav.menu-bar ol li:first-child a,nav.menu-bar ul li:first-child a{
   width: 100%;
   word-wrap: break-word;
   float: left;
-  margin-top: 7em;
+  margin-top: 2em;
  }
 
 @media only screen and (min-width:320px) and (max-width:340px){
@@ -1017,8 +1017,7 @@ nav.menu-bar ol li:first-child a,nav.menu-bar ul li:first-child a{
 #sidebar {
   width: 250px;
   float: left;
-  margin-left: 3em;
-  margin-top: 7em;
+  margin: 2em 0 0 3em;
 }
 
 #sidebar .section {

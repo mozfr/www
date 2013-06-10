@@ -10,6 +10,5 @@
       <li class="last"><a href="./archives">Archives</a></li>
     </ul>
   </nav>
-
-  <h1 id="site-title"><a href="./">Mozilla&nbsp;Francophone</a></h1>
 </header>
+  <h1 id="site-title"><a href="./">Mozilla Francophone</a></h1>
