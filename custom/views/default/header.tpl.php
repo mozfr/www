@@ -11,4 +11,4 @@
     </ul>
   </nav>
 </header>
-  <h1 id="site-title"><a href="./">Mozilla Francophone</a></h1>
+<h1 id="site-title"><a href="./">Mozilla Francophone</a></h1>

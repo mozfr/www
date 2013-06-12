@@ -28,13 +28,6 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
 
 ?>
 <div id="sidebar" class="aside">
-  <!--<div class="section">
-    <h2>Gazouillis</h2>
-    <ul id="twitter">
-      <?=getTweets('mozilla_fr', 5, 2)?>
-      <li class="more"><a href="https://twitter.com/#!/mozilla_fr/">Plus…</a></li>
-    </ul>
-  </div>-->
   <div class="section">
     <h2>MozFR ailleurs</h2>
     <ul id="sns">
@@ -122,6 +115,13 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
       <li class="feed"><a href="./atom.xml">Flux atom</a></li>
       <li class="feed"><a href="./rss.xml">Flux rss</a></li>
       <li class="more"><a href="./archives">Archives</a></li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2>Gazouillis</h2>
+    <ul id="twitter">
+      <a class="twitter-timeline"  href="https://twitter.com/mozilla_fr"  data-widget-id="344462767648038912">Tweets de @mozilla_fr</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </ul>
   </div>
 </div>
