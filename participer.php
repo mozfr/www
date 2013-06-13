@@ -86,6 +86,7 @@ dt {
   }
   document.head.appendChild(newStyle);
   </script>
+  <script src="custom/js/jquery-1.7.2.min.js" type="text/javascript"></script>
   <script src="mozfrtab/tabzilla.js"></script>
   <script src="custom/js/nav-main.js" type="text/javascript"></script>
 </body>
