@@ -42,6 +42,16 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
       <li id="firefox">
         <a href="http://www.mozilla.org/fr/firefox/?from=mozfr">Firefox</a>
       </li>
+      <li id="play">
+      	<a href="https://market.android.com/details?id=org.mozilla.firefox">
+      		Firefox Android <span class="small">(Play)</span>
+      	</a>
+      </li>
+      <li id="android">
+        <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/fr/">
+        	Firefox Android <span class="small">(apk)</span>
+        </a>
+      </li>
       <li id="thunderbird">
         <a href="http://www.mozilla.org/fr/thunderbird/?from=mozfr">Thunderbird</a>
       </li>
