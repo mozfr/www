@@ -757,13 +757,17 @@ nav.menu-bar ol li:first-child a,nav.menu-bar ul li:first-child a{
 }
 
 li#thunderbird a,
-li#firefox a {
+li#firefox a, li#play a, li#android a {
   line-height: 48px;
   min-height: 48px;
   padding-left: 54px; }
 
 li#firefox a {
   background-image: url(icons/firefox_48px.png); }
+li#play a {
+  background-image: url(icons/play_48px.png); }
+li#android a {
+  background-image: url(icons/android_48px.png); }
 
 li#thunderbird a {
   background-image: url(icons/thunderbird_48px.png); }
