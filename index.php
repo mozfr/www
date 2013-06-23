@@ -55,7 +55,6 @@ if (!isset($_GET['type']) ||
 if (!OutputCache::Start($_GET['type'], $cache_key, $cache_duration)) {
     include_once(dirname(__FILE__).'/custom/views/'.$_GET['type'].'/index.tpl.php');
     OutputCache::End();
-    echo "Vous visualisez la page sans cache, un cache de page d'une durée de 10mn vient d'être créé, vous ne verez donc pas ce message au prochain chargement.";
 }
 
 $bench['contentdisplayed'] = microtime(true);
