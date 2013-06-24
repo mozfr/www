@@ -757,7 +757,9 @@ nav.menu-bar ol li:first-child a,nav.menu-bar ul li:first-child a{
 }
 
 li#thunderbird a,
-li#firefox a, li#play a, li#android a {
+li#firefox a,
+li#play a,
+li#android a {
   line-height: 48px;
   min-height: 48px;
   padding-left: 54px; }
@@ -777,11 +779,6 @@ li#twitterlogo a {
 
 li#diasporalogo a {
   background-image: url(icons/diaspora_asterisk_32.png); }
-
-li#newsletterlogo a {
-  line-height: 160px;
-  min-height: 160px;
-  background-image: url(icons/newsletter.png); }
 
 /* activities | communities */
 #activities li a,

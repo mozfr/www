@@ -111,12 +111,10 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
 
   <div class="section">
     <h2>Lettre d'informations</h2>
-    <ul id="newsletter">
-      <li id="newsletterlogo">
-        <a href="http://www.mozilla.org/fr/newsletter/"></a>
-      </li>
-      <a href="http://www.mozilla.org/fr/newsletter/">Abonnez-vous</a> à Firefox &amp; vous, notre lettre d'informations mensuelle.
-    </ul>
+    <p>
+      <img src="custom/style/icons/newsletter.png" alt="newsletter" />
+      <a href="http://www.mozilla.org/fr/newsletter/">Abonnez-vous à Firefox &amp; vous</a>, notre lettre d'informations mensuelle.
+    </p>
   </div>
 
   <div class="section">
@@ -129,10 +127,10 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
   </div>
   <div class="section">
     <h2>Gazouillis</h2>
-    <ul id="twitter">
+    <p id="twitter">
       <a class="twitter-timeline"  href="https://twitter.com/mozilla_fr"  data-widget-id="344462767648038912">Tweets de @mozilla_fr</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </ul>
+    </p>
   </div>
 </div>
 

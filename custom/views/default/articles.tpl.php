@@ -15,14 +15,16 @@
       <article class="<?php echo $host; ?>">
         <header class="entry-header">
           <h2 class="entry-title"><a href="<?php echo $item->get_permalink(); ?>" title="Se rendre sur l'article original"><?php echo $item->get_title(); ?></a></h2>
-        <p class="entry-posted">
-          <time class="published" title="<?php echo $item->get_date('U');?>" datetime="<?php echo $item->get_date('U');?>">
-            <span class="posted-date"><?php echo $item->get_date('d'); ?></span>
-            <span class="posted-month"><?php echo strftime("%b", mktime(0, 0, 0, $item->get_date('m'))); ?></span>
-            <span class="posted-year" ><?php echo $item->get_date('Y'); ?></span>
-          </time>
-        </p>
-        <address class="vcard"><cite class="author fn"><a class="url" href="<?php echo $feed->getWebsite(); ?>" title="Source"><?php echo $feed->getName(); ?></a></cite></address>
+          <p class="entry-posted">
+            <time class="published" title="<?php echo $item->get_date('U');?>" datetime="<?php echo $item->get_date('U');?>">
+              <span class="posted-date"><?php echo $item->get_date('d'); ?></span>
+              <span class="posted-month"><?php echo strftime("%b", mktime(0, 0, 0, $item->get_date('m'))); ?></span>
+              <span class="posted-year" ><?php echo $item->get_date('Y'); ?></span>
+            </time>
+          </p>
+          <address class="vcard"><cite class="author fn"><a class="url" href="<?php echo $feed->getWebsite(); ?>" title="Source"><?php echo $feed->getName(); ?></a></cite></address>
+        </header>
+        
         <div class="content">
           <?php echo $item->get_content(); ?>
         </div>
@@ -30,8 +32,8 @@
       <?php if (++$count == $limit) { break; } ?>
     <?php endforeach; ?>
   <?php endif; ?>
-  <nav class="nav-paging">
-    <ul role="navigation">
+  <nav class="nav-paging" role="navigation">
+    <ul>
       <li class="prev"><a href="./archives" >Archives</a></li>
     </ul>
   </nav>
