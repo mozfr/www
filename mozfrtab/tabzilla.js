@@ -88,8 +88,8 @@ Tabzilla.jQueryCDNSrc =
     '//www.mozilla.org/media/js/libs/jquery-1.7.1.min.js';
 
 Tabzilla.LINK_TITLE = {
-    CLOSED: 'Mozilla links',
-    OPENED: 'Close (Esc)'
+    CLOSED: 'Liens Mozilla Francophone',
+    OPENED: 'Fermer (Échap)'
 }
 
 /**
@@ -558,7 +558,7 @@ Tabzilla.content =
     + '        <ul>'
     + '          <li><a href="https://www.mozilla.org/fr/firefox/fx/">Firefox</a></li>'
     + '          <li><a href="https://www.mozilla.org/fr/thunderbird/">Thunderbird</a></li>'
-    + '          <li><a href="https://www.mozilla.org/fr/firefox/partners/#os">Firefox OS</a></li>'
+    + '          <li><a href="https://www.mozilla.org/fr/firefox/os">Firefox OS</a></li>'
     + '          <li><a href="https://addons.mozilla.org/fr/">Extensions</a></li>'
     + '        </ul>'
     + '      </li>'

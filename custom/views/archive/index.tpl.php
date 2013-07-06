@@ -29,7 +29,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title><?php echo $PlanetConfig->getName(); ?></title>
   <link rel="stylesheet" type="text/css" href="custom/style/mozfr.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico?v=3" />
 </head>
 <body>
   <div id="wrapper">
