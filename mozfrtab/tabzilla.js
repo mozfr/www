@@ -564,7 +564,7 @@ Tabzilla.content =
     + '      </li>'
     + '      <li><h2>Participer</h2>'
     + '        <ul>'
-    + '          <li><a href="http://mozfr.org/mailman/listinfo/moz-fr">Liste de discussion</a></li>'
+    + '          <li><a href="http://mozfr.org/liste">Liste de discussion</a></li>'
     + '          <li><a href="http://mozfr.org/participer">Comment participer</a></li>'
     + '          <li><a href="http://wiki.mozfr.org/MozFR:Actualit%C3%A9s">Agenda</a></li>'
     + '        </ul>'
