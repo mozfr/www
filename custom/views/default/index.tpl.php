@@ -10,7 +10,7 @@
   <title><?php echo $PlanetConfig->getName(); ?></title>
   <link rel="stylesheet" type="text/css" href="custom/style/mozfr.css" />
   <link rel="alternate" type="application/atom+xml" title="atom" href="./atom.xml" />
-  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico?v=2" />
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico?v=3" />
 </head>
 <body>
   <div id="wrapper">
