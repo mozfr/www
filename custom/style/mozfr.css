@@ -1,4 +1,5 @@
 @import url(../../mozfrtab/tabzilla.css);
+@import url(sandstone.css);
 /*******************************************
  * #SandStone colors by MozillaFR
  *
@@ -399,6 +400,7 @@ pre, code {
   line-height: 100%;
 }
 
+
 /* @Headings */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 .25em;
@@ -700,10 +702,14 @@ nav.menu-bar ol li:first-child a,nav.menu-bar ul li:first-child a{
   border: 10px solid #fff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
   max-width: 96.5%;
+  height: 100%;
   display: block;
   margin: 0px auto 1.5em;
 }
 
+#content div {
+  max-width: 100%!important;
+}
 /*******************************************************************************
 /* #Sidebar
 *******************************************************************************/
