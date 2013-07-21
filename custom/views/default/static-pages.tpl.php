@@ -44,6 +44,45 @@ dt {
   transition-duration: 0s;
 }
 .accordion-panel p {padding-right: 110px; }
+
+/* mozfr form */
+
+#mozfr-form {
+  padding:40px;
+  margin-bottom:40px;
+  -webkit-box-shadow:0 0 0 1px #fff inset;
+  -moz-box-shadow:0 0 0 1px #fff inset;
+  box-shadow:0 0 0 1px #fff inset;
+  background:#fff;
+  border-bottom:1px solid #ddd;
+  zoom:1
+}
+
+#mozfr-form:after {
+  display:block;
+  visibility:hidden;
+  height:0;
+  clear:both;
+  content:"."
+}
+
+#mozfr-form input[type="text"], #mozfr-form input[type="email"] {
+  width: 200px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #mozfr-form input[type="text"], #mozfr-form input[type="email"] {
+    width: 110px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #mozfr-form input[type="text"], #mozfr-form input[type="email"] {
+    width: 90%;
+    margin: 5px 0;
+  }
+} 
+
   </style>
 </head>
 <body>
