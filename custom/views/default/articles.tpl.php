@@ -18,7 +18,7 @@
           <p class="entry-posted">
             <time class="published" title="<?php echo $item->get_date('U');?>" datetime="<?php echo $item->get_date('U');?>">
               <span class="posted-date"><?php echo $item->get_date('d'); ?></span>
-              <span class="posted-month"><?php echo strftime("%b", mktime(0, 0, 0, $item->get_date('m'))); ?></span>
+              <span class="posted-month"><?php echo utf8_encode(strftime("%b", mktime(0, 0, 0, $item->get_date('m')))); ?></span>
               <span class="posted-year" ><?php echo $item->get_date('Y'); ?></span>
             </time>
           </p>
