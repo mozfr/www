@@ -22,5 +22,10 @@
   <script src="custom/js/jquery-1.7.2.min.js" type="text/javascript"></script>
   <script src="mozfrtab/tabzilla.js"></script>
   <script src="custom/js/nav-main.js" type="text/javascript"></script>
+  <!--[if !(lt IE 8)]><!-->
+   <script type="text/javascript">
+     (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+   </script>
+  <!--<![endif]-->
 </body>
 </html>
