@@ -12,3 +12,8 @@
   </nav>
 </header>
 <h1 id="site-title"><a href="./">Mozilla Francophone</a></h1>
+<a href="http://april.org/campagne/?from=mozfr">
+<img width="580" height="76"
+src="http://april.org/campagne/images/priorite-logiciel-libre-je-soutiens-april.png"
+alt="Priorité au Logiciel Libre! Je soutiens l'April." />
+</a>
