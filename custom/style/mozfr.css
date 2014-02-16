@@ -452,6 +452,8 @@ a:hover, a:focus, a:active {
   transition: font-size, letter-spacing .5s linear;
 }
 
+#april-mobile, #april-tablet { display: none;}
+
 .more a {
   margin: 24px 0;
   font: 1em/1 'Open Sans Light', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
@@ -1066,6 +1068,10 @@ div.boite img {
     background-position: right;
     line-height: 80px;
   }
+  /* Under 767px, center April campaign. Beyond, align on the left */
+  #april {text-align: center;}
+  #april-tablet { display: inline;}
+  #april-desktop, #april-mobile { display: none;}
 
   #site-description {
     font-size: 1.2em;
@@ -1433,6 +1439,8 @@ div.boite img {
     line-height: 1;
     font-size: 3em;
   }
+  #april-mobile { display: inline;}
+  #april-desktop, #april-tablet { display: none;}
 }
 
 @media screen and (max-width: 321px) {
