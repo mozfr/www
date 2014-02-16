@@ -43,13 +43,13 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
         <a href="http://www.mozilla.org/fr/firefox/?from=mozfr">Firefox</a>
       </li>
       <li id="play">
-      	<a href="https://market.android.com/details?id=org.mozilla.firefox">
-      		Firefox Android <span class="small">(Play)</span>
-      	</a>
+        <a href="https://market.android.com/details?id=org.mozilla.firefox">
+          Firefox Android <span class="small">(Play)</span>
+        </a>
       </li>
       <li id="android">
         <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/fr/">
-        	Firefox Android <span class="small">(apk)</span>
+          Firefox Android <span class="small">(apk)</span>
         </a>
       </li>
       <li id="thunderbird">
@@ -110,10 +110,10 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
   </div>
 
   <div class="section">
-    <h2>Lettre d'informations</h2>
+    <h2>Lettre d'information</h2>
     <p>
       <img src="custom/style/icons/newsletter.png" alt="newsletter" />
-      <a href="http://www.mozilla.org/fr/newsletter/">Abonnez-vous à Firefox &amp; vous</a>, notre lettre d'informations mensuelle.
+      <a href="http://www.mozilla.org/fr/newsletter/">Abonnez-vous à Firefox &amp; vous</a>, notre lettre d'information mensuelle.
     </p>
   </div>
 
