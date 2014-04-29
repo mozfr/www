@@ -28,6 +28,7 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
 
 ?>
 <div id="sidebar" class="aside">
+<a href="https://www.mozilla.org/fr/firefox/new/?from=mozfr"><img src="./custom/img/FFx-Australis_banner_300x250.png" alt="Engagé pour le Web ouvert, téléchargez Firefox"></a>
   <div class="section">
     <h2>MozFR ailleurs</h2>
     <ul id="sns">
