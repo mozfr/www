@@ -442,17 +442,90 @@ a:hover, a:focus, a:active {
   letter-spacing: -3px;
   margin: 0 0 0 -5px;
   display: block;
-  background: url("../img/mozfr.png") no-repeat;
-  background-position: right;
+  padding-left: 140px;
+  background: url("../img/mozfr.png") no-repeat left;
   line-height: 150px;
-  -moz-transition: font-size, letter-spacing .5s linear;
   -webkit-transition: font-size, letter-spacing .5s linear;
-  -o-transition: font-size, letter-spacing .5s linear;
-  -ms-transition: font-size, letter-spacing .5s linear;
-  transition: font-size, letter-spacing .5s linear;
+     -moz-transition: font-size, letter-spacing .5s linear;
+      -ms-transition: font-size, letter-spacing .5s linear;
+       -o-transition: font-size, letter-spacing .5s linear;
+          transition: font-size, letter-spacing .5s linear;
 }
 
 #april-mobile, #april-tablet { display: none;}
+
+#firefoxos-wrapper {
+  height: 380px;
+  padding-right: 150px;
+  background: url("../img/fox-back.png") no-repeat right 150px center;
+  overflow: hidden;
+}
+
+#phone {
+  width: 229px;
+  height: 400px;
+  float: right;
+  background: url("../img/zte_open_c_fr.png") no-repeat;
+  position: relative;
+  z-index: 9;
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+       -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+  -webkit-transform: translateY(-120px);
+     -moz-transform: translateY(-120px);
+      -ms-transform: translateY(-120px);
+       -o-transform: translateY(-120px);
+          transform: translateY(-120px);
+}
+
+#firefoxos {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+#firefoxos:hover+div {
+  -webkit-transform: translateY(-400px);
+     -moz-transform: translateY(-400px);
+      -ms-transform: translateY(-400px);
+       -o-transform: translateY(-400px);
+          transform: translateY(-400px);
+}
+
+#fox-front {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: url("../img/fox-front.png") no-repeat right;
+}
+
+#ffos-texte {
+  display: inline-block;
+  position: absolute;
+  font-size: 48px;
+  letter-spacing: -2px;
+  text-align: left;
+  line-height: 100%;
+  color: #484848;
+  font-family: 'Open Sans Light', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  max-width: 400px;
+  padding-top: 140px;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+#ffos-texte:hover {
+  text-decoration: none;
+  color: #484848;
+}
+
+#ffos-learn-more {
+  display: inline-block;
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 300px;
+}
 
 .more a {
   margin: 24px 0;
@@ -697,6 +770,17 @@ nav.menu-bar ol li:first-child a,nav.menu-bar ul li:first-child a{
 .entry-posted .posted-year {
   display: block;
   font-size: 1.4em;
+}
+
+.content {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.full-post {
+  text-align: right;
+  display: inline-block;
+  width: 100%;
 }
 
 #content img {
@@ -1007,6 +1091,30 @@ div.boite img {
     font-size:.9375em
   }
 
+  #ffos-texte {
+    max-width: 100%;
+    padding-top: 50px;
+    font-size: 30px;
+  }
+
+  #ffos-learn-more {
+    margin-top: 55px;
+    margin-left: 340px;
+  }
+
+  #fox-front, #phone {
+    display: none;
+  }
+
+  #firefoxos-wrapper {
+    height: 150px;
+    background: url('../img/firefox_os.png') no-repeat right;
+  }
+
+  .wide-br {
+    display: none;
+  }
+
   /* content */
 
   #content {
@@ -1294,6 +1402,35 @@ div.boite img {
     position:absolute;
     left:12px;
     top:-10px
+  }
+
+/* Promo Firefox OS */
+  #ffos-texte {
+    position: relative;
+    padding-top: 60px;
+    max-width: 100%;
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  #ffos-learn-more {
+    position: relative;
+    margin: 0;
+  }
+
+  #fox-front, #phone {
+    display: none;
+  }
+
+  #firefoxos-wrapper {
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    background: url('../img/firefox_os.png') no-repeat center top;
+  }
+
+  .wide-br {
+    display: none;
   }
 
   /* Content */

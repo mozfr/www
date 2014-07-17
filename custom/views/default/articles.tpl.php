@@ -28,6 +28,9 @@
         <div class="content">
           <?php echo $item->get_content(); ?>
         </div>
+        <span class="full-post">
+          <a href="<?php echo $item->get_permalink(); ?>">Lire la suite »</a>
+        </span>
       </article>
       <?php if (++$count == $limit) { break; } ?>
     <?php endforeach; ?>
