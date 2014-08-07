@@ -18,13 +18,13 @@
  * ***************************************/
 @font-face {
   font-family: 'Open Sans Light';
-  src: url("http://www.mozfr.org/fonts/OpenSans-Light-webfont.eot");
-  src: url("http://www.mozfr.org/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mozfr.org/fonts/OpenSans-Light-webfont.woff") format("woff"), url("http://www.mozfr.org/fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("http://www.mozfr.org/fonts/OpenSans-Light-webfont.svg#OpenSansLightItalic") format("svg"); }
+  src: url("http://www.mozfr.org/custom/style/fonts/OpenSans-Light-webfont.eot");
+  src: url("http://www.mozfr.org/custom/style/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mozfr.org/custom/style/fonts/OpenSans-Light-webfont.woff") format("woff"), url("http://www.mozfr.org/custom/style/fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("http://www.mozfr.org/custom/style/fonts/OpenSans-Light-webfont.svg#OpenSansLightItalic") format("svg"); }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url("http://www.mozfr.org/fonts/OpenSans-Bold-webfont.eot");
-  src: url("http://www.mozfr.org/fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mozfr.org/fonts/OpenSans-Bold-webfont.woff") format("woff"), url("http://www.mozfr.org/fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("http://www.mozfr.org/fonts/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
+  src: url("http://www.mozfr.org/custom/style/fonts/OpenSans-Bold-webfont.eot");
+  src: url("http://www.mozfr.org/custom/style/fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mozfr.org/custom/style/fonts/OpenSans-Bold-webfont.woff") format("woff"), url("http://www.mozfr.org/custom/style/fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("http://www.mozfr.org/custom/style/fonts/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
   font-weight: 600; }
 
 /* normalize.css v2.1.1 | MIT License | git.io/normalize */
@@ -1013,8 +1013,8 @@ div.boite img {
 }
 
 #site-info .wrap {display: inline-block;text-align: left;}
-#foot-logo, 
-#colophon, 
+#foot-logo,
+#colophon,
 #nav-meta {
   float: left;
   margin-right: 24px;
@@ -1022,13 +1022,13 @@ div.boite img {
   margin-top: 0;
 }
 
-#site-info a:link, 
+#site-info a:link,
 #site-info a:visited {
   color: #67a7d0;
 }
 
-#site-info a:hover, 
-#site-info a:focus, 
+#site-info a:hover,
+#site-info a:focus,
 #site-info a:active {
   color: #5c94b8;
 }
@@ -1040,7 +1040,7 @@ div.boite img {
   float: left;
   height: 26px;
   -moz-transition: opacity .1s linear;
-  -ms-transition: opacity .1s linear; 
+  -ms-transition: opacity .1s linear;
   -o-transition: opacity .1s linear;
   -webkit-transition: opacity .1s linear;
   transition: opacity .1s linear;
@@ -1050,8 +1050,8 @@ div.boite img {
   width: 92px;
 }
 
-#foot-logo .logo:hover, 
-#foot-logo .logo:focus, 
+#foot-logo .logo:hover,
+#foot-logo .logo:focus,
 #foot-logo .logo:active {
   opacity: 1;
 }
@@ -1132,8 +1132,8 @@ div.boite img {
     overflow: auto;
   }
 
-  #foot-logo, 
-  #colophon, 
+  #foot-logo,
+  #colophon,
   #nav-meta {
     margin: 0 10px 1em 10px;
     width: 220px;
@@ -1500,8 +1500,8 @@ div.boite img {
     margin-bottom:20px
   }
 
-  #foot-logo, 
-  #colophon, 
+  #foot-logo,
+  #colophon,
   #nav-meta {
     clear: both;
     float: none;
@@ -1520,10 +1520,10 @@ div.boite img {
     margin: 0 0 1em;
   }
 
-  #foot-logo .top:link, 
-  #foot-logo .top:visited, 
-  #foot-logo .top:hover, 
-  #foot-logo .top:focus, 
+  #foot-logo .top:link,
+  #foot-logo .top:visited,
+  #foot-logo .top:hover,
+  #foot-logo .top:focus,
   #foot-logo .top:active {
     background: transparent;
     border: 0;
