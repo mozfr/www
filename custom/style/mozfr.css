@@ -18,13 +18,13 @@
  * ***************************************/
 @font-face {
   font-family: 'Open Sans Light';
-  src: url("http://www.mozfr.org/custom/style/fonts/OpenSans-Light-webfont.eot");
-  src: url("http://www.mozfr.org/custom/style/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mozfr.org/custom/style/fonts/OpenSans-Light-webfont.woff") format("woff"), url("http://www.mozfr.org/custom/style/fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("http://www.mozfr.org/custom/style/fonts/OpenSans-Light-webfont.svg#OpenSansLightItalic") format("svg"); }
+  src: url("http://www.mozfr.org/fonts/OpenSans-Light-webfont.eot");
+  src: url("http://www.mozfr.org/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mozfr.org/fonts/OpenSans-Light-webfont.woff") format("woff"), url("http://www.mozfr.org/fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("http://www.mozfr.org/fonts/OpenSans-Light-webfont.svg#OpenSansLightItalic") format("svg"); }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url("http://www.mozfr.org/custom/style/fonts/OpenSans-Bold-webfont.eot");
-  src: url("http://www.mozfr.org/custom/style/fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mozfr.org/custom/style/fonts/OpenSans-Bold-webfont.woff") format("woff"), url("http://www.mozfr.org/custom/style/fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("http://www.mozfr.org/custom/style/fonts/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
+  src: url("http://www.mozfr.org/fonts/OpenSans-Bold-webfont.eot");
+  src: url("http://www.mozfr.org/fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mozfr.org/fonts/OpenSans-Bold-webfont.woff") format("woff"), url("http://www.mozfr.org/fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("http://www.mozfr.org/fonts/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
   font-weight: 600; }
 
 /* normalize.css v2.1.1 | MIT License | git.io/normalize */
