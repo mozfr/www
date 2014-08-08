@@ -2,22 +2,22 @@
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('/fonts/OpenSans-Regular-webfont.eot');
-    src: url('/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('/fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('/fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    src: url('http://www.mozfr.org/custom/style/fonts/OpenSans-Regular-webfont.eot');
+    src: url('http://www.mozfr.org/custom/style/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.mozfr.org/custom/style/fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('http://www.mozfr.org/custom/style/fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('http://www.mozfr.org/custom/style/fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('/fonts/OpenSans-Semibold-webfont.eot');
-    src: url('/fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/OpenSans-Semibold-webfont.woff') format('woff'),
-         url('/fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
-         url('/fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    src: url('http://www.mozfr.org/custom/style/fonts/OpenSans-Semibold-webfont.eot');
+    src: url('http://www.mozfr.org/custom/style/fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.mozfr.org/custom/style/fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('http://www.mozfr.org/custom/style/fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('http://www.mozfr.org/custom/style/fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
     font-weight: 600;
     font-style: normal;
 }
