@@ -93,7 +93,7 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
         <a href="http://mozilla-algeria.org/" title="site de la communauté algérienne">Mozilla Algeria</a>
       </li>
       <li id="community-be">
-        <a href="http://mozilla-belgium.org/" title="site de la communauté belge">Mozilla Belgium</a>
+        <a href="http://mozilla-belgium.org/fr/" title="site de la communauté belge">Mozilla Belgium</a>
       </li>
       <li id="community-ma">
         <a href="http://mozilla.ma/" title="site de la communauté marocaine">Mozilla Morocco</a>
