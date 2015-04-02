@@ -12,16 +12,13 @@
   </nav>
 </header>
 <h1 id="site-title"><a href="./">Mozilla Francophone</a></h1>
-<div id="april">
-  <a href="http://april.org/campagne/?from=mozfr">
-  <img id="april-desktop" width="580" height="76"
-  src="./custom/img/priorite-logiciel-libre-je-soutiens-april_desktop.png"
-  alt="Priorité au Logiciel Libre! Je soutiens l'April." />
-  <img id="april-tablet" width="374" height="48"
-  src="./custom/img/priorite-logiciel-libre-je-soutiens-april_tablet.png"
-  alt="Priorité au Logiciel Libre! Je soutiens l'April." />
-  <img id="april-mobile" width="240" height="200"
-  src="./custom/img/priorite-logiciel-libre-je-soutiens-april_mobile.png"
-  alt="Priorité au Logiciel Libre! Je soutiens l'April." />
-  </a>
-</div>
+<a href="http://www.ztefrance.com/smartphones/open-c/">
+  <div id="firefoxos-wrapper">
+    <span id="ffos-texte">Firefox&nbsp;OS arrive <br class="wide-br"> en France&nbsp;!</span>
+    <span id="ffos-learn-more" class="button">En savoir plus »</span>
+    <div id="firefoxos">
+      <div id="fox-front"></div>
+    </div>
+    <div id="phone"></div>
+  </div>
+</a>
