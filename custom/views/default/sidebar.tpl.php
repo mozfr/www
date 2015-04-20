@@ -41,7 +41,7 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
     <h2>Téléchargements</h2>
     <ul id="downloads">
       <li id="firefox">
-        <a href="http://www.mozilla.org/fr/firefox/?from=mozfr">Firefox</a>
+        <a href="https://www.mozilla.org/fr/firefox/?from=mozfr">Firefox</a>
       </li>
       <li id="play">
         <a href="https://market.android.com/details?id=org.mozilla.firefox">
@@ -54,7 +54,7 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
         </a>
       </li>
       <li id="thunderbird">
-        <a href="http://www.mozilla.org/fr/thunderbird/?from=mozfr">Thunderbird</a>
+        <a href="https://www.mozilla.org/fr/thunderbird/?from=mozfr">Thunderbird</a>
       </li>
       <li class="more">
         <a href="http://frenchmozilla.org/downloads">Autres</a>
@@ -69,16 +69,16 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
         <a href="http://bonjourmozilla.fr/" title="tous les jours, un membre de la communauté francophone est présenté">Bonjour Mozilla</a>
       </li>
       <li id="mozfr">
-		  <a href="http://blog.mozfr.org/" title="Blog généraliste de la communauté francophone">Blog de MozFr</a>
+		  <a href="https://blog.mozfr.org/" title="Blog généraliste de la communauté francophone">Blog de MozFr</a>
 		</li>
 		<li id="bidouilleux">
-		  <a href="http://tech.mozfr.org/" title="Blog technique de la communauté Mozilla francophone">Bidouilleux d'Web</a>
+		  <a href="https://tech.mozfr.org/" title="Blog technique de la communauté Mozilla francophone">Bidouilleux d'Web</a>
 		</li>
       <li id="frenchMozilla">
         <a href="http://frenchmozilla.org/" title="le site des traducteurs francophones">French Mozilla</a>
       </li>
       <li id="geckozone">
-        <a href="http://forums.mozfr.org/" title="aide et support technique des utilisateurs Mozilla">Forums Geckozone</a>
+        <a href="https://forums.mozfr.org/" title="aide et support technique des utilisateurs Mozilla">Forums Geckozone</a>
       </li>
       <li class="more">
         <a href="./participer">Participer</a>
@@ -114,7 +114,7 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
     <h2>Lettre d'information</h2>
     <p>
       <img src="custom/style/icons/newsletter.png" alt="newsletter" />
-      <a href="http://www.mozilla.org/fr/newsletter/">Abonnez-vous à Firefox &amp; vous</a>, notre lettre d'information mensuelle.
+      <a href="https://www.mozilla.org/fr/newsletter/">Abonnez-vous à Firefox &amp; vous</a>, notre lettre d'information mensuelle.
     </p>
   </div>
 
