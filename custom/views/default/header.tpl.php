@@ -6,6 +6,7 @@
       <li class="first"><a href="./">Accueil</a></li>
       <li><a href="./participer">Participer</a></li>
       <li><a href="./manifesto">À propos</a></li>
+      <li><a href="//forums.mozfr.org">Forums</a></li>
       <li class="last"><a href="./archives">Archives</a></li>
     </ul>
   </nav>
