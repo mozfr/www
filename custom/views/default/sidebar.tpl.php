@@ -49,7 +49,7 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
         </a>
       </li>
       <li id="android">
-        <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/fr/">
+        <a href="https://www.mozilla.org/firefox/android/all/?from=mozfr">
           Firefox Android <span class="small">(apk)</span>
         </a>
       </li>
