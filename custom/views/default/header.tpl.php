@@ -12,13 +12,3 @@
   </nav>
 </header>
 <h1 id="site-title"><a href="./">Mozilla Francophone</a></h1>
-<a href="http://www.ztefrance.com/smartphones/open-c/">
-  <div id="firefoxos-wrapper">
-    <span id="ffos-texte">Firefox&nbsp;OS arrive <br class="wide-br"> en France&nbsp;!</span>
-    <span id="ffos-learn-more" class="button">En savoir plus »</span>
-    <div id="firefoxos">
-      <div id="fox-front"></div>
-    </div>
-    <div id="phone"></div>
-  </div>
-</a>
