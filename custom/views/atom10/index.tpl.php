@@ -19,7 +19,7 @@ echo '<?xml version="1.0" encoding="UTF-8" ?>';
         <title type="html"><?php echo htmlspecialchars($item->get_feed()->getName()); ?> : <?php echo htmlspecialchars($item->get_title());?></title>
         <id><?php echo htmlspecialchars($item->get_permalink());?></id>
         <link rel="alternate" href="<?php echo htmlspecialchars($item->get_permalink());?>"/>
-        <published><?php echo $item->get_date('Y-m-d\\TH:i:s+00:00'); ?></published>
+        <updated><?php echo $item->get_date('Y-m-d\\TH:i:s+00:00'); ?></updated>
         <author><name><?php echo ($item->get_author()? $item->get_author()->get_name() : 'anonymous'); ?></name></author>
 
         <content type="html"><![CDATA[<?php echo $item->get_content();?>]]></content>
