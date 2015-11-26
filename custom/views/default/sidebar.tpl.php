@@ -28,7 +28,13 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
 
 ?>
 <div id="sidebar" class="aside">
-<a href="https://www.mozilla.org/fr/firefox/new/?from=mozfr"><img src="./custom/img/FFx-Australis_banner_300x250.png" alt="Engagé pour le Web ouvert, téléchargez Firefox"></a>
+  <p>
+    <a href="https://soutien.laquadrature.net/?from=mozfr" style="margin-left: 25px"><img src="https://soutien.laquadrature.net/static/images/support_lqdn_250_B_fr.png" alt="Soutenez l'action de La Quadrature Du Net par un don" title="Soutenez l'action de La Quadrature Du Net par un don"></a>
+  </p>
+
+  <p>
+    <a href="https://www.mozilla.org/fr/firefox/new/?from=mozfr"><img src="./custom/img/FFx-Australis_banner_300x250.png" alt="Engagé pour le Web ouvert, téléchargez Firefox"></a>
+  </p>
   <div class="section">
     <h2>MozFR ailleurs</h2>
     <ul id="sns">
@@ -134,4 +140,3 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
     </p>
   </div>
 </div>
-
