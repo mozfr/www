@@ -77,6 +77,9 @@ function getTweets($screen_name, $nb_tweets=5, $timeout=3) {
       <li id="mozfr">
 		  <a href="https://blog.mozfr.org/" title="Blog généraliste de la communauté francophone">Blog de MozFr</a>
 		</li>
+      <li id="firefox-os">
+		  <a href="https://firefoxos.mozfr.org/" title="Blog Firefox OS alimenté par son groupe de communication">Firefox OS</a>
+		</li>
 		<li id="bidouilleux">
 		  <a href="https://tech.mozfr.org/" title="Blog technique de la communauté Mozilla francophone">Bidouilleux d'Web</a>
 		</li>
