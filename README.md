@@ -1,9 +1,10 @@
-Ceci est le portail Mozilla francophone: <https://mozfr.org/>. C’est une installation MoonMoon standard avec :
- * un dossier `custom/` spécifique (forcément !)
- * trois pages fixes : `manifesto.php`, `participer.php` et `liste.php`
+Ceci est le code source de notre portail Mozilla Francophone <https://mozfr.org/>.
 
-Les pages fixes réutilisent des bouts de `*.tpl` de `custom/` : en-tête, barre
- latérale, pied de page.
+Le site utilise le générateur statique Sculpin <https://sculpin.io/>.
 
-Les feuilles de style ont été générées avec le préprocesseur SASS http://sass-lang.com/
+Pour compiler le site:
+```
+sculpin generate
+```
 
+Le dossier de sortie est output_dev. Envoyez alors le contenu du dossier sur le serveur web.

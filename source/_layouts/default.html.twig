@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xml:lang="fr" lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ site.title }} - {{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+</head>
+<body>
+    <div id="wrapper">
+        <header id="masthead">
+            <a href="/" title="Retour au portail Mozilla Francophone" id="tabzilla">mozFR</a>
+            <nav id="nav-main" role="navigation">
+                <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
+                <ul id="nav-main-menu">
+                    <li class="first"><a href="/">Accueil</a></li>
+                    <li><a href="/participer">Participer</a></li>
+                    <li><a href="/manifesto">À propos</a></li>
+                    <li><a href="//forums.mozfr.org">Forums</a></li>
+                    <li><a href="//planete.mozfr.org">Planète</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 id="site-title"><a href="/">Mozilla Francophone</a></h1>
+        <div id="content">
+
+            {% block content %}Error 404{% endblock %}
+
+        </div>
+
+        <div id="sidebar" class="aside">
+            <p>
+                <a href="https://soutien.laquadrature.net/?from=mozfr" style="margin-left: 25px"><img src="https://soutien.laquadrature.net/static/images/support_lqdn_250_B_fr.png" alt="Soutenez l'action de La Quadrature Du Net par un don" title="Soutenez l'action de La Quadrature Du Net par un don"></a>
+            </p>
+
+            <p>
+                <a href="https://www.mozilla.org/fr/firefox/new/?from=mozfr"><img src="/img/FFx-Australis_banner_300x250.png" alt="Engagé pour le Web ouvert, téléchargez Firefox"></a>
+            </p>
+            <div class="section">
+                <h2>MozFR ailleurs</h2>
+                <ul id="sns">
+                    <li id="twitterlogo"><a href="https://twitter.com/mozilla_fr/">Twitter</a></li>
+                    <li id="diasporalogo"><a href="https://free-beer.ch/u/mozfr">Diaspora</a></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Téléchargements</h2>
+                <ul id="downloads">
+                    <li id="firefox">
+                        <a href="https://www.mozilla.org/fr/firefox/?from=mozfr">Firefox</a>
+                    </li>
+                    <li id="play">
+                        <a href="https://market.android.com/details?id=org.mozilla.firefox">
+                            Firefox Android <span class="small">(Play)</span>
+                        </a>
+                    </li>
+                    <li id="android">
+                        <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/fr/">
+                            Firefox Android <span class="small">(apk)</span>
+                        </a>
+                    </li>
+                    <li id="thunderbird">
+                        <a href="https://www.mozilla.org/fr/thunderbird/?from=mozfr">Thunderbird</a>
+                    </li>
+                    <li class="more">
+                        <a href="http://frenchmozilla.org/downloads">Autres</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Activités</h2>
+                <ul id="activities">
+                    <li id="bonjourMozilla">
+                        <a href="http://bonjourmozilla.fr/" title="tous les jours, un membre de la communauté francophone est présenté">Bonjour Mozilla</a>
+                    </li>
+                    <li id="mozfr">
+                        <a href="https://blog.mozfr.org/" title="Blog généraliste de la communauté francophone">Blog de MozFr</a>
+                    </li>
+                    <li id="bidouilleux">
+                        <a href="https://tech.mozfr.org/" title="Blog technique de la communauté Mozilla francophone">Bidouilleux d'Web</a>
+                    </li>
+                    <li id="frenchMozilla">
+                        <a href="http://frenchmozilla.org/" title="le site des traducteurs francophones">French Mozilla</a>
+                    </li>
+                    <li id="geckozone">
+                        <a href="https://forums.mozfr.org/" title="aide et support technique des utilisateurs Mozilla">Forums Geckozone</a>
+                    </li>
+                    <li class="more">
+                        <a href="/participer">Participer</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Communautés</h2>
+                <ul id="communities">
+                    <li id="community-dz">
+                        <a href="http://mozilla-algeria.org/" title="site de la communauté algérienne">Mozilla Algeria</a>
+                    </li>
+                    <li id="community-be">
+                        <a href="http://mozilla-belgium.org/fr/" title="site de la communauté belge">Mozilla Belgium</a>
+                    </li>
+                    <li id="community-ma">
+                        <a href="http://mozilla.ma/" title="site de la communauté marocaine">Mozilla Morocco</a>
+                    </li>
+                    <li id="community-qc-ca">
+                        <a href="http://mozillaquebec.org/web/fr/" title="site de la communauté québecoise">Mozilla Québec</a>
+                    </li>
+                    <li id="community-sn">
+                        <a href="http://mozilla-senegal.org/" title="site de la communauté sénégalaise">Mozilla Senegal</a>
+                    </li>
+                    <li id="community-tn">
+                        <a href="http://mozilla-tunisia.org/" title="site de la communauté tunisienne">Mozilla Tunisia</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Lettre d'information</h2>
+                <p>
+                    <img src="/img/newsletter.png" alt="newsletter" />
+                    <a href="https://www.mozilla.org/fr/newsletter/">Abonnez-vous à Firefox &amp; vous</a>, notre lettre d'information mensuelle.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Gazouillis</h2>
+                <p id="twitter">
+                    <a class="twitter-timeline"  href="https://twitter.com/mozilla_fr"  data-widget-id="344462767648038912">Tweets de @mozilla_fr</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </p>
+            </div>
+        </div>
+
+    </div> <!-- #wrapper -->
+    <footer id="site-info" role="contentinfo">
+        <div class="wrap">
+            <p id="foot-logo">
+                <a class="top" href="#wrapper">Retour en haut</a>
+                <a class="logo" href="https://mozilla.org" rel="external">Mozilla</a>
+            </p>
+
+            <p id="colophon">
+                Sauf mention contraire, le site est placé sous licence <a
+                href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+                paternité partage à l’identique</a>.
+            </p>
+
+            <p id="nav-meta">
+                Ce site est maintenu par des bénévoles et n'est pas un site officiel de la
+                <a href="https://www.mozilla.org/">fondation Mozilla</a>.
+            </p>
+        </div>
+    </footer>
+    <script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="/js/tabzilla.js" type="text/javascript"></script>
+    <script src="/js/nav-main.js" type="text/javascript"></script>
+</body>
+</html>
