@@ -1,0 +1,5 @@
+# Contenu de ce fichier chargé automatiquement et accessible
+# dans les templates via `site.*. Par exemple {{ site.title }}
+
+title: Mozilla Francophone
+subtitle: La communauté Mozilla francophone
