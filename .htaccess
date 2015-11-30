@@ -1,9 +1,9 @@
 RewriteEngine On
 
 # redirections internes
-RewriteRule ^archives /index.php?type=archive
-RewriteRule ^atom.xml /index.php?type=atom10
-RewriteRule ^rss.xml  /index.php?type=rss10
+#RewriteRule ^archives /index.php?type=archive
+#RewriteRule ^atom.xml /index.php?type=atom10
+#RewriteRule ^rss.xml  /index.php?type=rss10
 
 # redirections externes
 RewriteRule ^gplus  https://plus.google.com/u/0/communities/112241065457954102355

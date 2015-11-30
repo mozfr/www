@@ -8,7 +8,10 @@ Thumbs.db
 *.esproj
 *.sass-cache*
 
-# Editable through the Web #
-############################
-custom/people.opml
-admin/inc/auth.inc.php
+/.sculpin/
+/app/cache/*
+/app/logs/*
+/output_*/
+/source/components/
+
+sculpin.phar
