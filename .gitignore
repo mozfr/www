@@ -10,10 +10,11 @@ Thumbs.db
 
 /.sculpin/
 /app/cache/*
+/app/config/config.ini
 /app/logs/*
-/output_*/
 /source/components/
 
 sculpin.phar
 composer.lock
 vendor/
+output_prod/github_log.txt
