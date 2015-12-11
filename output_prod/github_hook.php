@@ -60,6 +60,11 @@ if (isset($_SERVER[$header])) {
                 exec("php {$composer} install > /dev/null 2>&1");
             }
         }
+
+        // Generate static site
+        chdir($app_root);
+        exec('php ./vendor/sculpin/sculpin/bin/sculpin generate --env=prod > /dev/null 2>&1');
+
         logHookResult('Last update: ' . date('d-m-Y H:i:s'), true);
     } else {
         logHookResult('Invalid GitHub secret');
