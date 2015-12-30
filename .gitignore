@@ -15,8 +15,9 @@ Thumbs.db
 /source/components/
 
 sculpin.phar
+composer.phar
 composer.lock
-vendor/
 
+vendor/
 output_dev/
 output_prod/
