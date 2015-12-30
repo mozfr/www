@@ -1,7 +1,7 @@
 RewriteEngine On
 
 # redirections externes
-RewriteRule ^gplus  https://plus.google.com/u/0/communities/112241065457954102355
+RedirectPermanent /gplus    https://plus.google.com/u/0/communities/112241065457954102355
 RedirectPermanent /atom.xml https://blog.mozfr.org/feed/atom
 RedirectPermanent /rss.xml  https://blog.mozfr.org/feed/rss2
-RedirectPermanent /forum  https://forums.mozfr.org/
+RedirectPermanent /forum    https://forums.mozfr.org/

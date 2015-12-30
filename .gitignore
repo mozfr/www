@@ -17,4 +17,6 @@ Thumbs.db
 sculpin.phar
 composer.lock
 vendor/
-output_prod/github_log.txt
+
+output_dev/
+output_prod/
