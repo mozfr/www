@@ -33,7 +33,7 @@ if (! file_exists($composer) and file_exists($app_root.'/composer.json')) {
     );
 }
 
-#Get Sculpin
+// Get Sculpin
 if (! file_exists($sculpin) and file_exists($app_root.'/sculpin.json')) {
     file_put_contents(
         $sculpin,
