@@ -5,6 +5,8 @@ date_default_timezone_set('Europe/Paris');
 
 // app variables
 $app_root = realpath(__DIR__ . '/../');
+$composer = $app_root . '/composer.phar';
+$sculpin = $app_root . '/sculpin.phar';
 
 // git variables
 $branch = 'master';
@@ -23,6 +25,22 @@ function logHookResult($message, $success = false)
     file_put_contents(__DIR__ . '/github_log.txt', $log_headers);
 }
 
+// CHECK: Download composer in the app root if it is not already there
+if (! file_exists($composer) and file_exists($app_root.'/composer.json')) {
+    file_put_contents(
+        $composer,
+        file_get_contents('https://getcomposer.org/composer.phar')
+    );
+}
+
+#Get Sculpin
+if (! file_exists($sculpin) and file_exists($app_root.'/sculpin.json')) {
+    file_put_contents(
+        $sculpin,
+        file_get_contents('https://download.sculpin.io/sculpin.phar')
+    );
+}
+
 if (isset($_SERVER[$header])) {
     $validation = hash_hmac(
         'sha1',
@@ -34,9 +52,30 @@ if (isset($_SERVER[$header])) {
         // Pull latest changes
         exec("git checkout $branch ; git pull origin $branch");
 
+        // Install or update dependencies
+        if (file_exists($composer) and file_exists($app_root.'/composer.json')) {
+            chdir($app_root);
+
+            // www-data does not have a HOME or COMPOSER_HOME, create one
+            if (! is_dir("{$app_root}/cache/.composer")) {
+                mkdir("{$app_root}/cache/.composer");
+            }
+
+            putenv("COMPOSER_HOME={$app_root}/cache/.composer");
+
+            if (file_exists($app_root . '/vendor')) {
+                exec("php {$composer} update > /dev/null 2>&1");
+            } else {
+                exec("php {$composer} install > /dev/null 2>&1");
+            }
+        }
+
         // Generate static site
-        chdir($app_root);
-        exec('php ./sculpin.phar generate --env=prod > /dev/null 2>&1');
+        if (file_exists($sculpin) and file_exists($app_root.'/sculpin.json')) {
+            chdir($app_root);
+
+            exec("php {$sculpin} generate --env=prod > /dev/null 2>&1");
+        }
 
         logHookResult('Last update: ' . date('d-m-Y H:i:s'), true);
     } else {
