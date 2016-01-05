@@ -26,7 +26,7 @@ function logHookResult($message, $success = false)
 }
 
 // CHECK: Download composer in the app root if it is not already there
-if (! file_exists($composer) and file_exists($app_root.'/composer.json')) {
+if (! file_exists($composer)) {
     file_put_contents(
         $composer,
         file_get_contents('https://getcomposer.org/composer.phar')
@@ -34,7 +34,7 @@ if (! file_exists($composer) and file_exists($app_root.'/composer.json')) {
 }
 
 // Get Sculpin
-if (! file_exists($sculpin) and file_exists($app_root.'/sculpin.json')) {
+if (! file_exists($sculpin) && file_exists($app_root.'/sculpin.json')) {
     file_put_contents(
         $sculpin,
         file_get_contents('https://download.sculpin.io/sculpin.phar')
@@ -53,7 +53,7 @@ if (isset($_SERVER[$header])) {
         exec("git checkout $branch ; git pull origin $branch");
 
         // Install or update dependencies
-        if (file_exists($composer) and file_exists($app_root.'/composer.json')) {
+        if (file_exists($composer)) {
             chdir($app_root);
 
             // www-data does not have a HOME or COMPOSER_HOME, create one
@@ -71,7 +71,7 @@ if (isset($_SERVER[$header])) {
         }
 
         // Generate static site
-        if (file_exists($sculpin) and file_exists($app_root.'/sculpin.json')) {
+        if (file_exists($sculpin) && file_exists($app_root.'/sculpin.json')) {
             chdir($app_root);
 
             exec("php {$sculpin} generate --env=prod > /dev/null 2>&1");
