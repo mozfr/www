@@ -776,7 +776,9 @@ nav.menu-bar ol li:first-child a,nav.menu-bar ul li:first-child a{
 li#thunderbird a,
 li#firefox a,
 li#play a,
-li#android a {
+li#android a,
+li#firefox-nightly a,
+li#itunes a{
   line-height: 48px;
   min-height: 48px;
   padding-left: 54px; }
@@ -790,6 +792,7 @@ li#firefox-nightly a {
 
 li#itunes a {
   background-image: url(/img/iTunes_44x15.png);
+  background-position: left;
 }
 
 li#play a {
