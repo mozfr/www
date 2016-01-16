@@ -783,10 +783,17 @@ li#android a {
 
 li#firefox a {
   background-image: url(/img/firefox_48px.png); }
+  
+li#firefox-nightly a {
+  background-image: url(/img/nightly_48px.png);
+}
+
+li#itunes a {
+  background-image: url(/img/iTunes_44x15.png);
+}
+
 li#play a {
   background-image: url(/img/play_48px.png); }
-li#android a {
-  background-image: url(/img/android_48px.png); }
 
 li#thunderbird a {
   background-image: url(/img/thunderbird_48px.png); }
@@ -817,8 +824,13 @@ li#bidouilleux a {
 li#mozfr a {
   background-image: url(/img/mozfr_32px.png); }
 
-li#frenchMozilla a {
-  background-image: url(/img/frenchmoz_32px.png); }
+li#notreinternet a {
+  background-image: url(/img/notreinternet_32px.png);
+}
+
+li#firefoxos a {
+  background-image: url(/img/firefoxos_32px.png);
+}
 
 li#geckozone a {
   background-image: url(/img/geckozone_32px.png); }
