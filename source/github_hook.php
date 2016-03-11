@@ -48,7 +48,7 @@ if (isset($_SERVER[$header])) {
         $secret
     );
 
-    if ($validation == explode('=', $_SERVER[$header])[1]) {
+    if (hash_equals($validation, explode('=', $_SERVER[$header])[1])) {
         // Pull latest changes
         exec("git checkout $branch ; git pull origin $branch");
 
