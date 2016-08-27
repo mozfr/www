@@ -6,7 +6,7 @@ date_default_timezone_set('Europe/Paris');
 // app variables
 $app_root = realpath(__DIR__ . '/../');
 $composer = $app_root . '/composer.phar';
-$sculpin = $app_root . '/sculpin.phar';
+$sculpin = $app_root . '/vendor/bin/sculpin';
 
 // git variables
 $branch = 'master';
@@ -30,14 +30,6 @@ if (! file_exists($composer)) {
     file_put_contents(
         $composer,
         file_get_contents('https://getcomposer.org/composer.phar')
-    );
-}
-
-// Get Sculpin
-if (! file_exists($sculpin) && file_exists($app_root.'/sculpin.json')) {
-    file_put_contents(
-        $sculpin,
-        file_get_contents('https://download.sculpin.io/sculpin.phar')
     );
 }
 
