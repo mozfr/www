@@ -5,3 +5,11 @@ RedirectPermanent /gplus    https://plus.google.com/u/0/communities/112241065457
 RedirectPermanent /atom.xml https://blog.mozfr.org/feed/atom
 RedirectPermanent /rss.xml  https://blog.mozfr.org/feed/rss2
 RedirectPermanent /forum    https://forums.mozfr.org/
+
+# Bonne pratiques de sécurité
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy "default-src https:; script-src https: 'unsafe-inline'; style-src https: 'unsafe-inline'; frame-ancestors 'none'"
+    Header set Strict-Transport-Security: max-age=31536000
+    Header set X-Content-Type-Options: nosniff
+    Header set X-XSS-Protection: "1; mode=block"
+</IfModule>
