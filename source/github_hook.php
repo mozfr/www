@@ -6,7 +6,7 @@ date_default_timezone_set('Europe/Paris');
 // app variables
 $app_root = realpath(__DIR__ . '/../');
 $composer = $app_root . '/composer.phar';
-$sculpin = $app_root . '/sculpin.phar';
+$sculpin = $app_root . '/vendor/bin/sculpin';
 
 // git variables
 $branch = 'master';
@@ -33,14 +33,6 @@ if (! file_exists($composer)) {
     );
 }
 
-// Get Sculpin
-if (! file_exists($sculpin) && file_exists($app_root.'/sculpin.json')) {
-    file_put_contents(
-        $sculpin,
-        file_get_contents('https://download.sculpin.io/sculpin.phar')
-    );
-}
-
 if (isset($_SERVER[$header])) {
     $validation = hash_hmac(
         'sha1',
@@ -48,7 +40,7 @@ if (isset($_SERVER[$header])) {
         $secret
     );
 
-    if ($validation == explode('=', $_SERVER[$header])[1]) {
+    if (hash_equals($validation, explode('=', $_SERVER[$header])[1])) {
         // Pull latest changes
         exec("git checkout $branch ; git pull origin $branch");
 

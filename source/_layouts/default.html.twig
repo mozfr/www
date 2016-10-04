@@ -41,7 +41,6 @@
                 <h2>MozFR ailleurs</h2>
                 <ul id="sns">
                     <li id="twitterlogo"><a href="https://twitter.com/mozilla_fr/">Twitter</a></li>
-                    <li id="diasporalogo"><a href="https://diaspora-fr.org/people/c5937eaddec02679">Diaspora</a></li>
                 </ul>
             </div>
 
@@ -70,12 +69,27 @@
                 </ul>
             </div>
 
+			<div class="section">
+				<h2>Sites officiels</h2>
+				<ul id="mozillasites">
+					<li id="mozilla">
+						<a href="https://mozilla.org/fr" title="Site officiel de Mozilla">Mozilla.org</a>
+					</li>
+					<li id="sumo">
+						<a href="https://support.mozilla.org/fr/" title="Assistance pour les logiciels Mozilla">Assistance utilisateur</a>
+					</li>
+					<li id="mdn">
+						<a href="https://developer.mozilla.org/fr/" title="Mozilla Developer Network">Documentation technique</a>
+					</li>
+					<li id="addons">
+						<a href="https://addons.mozilla.org/fr/" title="Extensions">Modules et extensions</a>
+					</li>
+				</ul>
+			</div>
+
             <div class="section">
-                <h2>Activités</h2>
+                <h2>Nos blogs thématiques</h2>
                 <ul id="activities">
-                    <li id="bonjourMozilla">
-                        <a href="http://bonjourmozilla.fr/" title="tous les jours, un membre de la communauté francophone est présenté">Bonjour Mozilla</a>
-                    </li>
                     <li id="mozfr">
                         <a href="https://blog.mozfr.org/" title="Blog généraliste de la communauté francophone">Blog de MozFr</a>
                     </li>
@@ -98,25 +112,13 @@
             </div>
 
             <div class="section">
-                <h2>Communautés</h2>
-                <ul id="communities">
-                    <li id="community-be">
-                        <a href="http://mozilla-belgium.org/fr/" title="site de la communauté belge">Mozilla Belgium</a>
-                    </li>
-                    <li id="community-tn">
-                        <a href="http://mozilla-tunisia.org/" title="site de la communauté tunisienne">Mozilla Tunisia</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="section">
                 <h2>Lettre d'information</h2>
                 <p>
                     <img src="/img/newsletter.png" alt="newsletter" />
                     <a href="https://www.mozilla.org/fr/newsletter/">Abonnez-vous à Firefox &amp; vous</a>, notre lettre d'information mensuelle.
                 </p>
             </div>
-            
+
             <div class="section">
                 <h2>Gazouillis</h2>
                 <p id="twitter">
@@ -135,9 +137,9 @@
             </p>
 
             <p id="colophon">
-                Sauf mention contraire, le site est placé sous licence <a
+                Sauf mention contraire, le contenu de ce site est placé sous licence <a
                 href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
-                paternité partage à l’identique</a>.
+                paternité partage à l’identique</a>. Le code source du site est sous licence <a href="https://www.mozilla.org/en-US/MPL/2.0/">Mozilla Public License Version 2.0</a>
             </p>
 
             <p id="nav-meta">
@@ -149,5 +151,20 @@
     <script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
     <script src="/js/tabzilla.js" type="text/javascript"></script>
     <script src="/js/nav-main.js" type="text/javascript"></script>
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.mozfr.org/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 10]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//piwik.mozfr.org/piwik.php?idsite=10" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
 </body>
 </html>
