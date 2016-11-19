@@ -804,6 +804,9 @@ li#thunderbird a {
 li#twitterlogo a {
   background-image: url(/img/twitter_logo_32.png); }
 
+li#facebooklogo a {
+  background-image: url(/img/facebook_logo_32.png); }
+
 li#diasporalogo a {
   background-image: url(/img/diaspora_asterisk_32.png); }
 
