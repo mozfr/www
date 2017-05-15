@@ -807,6 +807,9 @@ li#twitterlogo a {
 li#facebooklogo a {
   background-image: url(/img/facebook_logo_32.png); }
 
+li#youtubelogo a {
+  background-image: url(/img/youtube_logo_32.png); }
+
 li#diasporalogo a {
   background-image: url(/img/diaspora_asterisk_32.png); }
 
