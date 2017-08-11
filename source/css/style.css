@@ -785,13 +785,13 @@ li#itunes a{
 
 li#firefox a {
   background-image: url(/img/firefox_48px.png); }
-  
+
 li#firefox-nightly a {
   background-image: url(/img/nightly_48px.png);
 }
 
 li#itunes a {
-  background-image: url(/img/iTunes_44x15.png);
+  background-image: url(/img/firefox_ios.png);
   background-position: left;
 }
 
@@ -1576,4 +1576,4 @@ dt {
     width: 90%;
     margin: 5px 0;
   }
-} 
+}
