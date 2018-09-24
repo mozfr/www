@@ -785,13 +785,13 @@ li#itunes a{
 
 li#firefox a {
   background-image: url(/img/firefox_48px.png); }
-  
+
 li#firefox-nightly a {
   background-image: url(/img/nightly_48px.png);
 }
 
 li#itunes a {
-  background-image: url(/img/iTunes_44x15.png);
+  background-image: url(/img/firefox_ios.png);
   background-position: left;
 }
 
@@ -976,20 +976,14 @@ div.boite img {
 }
 
 #foot-logo .logo {
-  background: url("/img/logo-mozilla.png") 0 0 no-repeat;
+  background: url("/img/logo-mozilla.svg") 0 0 no-repeat;
   border: 0;
   display: block;
   float: left;
-  height: 26px;
-  -moz-transition: opacity .1s linear;
-  -ms-transition: opacity .1s linear;
-  -o-transition: opacity .1s linear;
-  -webkit-transition: opacity .1s linear;
-  transition: opacity .1s linear;
-  opacity: .8;
   overflow: hidden;
   text-indent: -999em;
-  width: 92px;
+  width: 120px;
+  height: 35px;
 }
 
 #foot-logo .logo:hover,
@@ -1413,7 +1407,6 @@ div.boite img {
     margin-bottom:20px
   }
 
-  #foot-logo,
   #colophon,
   #nav-meta {
     clear: both;
@@ -1576,4 +1569,4 @@ dt {
     width: 90%;
     margin: 5px 0;
   }
-} 
+}
