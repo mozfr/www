@@ -784,7 +784,10 @@ li#itunes a{
   padding-left: 54px; }
 
 
-li#firefox-focus a {
+li#firefox-focusa a {
+  background-image: url(/img/firefoxfocus_48px.png); }
+
+li#firefox-focusi a {
   background-image: url(/img/firefoxfocus_48px.png); }
 
 li#firefox a {
