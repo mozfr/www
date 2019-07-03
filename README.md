@@ -1,4 +1,4 @@
-Ceci est le code source de notre portail Mozilla Francophone <https://mozfr.org/>.
+Ceci est le code source de notre portail Mozilla francophone <https://mozfr.org/>.
 
 Le site utilise le générateur statique Sculpin <https://sculpin.io/>.
 
