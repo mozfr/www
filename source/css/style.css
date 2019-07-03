@@ -3,15 +3,8 @@
  * Import files
  *
  * ***************************************/
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap');
-@import url('https://rsms.me/inter/inter.css');
 @import url('normalize.css');
-
-
-/*******************************************
- *  #Fonts
- *
- * ***************************************/
+@import url('fonts.css');
 
 
 /*******************************************
@@ -25,7 +18,7 @@ body {
   font-family: Inter, sans-serif;
   line-height: 1.5;
   font-size: 1rem;
-  background: url("https://mozilla.org/media/img/firefox/channel/header-bg-tail.174d6c1f3606.png") no-repeat;
+  background: url("/img/header-bg-tail.png") no-repeat;
 }
 
 h1, h2, h3, h4 {
