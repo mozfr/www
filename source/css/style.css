@@ -78,17 +78,19 @@ footer a {
 footer a:hover {
     text-decoration: none;
 }
-/*******************************************
- *  mozfr
- *
- * ***************************************/
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+.content a {
+    color: #0250bb;
+    font-weight: bold;
 }
 
 .mozfrtext {
@@ -100,6 +102,13 @@ a:hover {
     font-family: 'Zilla Slab', serif;
     text-decoration: none;
     height: 1.5em;
+    border-radius: 2px;
+}
+
+.mozfrtext span {
+    font-style: italic;
+    font-weight: lighter;
+    color: deepskyblue;
 }
 
 .mozfrtext:hover {
