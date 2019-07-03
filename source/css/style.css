@@ -25,11 +25,13 @@ body {
   font-family: Inter, sans-serif;
   line-height: 1.5;
   font-size: 1rem;
+  background: url("https://mozilla.org/media/img/firefox/channel/header-bg-tail.174d6c1f3606.png") no-repeat;
 }
 
 h1, h2, h3, h4 {
   font-family: "Zilla Slab", Inter, sans-serif;
   font-weight: 700;
+  color: #20123a;
 }
 
 /*******************************************
@@ -37,45 +39,126 @@ h1, h2, h3, h4 {
  *
  * ***************************************/
 
-#wrapper {
-  width: 1000px;
-  margin: auto;
+.wrapper {
+    display: grid;
+    grid-row-gap: 20px;
 }
 
- header,
- #nav-main-menu {
-  display:flex;
+header,
+.content,
+footer {
+    padding: 0 300px;
 }
 
- #nav-main-menu li {
-  list-style-type: none;
-  flex-flow: row wrap;
-   justify-content: flex-start;
- }
+header,
+#nav-main ul {
+    display:flex;
+}
 
+#nav-main ul li {
+    list-style-type: none;
+    width: 120px;
+    text-align: center;
+}
+
+#nav-main ul li a {
+    color: black;
+}
+
+footer {
+    color: white;
+    background: black;
+    padding-top: 1em;
+    text-align: center;
+}
+
+footer a {
+    color:white;
+    text-decoration: underline;
+    max-width: 1200px;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
 /*******************************************
  *  mozfr
  *
  * ***************************************/
 
-
-
-
-#mozfrtext {
-  color: white;
-  background-color: black;
-  padding: 0.1em;
-  font-weight: bold;
-  font-size: 2em;
-  line-height: 1em;
-  font-family: 'Zilla Slab', serif;
-  display: inline-block;
-  margin: 10px;
+a {
   text-decoration: none;
 }
 
-#mozfrtext:hover {
+a:hover {
+  text-decoration: underline;
+}
+
+.mozfrtext {
+    color: white;
+    background-color: black;
+    padding: 0 6px;
+    font-weight: bold;
+    font-size: 2em;
+    /* line-height: 1em; */
+    font-family: 'Zilla Slab', serif;
+    display: inline-block;
+    /* margin: 0 10px; */
+    text-decoration: none;
+    height: 1.5em;
+    margin-top: 6px;
+}
+
+.mozfrtext:hover {
   text-decoration: none;
   color: black;
-  background-color: lightblue;
+  background-color: #9059ff;
+}
+
+footer .mozfrtext {
+    color: black;
+    background-color: white;
+    font-size: 1.5em;
+
+}
+footer .mozfrtext:hover {
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    border-bottom: 1px dashed #45a1ff;
+    color: #9059ff;
+}
+
+h1 span {
+    color: #ff4f5e;
+}
+
+.photo {
+    width: 500px;
+    float: right;
+    box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    border: 1px solid lightgray;
+    margin: 0 0 0em 1em;
+    padding: 10px 10px 1em 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(5deg);
+    font-weight: bold;
+    font-family: cursive;
+    font-style: italic;
+    border-radius: 2px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.gandi {
+    filter: invert(100%);
+    width: 100px;
+    vertical-align: middle;
+    margin-left: 20px;
 }
