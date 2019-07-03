@@ -46,14 +46,16 @@ footer {
 header,
 #nav-main ul {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #nav-main ul li {
     list-style-type: none;
-    width: 120px;
+    min-width: 100px;
     text-align: center;
+    margin-right: 0.5em;
 }
 
 #nav-main ul li a {
@@ -98,7 +100,6 @@ a:hover {
     font-family: 'Zilla Slab', serif;
     text-decoration: none;
     height: 1.5em;
-    margin-top: 6px;
 }
 
 .mozfrtext:hover {
@@ -120,7 +121,7 @@ footer .mozfrtext:hover {
 
 h1 {
     border-bottom: 1px dashed #45a1ff;
-    color: #9059ff;
+    color: #45a1ff;
 }
 
 h1 span {
