@@ -38,8 +38,7 @@ h1, h2, h3, h4 {
 }
 
 header,
-.content,
-footer {
+.content  {
     padding: 0 300px;
 }
 
@@ -65,23 +64,30 @@ header,
 footer {
     color: white;
     background: black;
-    padding-top: 1em;
-    text-align: center;
 }
 
-footer a {
+footer section#credits a {
     color:white;
     text-decoration: underline;
     max-width: 1200px;
 }
 
-footer a:hover {
+footer section#credits a:hover {
     text-decoration: none;
+}
+
+footer section#links a {
+    color:white;
+    text-decoration: none;
+    max-width: 1200px;
+}
+
+footer section#links a:hover {
+    text-decoration: underline;
 }
 
 a {
     text-decoration: none;
-
 }
 
 a:hover {
@@ -118,11 +124,14 @@ a:hover {
 }
 
 footer .mozfrtext {
-    color: black;
+    color: black !important;
     background-color: white;
     font-size: 1.5em;
-
+    position: absolute;
+    top: 10px;
+    left: 200px;
 }
+
 footer .mozfrtext:hover {
     color: white;
     background-color: black;
@@ -180,4 +189,30 @@ h1 span {
     color: white;
     text-decoration:none;
 
+}
+
+footer section#links {
+    display: flex;
+    padding-top: 2em;
+    justify-content: space-evenly;
+    background-color: purple;
+    color: white;
+    position:relative;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+footer section#links h3 {
+    color:white;
+}
+
+footer section#links ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2em;
+}
+
+footer section#credits {
+    text-align: center;
+    font-size: small;
 }
