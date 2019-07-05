@@ -7,18 +7,17 @@
 @import url('fonts.css');
 
 
-/*******************************************
+/******************************************
  *  General rules
  *
  * ***************************************/
 
 body {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
   font-family: Inter, sans-serif;
   line-height: 1.5;
   font-size: 1rem;
-  background: url("/img/header-bg-tail.png") no-repeat;
 }
 
 h1, h2, h3, h4 {
@@ -27,19 +26,27 @@ h1, h2, h3, h4 {
   color: #20123a;
 }
 
-/*******************************************
- *  presentation
- *
- * ***************************************/
-
 .wrapper {
-    display: grid;
-    grid-row-gap: 20px;
+    color: black;
+    background-color: white;
+    background: white url("/img/header-bg-tail.png") top center no-repeat;
 }
 
 header,
-.content  {
-    padding: 0 300px;
+.content,
+.inner-footer section {
+    max-width: 1200px;
+    margin:auto;
+}
+
+footer {
+    color: white;
+    background: black;
+}
+
+footer .inner-footer:first-child {
+    background-color: purple;
+    width: 100%;
 }
 
 header,
@@ -61,15 +68,11 @@ header,
     color: black;
 }
 
-footer {
-    color: white;
-    background: black;
-}
 
 footer section#credits a {
     color:white;
     text-decoration: underline;
-    max-width: 1200px;
+
 }
 
 footer section#credits a:hover {
@@ -79,7 +82,6 @@ footer section#credits a:hover {
 footer section#links a {
     color:white;
     text-decoration: none;
-    max-width: 1200px;
 }
 
 footer section#links a:hover {
@@ -120,21 +122,23 @@ a:hover {
 .mozfrtext:hover {
   text-decoration: none;
   color: black;
-  background-color: #9059ff;
+  background-color: white;
 }
 
-footer .mozfrtext {
+footer a.mozfrtext {
     color: black !important;
-    background-color: white;
+    background-color: white !important;
     font-size: 1.5em;
     position: absolute;
     top: 10px;
-    left: 200px;
+    left: 10px;
+    display: inline-block
 }
 
-footer .mozfrtext:hover {
-    color: white;
-    background-color: black;
+footer a.mozfrtext:hover {
+    color: white !important;
+    background-color: black !important;
+    text-decoration: none !important;
 }
 
 h1 {
@@ -195,11 +199,8 @@ footer section#links {
     display: flex;
     padding-top: 2em;
     justify-content: space-evenly;
-    background-color: purple;
     color: white;
     position:relative;
-    padding-left: 20%;
-    padding-right: 20%;
 }
 
 footer section#links h3 {
