@@ -111,6 +111,8 @@ a:hover {
     text-decoration: none;
     line-height: 1.5em;
     border-radius: 2px;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, #009de0 20%, #fed500 20% 40%, #8dbb0f 40% 60%, #6d1f80 60% 80%, #e31c2a 80%) 1;
 }
 
 .mozfrtext span {
