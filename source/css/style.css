@@ -219,3 +219,22 @@ footer section#credits {
     text-align: center;
     font-size: small;
 }
+
+
+details {
+    border: 1px solid #ddd;
+    background: #fff;
+    margin-bottom: 1.5rem;
+    border-radius: 0.35rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    padding: 0 1em;
+}
+
+summary {
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}

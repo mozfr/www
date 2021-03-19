@@ -8,7 +8,7 @@ RedirectPermanent /forum    https://forums.mozfr.org/
 
 # Bonne pratiques de sécurité
 <IfModule mod_headers.c>
-    Header set Content-Security-Policy: "default-src https:; object-src 'none'; base-uri 'self'; script-src 'self' 'nonce-4AEemGb0xJptoIGFP3Nd' 'unsafe-inline' piwik.mozfr.org; frame-ancestors 'none'"
+    Header set Content-Security-Policy: "default-src https:; object-src 'none'; base-uri 'self'; script-src 'self' 'nonce-4AEemGb0xJptoIGFP3Nd' piwik.mozfr.org; frame-ancestors 'none'"
     Header set Strict-Transport-Security: "max-age=31536000; includeSubDomains; preload"
     Header set X-Content-Type-Options: nosniff
     Header set X-XSS-Protection: "1; mode=block"
