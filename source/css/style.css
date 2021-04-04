@@ -13,11 +13,11 @@
  * ***************************************/
 
 body {
-  color: white;
-  background-color: black;
-  font-family: Inter, sans-serif;
-  line-height: 1.5;
-  font-size: 1rem;
+    color: black;
+    background-color: white;
+    font-family: Inter, sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
 }
 
 h1, h2, h3, h4 {
@@ -61,13 +61,29 @@ header,
     list-style-type: none;
     min-width: 100px;
     text-align: center;
-    margin-right: 0.5em;
-}
-
-#nav-main ul li a {
+    margin-right: 0;
+    padding: 0 1.5em;
     color: black;
 }
 
+#nav-main ul li:hover {
+    color: white !important;
+    background-color: purple;
+}
+
+#nav-main ul li:hover a {
+    color: white;
+}
+
+#nav-main ul li a {
+    color:black;
+    text-decoration: none;
+}
+
+#nav-main ul li a:hover {
+    color:white;
+    text-decoration: none;
+}
 
 footer section#credits a {
     color:white;
