@@ -1,5 +1,17 @@
 {
     "require": {
-        "sculpin/sculpin": "^3.1"
+        "sculpin/sculpin": "^3.1",
+        "components/jquery": "^3.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "sculpin/sculpin-theme-composer-plugin": true
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "cp -r vendor/components/jquery/ source/js/",
+            "rm source/js/jquery/README.md"
+        ]
     }
 }
