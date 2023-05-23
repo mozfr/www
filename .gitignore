@@ -12,12 +12,11 @@ Thumbs.db
 /app/cache/*
 /app/config/config.ini
 /app/logs/*
-/source/components/
 
 sculpin.phar
 composer.phar
-composer.lock
 
 vendor/
 output_dev/
 output_prod/
+/source/js/jquery/
