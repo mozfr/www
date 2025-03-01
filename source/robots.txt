@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /archive
-Disallow: /rss.xml
+Disallow: /munin
 Disallow: /atom.xml
+Disallow: /rss.xml
