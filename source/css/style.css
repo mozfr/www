@@ -234,6 +234,10 @@ footer section#links ul {
 footer section#credits {
     text-align: center;
     font-size: small;
+
+    & p {
+      margin-block-end: 0;
+    }
 }
 
 
