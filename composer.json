@@ -1,17 +1,13 @@
 {
-    "require": {
-        "sculpin/sculpin": "^3.2",
-        "components/jquery": "^3.6"
-    },
-    "config": {
-        "allow-plugins": {
-            "sculpin/sculpin-theme-composer-plugin": true
-        }
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "cp -r vendor/components/jquery/ source/js/",
-            "rm source/js/jquery/README.md"
-        ]
-    }
+  "require": {
+    "cecil/cecil": "^8.45.7"
+  },
+  "config": {
+    "process-timeout": 0
+  },
+  "scripts": {
+    "cecil": "./vendor/bin/cecil \"$@\"",
+    "serve:dev": "export CECIL_ENV='dev' && ./vendor/bin/cecil serve --open ./source",
+    "serve:prod": "export CECIL_ENV='prod' && ./vendor/bin/cecil serve --open ./source"
+  }
 }

@@ -1,0 +1,47 @@
+{# This Source Code Form is subject to the terms of the Mozilla Public
+ # License, v. 2.0. If a copy of the MPL was not distributed with this
+ # file, You can obtain one at https://mozilla.org/MPL/2.0/. #}
+<!DOCTYPE html>
+<html xml:lang="fr" lang="fr">
+<head>
+  {% include("partials/head.html.twig") %}
+</head>
+<body{{ page.id ? " class=\"#{page.id}\""|raw : '' }}>
+    <div class="wrapper">
+        <header>
+          {{ include("partials/navbar.html.twig") }}
+        </header>
+        <main class="content">
+            <h1>{{ page.title }}</h1>
+
+            {% block content %}
+              {{ page.content }}
+            {% endblock %}
+
+        </main>
+
+        <footer>
+          {{ include("partials/footer.html.twig") }}
+        </footer>
+    </div> <!-- #wrapper -->
+    {% if site.env and site.env == 'prod' %}
+    <!-- Matomo -->
+    <script nonce="4AEemGb0xJptoIGFP3Nd">
+      var _paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://piwik.mozfr.org/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '10']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- Matomo Image Tracker-->
+    <noscript><img src="https://piwik.mozfr.org/matomo.php?idsite=10&amp;rec=1" style="border:0" alt="" /></noscript>
+    <!-- End Matomo -->
+    {% endif %}
+</body>
+</html>
