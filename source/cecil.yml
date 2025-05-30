@@ -5,8 +5,6 @@
 title: "MozFr"
 baseurl: https://mozfr.org/
 description: "Le site web de MozFR.org - Communauté francophone de Mozilla"
-output:
-  dir: ../output_prod
 
 pages:
   default:
