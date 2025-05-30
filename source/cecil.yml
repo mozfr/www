@@ -3,8 +3,10 @@
 # file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 title: "MozFr"
-baseurl: "https://mozfr.org/"
+baseurl: https://mozfr.org/
 description: "Le site web de MozFR.org - Communauté francophone de Mozilla"
+output:
+  dir: ../output_prod
 
 pages:
   default:

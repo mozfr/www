@@ -24,24 +24,5 @@
           {{ include("partials/footer.html.twig") }}
         </footer>
     </div> <!-- #wrapper -->
-    {% if site.env and site.env == 'prod' %}
-    <!-- Matomo -->
-    <script nonce="4AEemGb0xJptoIGFP3Nd">
-      var _paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="https://piwik.mozfr.org/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '10']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <!-- Matomo Image Tracker-->
-    <noscript><img src="https://piwik.mozfr.org/matomo.php?idsite=10&amp;rec=1" style="border:0" alt="" /></noscript>
-    <!-- End Matomo -->
-    {% endif %}
 </body>
 </html>
