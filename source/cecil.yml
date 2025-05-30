@@ -1,0 +1,20 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+title: "MozFr"
+baseurl: "https://mozfr.org/"
+description: "Le site web de MozFR.org - Communauté francophone de Mozilla"
+
+pages:
+  default:
+    robots:
+      published: false
+    404:
+      published: false
+    sitemap:
+      published: false
+    xsl/atom:
+      published: false
+    xsl/rss:
+      published: false

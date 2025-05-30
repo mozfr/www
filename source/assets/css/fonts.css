@@ -1,4 +1,6 @@
-/*@import url('https://rsms.me/inter/inter.css');*/
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 @font-face {
   font-family: 'Inter';
@@ -177,21 +179,53 @@ Usage:
 
 
 /* --------------------------------------------------------------------------
-[EXPERIMENTAL] Multi-axis, single variable font.
-
-Slant axis is not yet widely supported (as of February 2019) and thus this
-multi-axis single variable font is opt-in rather than the default.
+Multi-axis, single variable font.
 
 When using this, you will probably need to set font-variation-settings
 explicitly, e.g.
 
-  * { font-variation-settings: "slnt" 0deg }
-  .italic { font-variation-settings: "slnt" 10deg }
-
+  <selector> { font-variation-settings: "slnt" 0deg }
 */
 @font-face {
   font-family: 'Inter var experimental';
   font-weight: 100 900;
   font-style: oblique 0deg 10deg;
   src: url("../fonts/Inter.var.woff2?v=3.7") format("woff2");
+}
+
+/* --------------------------------------------------------------------------
+ * Zilla */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/ZillaSlab-Regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ZillaSlab-Regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/ZillaSlab-Regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/ZillaSlab-Regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ZillaSlab-Regular.woff2") format('woff2');
 }

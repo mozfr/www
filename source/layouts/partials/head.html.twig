@@ -1,0 +1,42 @@
+{# This Source Code Form is subject to the terms of the Mozilla Public
+ # License, v. 2.0. If a copy of the MPL was not distributed with this
+ # file, You can obtain one at https://mozilla.org/MPL/2.0/. #}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{{ site.title | striptags }} - {{ page.title | striptags }}</title>
+
+<!-- Generic metadata for search engines-->
+<meta name="description" content="{{ site.description|striptags }}">
+<meta name="image" content="https://mozfr.org/img/communityPicture.png">
+
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="{{ site.title|striptags }}">
+<meta itemprop="description" content="{{ site.description|striptags }}">
+<meta itemprop="image" content="https://mozfr.org/img/communityPicture.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@mozilla_fr">
+<meta name="twitter:url" content="{{ site.baseurl }}" />
+<meta name="twitter:title" content="{{ site.title|striptags }}">
+<meta name="twitter:description" content="{{ site.description|striptags }}">
+<meta name="twitter:image" content="https://mozfr.org/img/communityPicture.png">
+
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta property="og:title" content="{{ page.title|striptags }}">
+<meta property="og:description" content="{{ site.description|striptags }}">
+<meta property="og:image" content="https://mozfr.org/img/communityPicture.png">
+<meta property="og:url" content="https://www.mozfr.org">
+<meta property="og:site_name" content="{{ site.title|striptags }}">
+<meta property="og:locale" content="fr">
+<meta property="og:type" content="website">
+
+<!-- Icons -->
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+
+<link rel="stylesheet"
+      href="{{ asset(
+            ['/css/normalize.css', '/css/fonts.css', '/css/style.css'],
+            { filename: '/css/style.css'}
+      ) }}" />

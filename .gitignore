@@ -1,5 +1,4 @@
-# OS generated files #
-######################
+# OS generated files
 .DS_Store*
 ehthumbs.db
 Icon?
@@ -8,15 +7,13 @@ Thumbs.db
 *.esproj
 *.sass-cache*
 
-/.sculpin/
-/app/cache/*
-/app/config/config.ini
-/app/logs/*
-
-sculpin.phar
+# Project specific
+cecil.phar
 composer.phar
 
-vendor/
 output_dev/
 output_prod/
-/source/js/jquery/
+source/.cache
+source/.cecil
+source/_site
+vendor/
