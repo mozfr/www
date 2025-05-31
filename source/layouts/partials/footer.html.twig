@@ -4,37 +4,26 @@
 
 <div class="inner-footer">
     <section id="links">
-    <a href="/" title="Mozilla francophone" class="mozfrtext">moz<span>fr</span></a>
+    <a href="/" title="Mozilla francophone" class="mozfrtext">
+      moz<span>fr</span>
+    </a>
         <div>
         <h3>Communication</h3>
-        <ul>
-            <li><a href="https://blog.mozfr.org">Blog principal</a></li>
-            <li><a href="https://tech.mozfr.org">Blog technique</a></li>
-            <li><a href="https://notreinternet.mozfr.org">Mozilla et la vie publique</a></li>
-            <li><a href="https://planete.mozfr.org">Planète Mozilla francophone</a></li>
-            <li><a href="https://twitter.com/Mozilla_fr">Suivez-nous sur Twitter</a></li>
-            <li><a rel="me" href="https://mamot.fr/@Mozilla">Suivez-nous sur Mastodon</a></li>
-        </ul>
+        {% include 'partials/menu.html.twig'
+          with { 'menu': site.menus.communication }
+        %}
         </div>
         <div>
         <h3>Logiciels</h3>
-        <ul>
-            <li><a href="https://www.mozilla.org/fr/firefox/new">Firefox</a></li>
-            <li><a href="https://www.mozilla.org/fr/firefox/channel/desktop/?from=mozfr">Préversions de Firefox</a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=org.mozilla.fenix&amp;gl=FR">Firefox pour Android</a></li>
-            <li><a href="https://www.thunderbird.net/fr/">Thunderbird</a></li>
-            <li><a href="https://monitor.firefox.com/">Firefox Monitor</a></li>
-        </ul>
+        {% include 'partials/menu.html.twig'
+          with { 'menu': site.menus.softwares }
+        %}
         </div>
         <div>
         <h3>À propos</h3>
-        <ul>
-            <li><a href="/manifesto">Le manifeste de Mozilla</a></li>
-            <li><a href="/participer">Participer</a></li>
-            <li><a href="https://github.com/mozfr/besogne/wiki/Traduction">Traduire</a></li>
-            <li><a href="https://forums.mozfr.org/">Forums et assistance</a></li>
-            <li><a href="https://github.com/mozfr/besogne/wiki">Wiki d’équipe</a></li>
-        </ul>
+        {% include 'partials/menu.html.twig'
+          with { 'menu': site.menus.about }
+        %}
         </div>
     </section>
 </div>
