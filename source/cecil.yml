@@ -18,3 +18,79 @@ pages:
       published: false
     xsl/rss:
       published: false
+
+menus:
+  # Navbar menu
+  main:
+    # We disable the index link sine we already use the navbar logo for that.
+    - id: index
+      enabled: false
+    - id: news
+      name: "Nouvelles"
+      url: "https://blog.mozfr.org"
+      foobar: "foobar"
+    - id: forum
+      name: "Forums et assistance"
+      url: "https://forums.mozfr.org"
+    - id: contribute
+      name: "Participer"
+      url: "/participer/"
+    - id: about
+      name: "À propos"
+      url: "/manifesto/"
+  communication:
+    - id: main-blog
+      name: "Blog principal"
+      url: "https://blog.mozfr.org"
+    - id: technical-blog
+      name: "Blog technique"
+      url: "https://tech.mozfr.org"
+    - id: our-internet
+      name: "Mozilla et la vie publique"
+      url: "https://notreinternet.mozfr.org"
+    - id: planet
+      name: "Planète Mozilla francophone"
+      url: "https://planete.mozfr.org"
+    - id: twitter
+      name: "Suivez-nous sur Twitter"
+      url: "https://twitter.com/Mozilla_fr"
+    - id: mastodon
+      name: "Suivez-nous sur Mastodon"
+      url: "https://mamot.fr/@Mozilla"
+  softwares:
+    - id: firefox
+      name: "Firefox"
+      url: "https://www.mozilla.org/fr/firefox/new?from=mozfr"
+    - id: firefox-channels
+      name: "Préversions de Firefox"
+      url: "https://www.mozilla.org/fr/firefox/channel/desktop/?from=mozfr"
+    - id: firefox-android
+      name: "Firefox pour Android"
+      url: "https://play.google.com/store/apps/details?id=org.mozilla.fenix&amp;gl=FR"
+    - id: firefox-monitor
+      name: "Firefox Monitor"
+      url: "https://monitor.firefox.com/"
+    - id: thunderbird
+      name: "Thunderbird"
+      url: "https://www.thunderbird.net/fr/"
+    - id: thunderbird-android
+      name: "Thunderbird pour Android"
+      url: "https://play.google.com/store/apps/details?id=net.thunderbird.android&amp;gl=FR"
+  about:
+    - id: manifesto
+      name: "Le manifeste de Mozilla"
+      url: "/manifesto/"
+    - id: contribute
+      name: "Participer"
+      url: "/participer/"
+    - id: translate
+      name: "Traduire"
+      url: "https://github.com/mozfr/besogne/wiki/Traduction"
+    - id: forum
+      name: "Forums et assistance"
+      url: "https://forums.mozfr.org"
+    - id: wiki
+      name: "Wiki d'équipe"
+      url: "https://github.com/mozfr/besogne/wiki/"
+
+debug: true
