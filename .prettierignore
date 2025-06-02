@@ -1,0 +1,8 @@
+source/.cache/
+source/_site/
+vendor/
+
+.htaccess
+composer.lock
+LICENSE
+package-lock.json

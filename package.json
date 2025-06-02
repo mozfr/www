@@ -1,0 +1,28 @@
+{
+  "name": "mozfr.org",
+  "version": "0.1.0",
+  "description": "Mozilla Francophone",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint",
+    "prettier": "npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannycolin/mozfrorg.git"
+  },
+  "author": "",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/dannycolin/mozfrorg/issues"
+  },
+  "homepage": "https://github.com/dannycolin/mozfrorg#readme",
+  "devDependencies": {
+    "@eslint/css": "^0.8.1",
+    "@eslint/js": "^9.28.0",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3"
+  }
+}
