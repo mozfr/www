@@ -4,11 +4,10 @@
 
 <a href="/" title="Mozilla francophone" class="mozfrtext">moz<span>fr</span></a>
 <nav id="nav-main" role="navigation">
-    <ul>
-        <li><a href="//blog.mozfr.org">Nouvelles</a></li>
-        <li><a href="//forums.mozfr.org">Forums et assistance</a></li>
-        <li><a href="/participer">Participer</a></li>
-        <li><a href="/manifesto">À propos</a></li>
-    </ul>
+  {% include 'partials/menu.html.twig' with { 'menu': site.menus.main } %}
 </nav>
-<a href="https://www.mozilla.org/fr/firefox/download/thanks/?source=mozfr" class="getfirefox">Télécharger Firefox</a>
+<a href="https://www.mozilla.org/fr/firefox/download/thanks/?source=mozfr"
+   class="getfirefox">
+  Télécharger Firefox
+</a>
+
