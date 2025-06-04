@@ -67,7 +67,7 @@ header,
 }
 
 #nav-main ul li:hover {
-    color: white !important;
+    color: white;
     background-color: purple;
 }
 
@@ -144,8 +144,10 @@ a:hover {
 }
 
 footer a.mozfrtext {
+    /* eslint-disable css/no-important */
     color: black !important;
     background-color: white !important;
+    /* eslint-enable css/no-important */
     font-size: 1.5em;
     position: absolute;
     top: 10px;
@@ -154,9 +156,11 @@ footer a.mozfrtext {
 }
 
 footer a.mozfrtext:hover {
+    /* eslint-disable css/no-important */
     color: white !important;
     background-color: black !important;
     text-decoration: none !important;
+    /* eslint-enable css/no-important */
 }
 
 h1 {
