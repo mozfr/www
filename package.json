@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dannycolin/mozfrorg.git"
+    "url": "git+https://github.com/mozfr/www.git"
   },
-  "author": "",
+  "author": "mozfr.org",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/dannycolin/mozfrorg/issues"
+    "url": "https://github.com/mozfr/www/issues"
   },
-  "homepage": "https://github.com/dannycolin/mozfrorg#readme",
+  "homepage": "https://mozfr.org",
   "devDependencies": {
     "@eslint/css": "^0.8.1",
     "@eslint/js": "^9.28.0",
