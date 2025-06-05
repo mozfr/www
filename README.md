@@ -38,11 +38,35 @@ composer cecil [nom de la commande]
 ```
 
 Tous les fichiers source (HTML, JS, CSS, images, polices…) sont dans le
-dossier `src`.
+dossier `source`. Le dossier de sortie se trouve dans `source/_site`.
 
-Le dossier de sortie pour le développement local est `output_dev`. Le dossier de
-sortie pour la mise en production est `output_prod`, c'est vers ce dossier que le
-serveur apache pointe le domaine www.mozfr.org.
+## Outils de validation et de _formatage_ du code
+
+Pour les utiliser, vous devez tout d'abord installer
+[NodeJS](https://nodejs.org/fr/download).
+
+Lorsque NodeJS est installé, vous pouvez installer les outils avec:
+
+```
+cd /chemin/vers/mozfr/www
+npm install
+```
+
+### ESList
+
+Pour lancer les tests de détection des bugs, vous pouvez exécuter:
+
+```
+npm run lint
+```
+
+### Prettier
+
+Pour _formatter_ le code, vous pouvez exécuter:
+
+```
+npm run prettier
+```
 
 ## Proposer un patch
 

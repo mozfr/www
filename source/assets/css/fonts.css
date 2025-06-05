@@ -150,14 +150,12 @@ Usage:
   font-family: 'Inter var';
   font-weight: 100 900;
   font-style: normal;
-  font-named-instance: 'Regular';
   src: url("../fonts/Inter-upright.var.woff2?v=3.7") format("woff2");
 }
 @font-face {
   font-family: 'Inter var';
   font-weight: 100 900;
   font-style: italic;
-  font-named-instance: 'Italic';
   src: url("../fonts/Inter-italic.var.woff2?v=3.7") format("woff2");
 }
 
@@ -166,14 +164,12 @@ Usage:
   font-family: 'Inter var alt';
   font-weight: 100 900;
   font-style: normal;
-  font-named-instance: 'Regular';
   src: url("../fonts/Inter-upright.var.woff2?v=3.7") format("woff2");
 }
 @font-face {
   font-family: 'Inter var alt';
   font-weight: 100 900;
   font-style: italic;
-  font-named-instance: 'Italic';
   src: url("../fonts/Inter-italic.var.woff2?v=3.7") format("woff2");
 }
 
