@@ -1,13 +1,19 @@
 {
   "require": {
-    "cecil/cecil": "^8.45.7"
+    "cecil/cecil": "^9.0"
   },
   "config": {
     "process-timeout": 0
   },
   "scripts": {
     "cecil": "./vendor/bin/cecil \"$@\"",
-    "serve:dev": "export CECIL_ENV='dev' && ./vendor/bin/cecil serve --open ./source",
-    "serve:prod": "export CECIL_ENV='prod' && ./vendor/bin/cecil serve --open ./source"
+    "serve:dev": [
+      "@putenv CECIL_ENV=dev",
+      "./vendor/bin/cecil serve --open ./source"
+    ],
+    "serve:prod": [
+      "@putenv CECIL_ENV=prod",
+      "./vendor/bin/cecil serve --open ./source"
+    ]
   }
 }

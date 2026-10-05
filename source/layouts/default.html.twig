@@ -2,27 +2,24 @@
  # License, v. 2.0. If a copy of the MPL was not distributed with this
  # file, You can obtain one at https://mozilla.org/MPL/2.0/. #}
 <!DOCTYPE html>
-<html xml:lang="fr" lang="fr">
-<head>
-  {% include("partials/head.html.twig") %}
-</head>
-<body{{ page.id ? " class=\"#{page.id}\""|raw : '' }}>
+<html xml:lang="{{ site.language }}" lang="{{ site.language }}">
+  <head>
+    {%- include("partials/head.html.twig") ~%}
+  </head>
+  <body{{ page.id ? " class=\"#{page.id}\""|raw : '' }}>
     <div class="wrapper">
-        <header>
-          {{ include("partials/navbar.html.twig") }}
-        </header>
-        <main class="content">
-            <h1>{{ page.title }}</h1>
-
-            {% block content %}
-              {{ page.content }}
-            {% endblock %}
-
-        </main>
-
-        <footer>
-          {{ include("partials/footer.html.twig") }}
-        </footer>
-    </div> <!-- #wrapper -->
-</body>
+      <header>
+        {{- include("partials/navbar.html.twig") ~}}
+      </header>
+      <main class="content">
+        <h1>{{ page.title }}</h1>
+        {%- block content ~%}
+          {{ page.content }}
+        {%- endblock ~%}
+      </main>
+      <footer>
+        {{- include("partials/footer.html.twig") ~}}
+      </footer>
+    </div>
+  </body>
 </html>

@@ -3,8 +3,8 @@
  * Import files
  *
  * ***************************************/
-@import url('normalize.css');
-@import url('fonts.css');
+/*@import url('normalize.css');*/
+/*@import url('fonts.css');*/
 
 
 /******************************************
@@ -37,6 +37,7 @@ header,
 .inner-footer section {
     max-width: 1200px;
     margin:auto;
+    padding: 1rem;
 }
 
 footer {
@@ -55,6 +56,10 @@ header,
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#nav-main ul {
+  padding: unset;
 }
 
 #nav-main ul li {
@@ -174,6 +179,7 @@ h1 span {
 
 .photo {
     width: 500px;
+    height: auto;
     float: right;
     box-shadow: 0 4px 6px rgba(0,0,0,.3);
     border: 1px solid lightgray;
