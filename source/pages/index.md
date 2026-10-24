@@ -21,4 +21,4 @@ Si vous voulez en savoir plus sur les principes qui régissent le projet Mozilla
 
 Si vous êtes convaincu et désirez nous rejoindre et faire bouger le Web avec nous, consultez notre page [Participer](participer) qui est une liste partielle de nos activités en cours. N’hésitez-pas à nous proposer d’autres activités cohérentes avec la vision de Mozilla que nous ne couvririons pas déjà, nous sommes friands de toute initiative originale !
 
-***À bientôt !***
+***À très bientôt !***
