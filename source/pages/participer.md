@@ -2,129 +2,143 @@
 layout: default
 title: Participer
 ---
-<section id="contrib">
-    <details open>
-        <summary>Pourquoi contribuer à Mozilla&#160;?</summary>
-        <div>
-            <ul>
-                <li>Pour le fun, parce que c’est amusant&#160;! Pour sa communauté haute en couleurs avec laquelle vous partagerez bien plus que l’amour des logiciels libres.</li>
-                <li>Parce qu’en apportant votre pierre à l’édifice, vous rendez un service utile à tout le monde. Mozilla œuvre pour rendre Internet meilleur, libre et ouvert, dont chacun puisse utiliser les riches possibilités.</li>
-                <li>Pour vous. Vous choisissez ce à quoi vous voulez participer. Vous pouvez ainsi progresser dans les domaines qui vous intéressent, accéder aux technologies de Mozilla et du Web. De plus, toutes les contributions sont valorisées.</li>
-            </ul>
-        </div>
-    </details>
-    <details>
-        <summary>Discuter avec la communauté</summary>
-        <div>
-            <ul>
-                <li>Des <a href="https://github.com/mozfr/besogne/wiki/Matrix" title="Matrix – mozfr wiki" class="mw-redirect">salons Matrix francophones</a> vous permettent de discuter en ligne avec les membres de la communauté qui y sont connectés en même temps que vous depuis divers endroits dans le monde. Certains salons sont thématiques (développement, aide…), mais vous pouvez aussi discuter de tout et de rien sur #mozfr.</li>
-                <li>Nous sommes présents sur <a href="https://twitter.com/mozilla_fr">Twitter</a> et <a href="https://mamot.fr/@Mozilla">Mastodon</a>.</li>
-            </ul>
-        </div>
-    </details>
+<details open markdown="1">
+<summary>Pourquoi contribuer à Mozilla ?</summary>
 
-    <details>
-        <summary>Inviter la communauté à votre évènement</summary>
-        <diV>
-            <p>Vous organisez un évènement et vous souhaiteriez une présence de MozFr (un conférencier, un stand, des <i lang="en">goodies</i>&hellip;)&#160;?</p>
-            <p>Contactez-nous via les liens ci-dessus ou par courriel à l’adresse <i>evenements</i>(à)<i>mozfr.org</i>.</p>
-        </diV>
-    </details>
+- Pour le fun, parce que c’est amusant ! Pour sa communauté haute en couleurs avec laquelle vous partagerez bien plus que l’amour des logiciels libres.
+- Parce qu’en apportant votre pierre à l’édifice, vous rendez un service utile à tout le monde. Mozilla œuvre pour rendre Internet meilleur, libre et ouvert, dont chacun puisse utiliser les riches possibilités.
+- Pour vous. Vous choisissez ce à quoi vous voulez participer. Vous pouvez ainsi progresser dans les domaines qui vous intéressent, accéder aux technologies de Mozilla et du Web. De plus, toutes les contributions sont valorisées.
 
-    <details>
+</details>
 
-        <summary>Organisation de MozFr</summary>
-        <div>
-            <p>Nous avons choisi de répartir les contributions possibles entre six groupes de travail, suivant les domaines qu’elles concernent et les compétences qu’elles demandent, avec chacun un référent. Il est tout à fait possible de participer à plusieurs groupes simultanément.</p>
+<details markdown="1">
+<summary>Discuter avec la communauté</summary>
 
-            <div id="traduction">
-                <h3><a href="#traduction">Traduction</a></h3>
-                <p>Chez Mozilla, on parle plutôt de localisation, car la traduction des différents produits Mozilla passe par l’adaptation à la culture locale.</p>
-                <p>C’est l’une des activités historiques de la communauté francophone, sous le nom de FrenchMozilla, la localisation des logiciels Mozilla étant depuis très longtemps réalisée par la communauté.</p>
-                <dl>
-                    <dt>Activités</dt>
-                    <dd>Traduction des applications, sites web et lettres d’information de Mozilla.</dd>
-                    <dt>Compétences souhaitées</dt>
-                    <dd>Bonne compréhension de l’anglais et bonne maîtrise du français.</dd>
-                    <dt>Référent</dt>
-                    <dd><a href="https://framapiaf.org/@goofy" title="Goofy (@goofy@framapiaf.org) – Framapiaf">Goofy</a></dd>
-                </dl>
-                <p><a href="https://github.com/mozfr/besogne/wiki/Traduction" title="Contribuer aux traductions – mozfr wiki">Comment contribuer, tout savoir ou presque</a></p>
-            </div>
+- Des [salons Matrix francophones](https://github.com/mozfr/besogne/wiki/Matrix "Matrix – mozfr wiki") vous permettent de discuter en ligne avec les membres de la communauté qui y sont connectés en même temps que vous depuis divers endroits dans le monde. Certains salons sont thématiques (développement, aide…), mais vous pouvez aussi discuter de tout et de rien sur #mozfr.
+- Nous sommes présents sur [Twitter](https://twitter.com/mozilla_fr) et [Mastodon](https://mamot.fr/@Mozilla).
 
-            <div id="assistance_aux_utilisateurs">
-                <h3><a href="#assistance_aux_utilisateurs">Assistance aux utilisateurs et utilisatrices</a></h3>
-                <p>Il existe plusieurs moyens d’aider les utilisateurs et les utilisatrices selon le temps que vous avez à y consacrer, que ce soit quelques minutes à l’occasion ou plus régulièrement.</p>
-                <p>Si vous maîtrisez les logiciels de Mozilla ou vouliez prendre le temps de combler vos lacunes, vous pouvez aider d’autres utilisateurs ou utilisatrices. Bonus&#160;: la reconnaissance des personnes que vous aiderez.</p>
-                <dl>
-                    <dt>Activités</dt>
-                    <dd>Aide aux utilisateurs et utilisatrices de logiciels, sites et services de Mozilla ou basés sur ses technologies.</dd>
-                    <dt>Compétences souhaitées</dt>
-                    <dd>Bonne utilisation des applications Mozilla, pédagogie, rédaction correcte.</dd>
-                    <dt>Référent</dt>
-                    <dd><a href="https://twitter.com/hellosct1" title="Christophe Villeneuve (@hellosct1) – Twitter">Christophe Villeneuve</dd>
-                    <dt>Sites d’assistance aux utilisateurs et utilisatrices</dt>
-                    <dd><a href="https://support.mozilla.org/fr/kb/benevoles-recherches">SuMo</a></dd>
-                    <dd><a href="https://forums.mozfr.org/">Forum Geckozone</a></dd>
-                </dl>
-            </div>
-            <div id="education_et_promotion_technique">
-                <h3><a href="#education_et_promotion_technique">Éducation et promotion technique</a></h3>
-                <p>Vous voulez parler et écrire à propos du Web ouvert, des standards, etc. pour convaincre le reste du monde que c’est la voie à suivre&#160;? Bienvenue&#160;!</p>
-                <p>Vous êtes capable d’écrire sur ces sujets, de donner des conférences, voire des cours à des étudiants&#160;? Le groupe d’éducation et de promotion technique n’attendait que vous&#160;!</p>
-                <dl>
-                    <dt>Activités</dt>
-                    <dd>Familiariser les développeurs et développeuses et le reste du monde aux technologies du Web ouvert à travers l’écriture d’articles et l’organisation d’évènements.</dd>
-                    <dt>Compétences souhaitées</dt>
-                    <dd>Connaissances sur les technologies web, pédagogie, rédaction.</dd>
-                    <dt>Référent</dt>
-                    <dd><a href="https://twitter.com/JeremiePat" title="Jérémie Patonnier (@JeremiePat) – Twitter">Jérémie</a></dd>
-                    <dt>Sites de ce groupe</dt>
-                    <dd><a href="https://tech.mozfr.org/">Blog Bidouilleux d’Web</a></dd>
-                    <dd><a href="https://github.com/mozfr/besogne/wiki/Techno" title="Techno – mozfr wiki">Page du groupe sur le wiki</a></dd>
-                </dl>
-            </div>
-            <div id="communication">
-                <h3><a href="#communication">Communication</a></h3>
-                <p>Mozilla et MozFr, c’est génial&#160;! Encore faut-il que les gens soient au courant. Pour ça, il faut en parler, organiser des évènements, rédiger des articles, créer des affiches…</p>
-                <p>Ça tombe bien, c’est justement le rôle de ce groupe de travail&#160;!</p>
-                <dl>
-                    <dt>Activités</dt>
-                    <dd>Faire connaître Mozilla et rassembler des gens autour de nos valeurs.</dd>
-                    <dt>Compétences souhaitées</dt>
-                    <dd>Rédaction, enthousiasme, organisation.</dd>
-                    <dt>Référent</dt>
-                    <dd><a href="https://people.mozilla.org/p/Mozinet" title="Pierre Mozinet (@Mozinet) – Mozilla People Directory">Mozinet</a></dd>
-                    <dt>Sites de ce groupe</dt>
-                    <dd><a href="https://blog.mozfr.org/">Blog</a></dd>
-                    <dd><a href="https://github.com/mozfr/besogne/wiki/Communication" title="Communication – wiki Mozfr">Page du groupe sur le wiki</a></dd>
-                </dl>
-            </div>
-            <div id="developpement">
-                <h3><a href="#developpement">Développement</a></h3>
-                <p>Ici, on développe des outils pour MozFr, mais on s’entraide aussi pour maîtriser les technologies web et la programmation dans divers langages, du JavaScript au C++&#160;!</p>
-                <p>Si vous avez dans l’idée de développer des logiciels utilisant les technologies de Mozilla ou du Web ouvert, vous pourrez trouver des gens pour vous guider et avec qui en discuter dans ce groupe de travail. Ce groupe rassemble aussi les gens qui s’occupent de créer et maintenir les outils et les sites de MozFr. Il y a certes besoin de programmeurs et programmeuses dans ce groupe, mais aussi, par exemple, de designers et de graphistes.</p>
-                <dl>
-                    <dt>Activités</dt>
-                    <dd>Développement et maintenance des sites web et outils de MozFr, mais aussi de modules complémentaires, d’applications Mozilla, d’<i lang="en">Open Web Apps</i>, etc.</dd>
-                    <dt>Compétences souhaitées</dt>
-                    <dd>Développement web (html/css/javasript, php/python/node), design web et graphisme, administration système, mentors pour débutant·e·s sur un projet ou un langage.</dd>
-                    <dt>Référent</dt>
-                    <dd><a href="https://twitter.com/pascalchevrel" title="Pascal Chevrel (@pascalchevrel) – Twitter">Pascalc</a></dd>
-                    <dt>Sites de ce groupe</dt>
-                    <dd><a href="https://github.com/mozfr">MozFr sur GitHub</a></dd>
-                    <dd><a href="https://github.com/mozfr/besogne/wiki/Devops" title="Devops – mozfr wiki">Page du groupe sur le wiki</a></dd>
-                </dl>
-            </div>
-        </div>
-    <details>
-    <summary>Suggestions de contributions</summary>
-        <div>
-            <p>Vous trouverez ici des <a href="https://github.com/mozfr/besogne/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20-label%3A%22admin%20sys%22" title="Idées de contributions">idées de contribution</a>. N’hésitez pas à contacter les personnes sur IRC qui pourront vous aider à mettre le pied à l’étrier et répondre à vos questions. Cette liste n’est pas exhaustive mais peut vous aider à trouver par où commencer.</p>
-            <p>Vous pouvez aussi jeter un œil à la <a href="https://www.mozilla.org/fr/contribute/">page <i>Contribuez à Mozilla&#160;!</i></a> sur le site officiel.</p>
-            <h2 id="Projets_de_Mozilla">Projets de Mozilla</h2>
-            <p>Vous trouverez une <a href="https://github.com/mozfr/besogne/wiki/Projets-de-Mozilla-et-apparent%C3%A9s" title="Projets de Mozilla et apparentés – mozfr wiki">liste de projets libres et <i lang="en">open source</i> de Mozilla</a>, soutenus par Mozilla ou utilisant des technologies de Mozilla. Cette liste n’est, encore une fois, pas exhaustive.</p>
-            <p>Vous pourrez également trouver une <a href="https://www.mozilla.org/fr/firefox/products/">liste de projets</a> et <a href="https://developer.mozilla.org/en-US/docs/Archive/List_of_Mozilla-Based_Applications">une un peu plus complète en anglais</a>.</p>
-        </div>
-    </details>
-</section>
+</details>
+
+<details markdown="1">
+<summary>Inviter la communauté à votre évènement</summary>
+
+Vous organisez un évènement et vous souhaiteriez une présence de MozFr (un conférencier, un stand, des *goodies*…) ?
+
+Contactez-nous via les liens ci-dessus ou par courriel à l’adresse *evenements*(à)*mozfr.org*.
+
+</details>
+
+<details markdown="1">
+<summary>Organisation de MozFr</summary>
+
+Nous avons choisi de répartir les contributions possibles entre six groupes de travail, suivant les domaines qu’elles concernent et les compétences qu’elles demandent, avec chacun un référent. Il est tout à fait possible de participer à plusieurs groupes simultanément.
+
+### [Traduction](#traduction) {#traduction}
+
+Chez Mozilla, on parle plutôt de localisation, car la traduction des différents produits Mozilla passe par l’adaptation à la culture locale.
+
+C’est l’une des activités historiques de la communauté francophone, sous le nom de FrenchMozilla, la localisation des logiciels Mozilla étant depuis très longtemps réalisée par la communauté.
+
+Activités
+: Traduction des applications, sites web et lettres d’information de Mozilla.
+
+Compétences souhaitées
+: Bonne compréhension de l’anglais et bonne maîtrise du français.
+
+Référent
+: [Goofy](https://framapiaf.org/@goofy "Goofy (@goofy@framapiaf.org) – Framapiaf")
+
+[Comment contribuer, tout savoir ou presque](https://github.com/mozfr/besogne/wiki/Traduction "Contribuer aux traductions – mozfr wiki")
+
+### [Assistance aux utilisateurs et utilisatrices](#assistance_aux_utilisateurs) {#assistance_aux_utilisateurs}
+
+Il existe plusieurs moyens d’aider les utilisateurs et les utilisatrices selon le temps que vous avez à y consacrer, que ce soit quelques minutes à l’occasion ou plus régulièrement.
+
+Si vous maîtrisez les logiciels de Mozilla ou vouliez prendre le temps de combler vos lacunes, vous pouvez aider d’autres utilisateurs ou utilisatrices. Bonus : la reconnaissance des personnes que vous aiderez.
+
+Activités
+: Aide aux utilisateurs et utilisatrices de logiciels, sites et services de Mozilla ou basés sur ses technologies.
+
+Compétences souhaitées
+: Bonne utilisation des applications Mozilla, pédagogie, rédaction correcte.
+
+Référent
+: [Christophe Villeneuve](https://twitter.com/hellosct1 "Christophe Villeneuve (@hellosct1) – Twitter")
+
+Sites d’assistance aux utilisateurs et utilisatrices
+: [SuMo](https://support.mozilla.org/fr/kb/benevoles-recherches)
+: [Forum Geckozone](https://forums.mozfr.org/)
+
+### [Éducation et promotion technique](#education_et_promotion_technique) {#education_et_promotion_technique}
+
+Vous voulez parler et écrire à propos du Web ouvert, des standards, etc. pour convaincre le reste du monde que c’est la voie à suivre ? Bienvenue !
+
+Vous êtes capable d’écrire sur ces sujets, de donner des conférences, voire des cours à des étudiants ? Le groupe d’éducation et de promotion technique n’attendait que vous !
+
+Activités
+: Familiariser les développeurs et développeuses et le reste du monde aux technologies du Web ouvert à travers l’écriture d’articles et l’organisation d’évènements.
+
+Compétences souhaitées
+: Connaissances sur les technologies web, pédagogie, rédaction.
+
+Référent
+: [Jérémie](https://twitter.com/JeremiePat "Jérémie Patonnier (@JeremiePat) – Twitter")
+
+Sites de ce groupe
+: [Blog Bidouilleux d’Web](https://tech.mozfr.org/)
+: [Page du groupe sur le wiki](https://github.com/mozfr/besogne/wiki/Techno "Techno – mozfr wiki")
+
+### [Communication](#communication) {#communication}
+
+Mozilla et MozFr, c’est génial ! Encore faut-il que les gens soient au courant. Pour ça, il faut en parler, organiser des évènements, rédiger des articles, créer des affiches…
+
+Ça tombe bien, c’est justement le rôle de ce groupe de travail !
+
+Activités
+: Faire connaître Mozilla et rassembler des gens autour de nos valeurs.
+
+Compétences souhaitées
+: Rédaction, enthousiasme, organisation.
+
+Référent
+: [Mozinet](https://people.mozilla.org/p/Mozinet "Pierre Mozinet (@Mozinet) – Mozilla People Directory")
+
+Sites de ce groupe
+: [Blog](https://blog.mozfr.org/)
+: [Page du groupe sur le wiki](https://github.com/mozfr/besogne/wiki/Communication "Communication – wiki Mozfr")
+
+### [Développement](#developpement) {#developpement}
+
+Ici, on développe des outils pour MozFr, mais on s’entraide aussi pour maîtriser les technologies web et la programmation dans divers langages, du JavaScript au C++ !
+
+Si vous avez dans l’idée de développer des logiciels utilisant les technologies de Mozilla ou du Web ouvert, vous pourrez trouver des gens pour vous guider et avec qui en discuter dans ce groupe de travail. Ce groupe rassemble aussi les gens qui s’occupent de créer et maintenir les outils et les sites de MozFr. Il y a certes besoin de programmeurs et programmeuses dans ce groupe, mais aussi, par exemple, de designers et de graphistes.
+
+Activités
+: Développement et maintenance des sites web et outils de MozFr, mais aussi de modules complémentaires, d’applications Mozilla, d’*Open Web Apps*, etc.
+
+Compétences souhaitées
+: Développement web (html/css/javasript, php/python/node), design web et graphisme, administration système, mentors pour débutant·e·s sur un projet ou un langage.
+
+Référent
+: [Pascalc](https://twitter.com/pascalchevrel "Pascal Chevrel (@pascalchevrel) – Twitter")
+
+Sites de ce groupe
+: [MozFr sur GitHub](https://github.com/mozfr)
+: [Page du groupe sur le wiki](https://github.com/mozfr/besogne/wiki/Devops "Devops – mozfr wiki")
+
+</details>
+
+<details markdown="1">
+<summary>Suggestions de contributions</summary>
+
+Vous trouverez ici des [idées de contribution](https://github.com/mozfr/besogne/issues?q=is%3Aissue%20is%3Aopen%20-label%3A%22admin%20sys%22 "Idées de contributions"). N’hésitez pas à contacter les personnes sur IRC qui pourront vous aider à mettre le pied à l’étrier et répondre à vos questions. Cette liste n’est pas exhaustive mais peut vous aider à trouver par où commencer.
+
+Vous pouvez aussi jeter un œil à la [page *Contribuez à Mozilla !*](https://www.mozilla.org/fr/contribute/) sur le site officiel.
+
+## Projets de Mozilla {#Projets_de_Mozilla}
+
+Vous trouverez une [liste de projets libres et *open source* de Mozilla](https://github.com/mozfr/besogne/wiki/Projets-de-Mozilla-et-apparent%C3%A9s "Projets de Mozilla et apparentés – mozfr wiki"), soutenus par Mozilla ou utilisant des technologies de Mozilla. Cette liste n’est, encore une fois, pas exhaustive.
+
+Vous pourrez également trouver une [liste de projets](https://www.mozilla.org/fr/firefox/products/) et [une un peu plus complète en anglais](https://developer.mozilla.org/en-US/docs/Archive/List_of_Mozilla-Based_Applications).
+
+</details>

@@ -4,20 +4,23 @@
 
 title: "MozFr"
 baseurl: https://mozfr.org/
+baseline: "Communauté francophone de Mozilla"
 description: "Le site web de MozFR.org - Communauté francophone de Mozilla"
 
-pages:
-  default:
-    robots:
-      published: false
-    404:
-      published: false
-    sitemap:
-      published: false
-    xsl/atom:
-      published: false
-    xsl/rss:
-      published: false
+language: fr
+languages:
+  - code: fr
+    name: Français
+    locale: fr_FR
+
+metatags:
+  favicon:
+    image: img/communityPicture.png
+
+social:
+  twitter:
+    username: mozilla_fr
+    site: mozilla_fr
 
 menus:
   # Navbar menu
@@ -93,4 +96,19 @@ menus:
       name: "Wiki d'équipe"
       url: "https://github.com/mozfr/besogne/wiki/"
 
-debug: true
+pages:
+  default:
+    404:
+      published: false
+    sitemap:
+      published: false
+    xsl/sitemap:
+      published: false
+    xsl/atom:
+      published: false
+
+output:
+  pagetypeformats:
+    homepage: [html]
+
+#debug: true

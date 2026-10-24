@@ -1,13 +1,11 @@
 {# This Source Code Form is subject to the terms of the Mozilla Public
  # License, v. 2.0. If a copy of the MPL was not distributed with this
- # file, You can obtain one at https://mozilla.org/MPL/2.0/. #}
-
-<a href="/" title="Mozilla francophone" class="mozfrtext">moz<span>fr</span></a>
-<nav id="nav-main" role="navigation">
-  {% include 'partials/menu.html.twig' with { 'menu': site.menus.main } %}
-</nav>
-<a href="https://www.mozilla.org/fr/firefox/download/thanks/?source=mozfr"
-   class="getfirefox">
-  Télécharger Firefox
-</a>
-
+ # file, You can obtain one at https://mozilla.org/MPL/2.0/. ~#}
+        <a href="{{ url(site.home) }}" title="{{ site.baseline }}" class="mozfrtext">moz<span>fr</span></a>
+        <nav id="nav-main" role="navigation">
+          {{- include('partials/menu.html.twig', {menu: site.menus.main}) ~}}
+        </nav>
+        <a href="https://www.mozilla.org/fr/firefox/download/thanks/?source=mozfr"
+          class="getfirefox">
+          Télécharger Firefox
+        </a>

@@ -1,52 +1,37 @@
 {# This Source Code Form is subject to the terms of the Mozilla Public
  # License, v. 2.0. If a copy of the MPL was not distributed with this
- # file, You can obtain one at https://mozilla.org/MPL/2.0/. #}
-
-<div class="inner-footer">
-    <section id="links">
-    <a href="/" title="Mozilla francophone" class="mozfrtext">
-      moz<span>fr</span>
-    </a>
-        <div>
-        <h3>Communication</h3>
-        {% include 'partials/menu.html.twig'
-          with { 'menu': site.menus.communication }
-        %}
+ # file, You can obtain one at https://mozilla.org/MPL/2.0/. ~#}
+        <div class="inner-footer">
+          <section id="links">
+            <a href="{{ url(site.home) }}" title="{{ site.baseline }}" class="mozfrtext">moz<span>fr</span></a>
+            <div>
+              <h3>Communication</h3>
+              {{- include('partials/menu.html.twig', {menu: site.menus.communication}) ~}}
+            </div>
+            <div>
+              <h3>Logiciels</h3>
+              {{- include('partials/menu.html.twig', {menu: site.menus.softwares}) ~}}
+            </div>
+            <div>
+              <h3>À propos</h3>
+              {{- include('partials/menu.html.twig', {menu: site.menus.about}) ~}}
+            </div>
+          </section>
         </div>
-        <div>
-        <h3>Logiciels</h3>
-        {% include 'partials/menu.html.twig'
-          with { 'menu': site.menus.softwares }
-        %}
+        <div class="inner-footer">
+          <section id="credits">
+            <p>
+              Le contenu textuel est disponible sous la licence <em>Creative Commons</em> <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" title="Creative Commons — Attribution – Partage dans les mêmes conditions 4.0 International – CC BY-SA 4.0">CC By-SA 4.0</a>+ (<a href="https://github.com/mozfr/besogne/wiki/Licence" hreflang="fr">en savoir plus…</a>).
+            </p>
+            <p>
+              Le <a href="https://github.com/mozfr/www">code source</a> du site est disponible sous licence <a href="https://www.mozilla.org/en-US/MPL/2.0/">Mozilla Public License Version 2.0</a>.
+            </p>
+            <p>
+              Ce site est maintenu par des bénévoles et n’est pas un site officiel de la
+              <a href="https://www.mozilla.org/fr/">fondation Mozilla</a>.
+            </p>
+            <p>
+              Les sites mozfr sont hébergés gracieusement par <a href="https://gandi.net">Gandi</a>. <b>Merci&nbsp;!</b><img src="{{ url(asset('/img/propulse_par_gandi.svg')) }}" class="gandi">
+            </p>
+          </section>
         </div>
-        <div>
-        <h3>À propos</h3>
-        {% include 'partials/menu.html.twig'
-          with { 'menu': site.menus.about }
-        %}
-        </div>
-    </section>
-</div>
-
-<div class="inner-footer">
-    <section id="credits">
-    <p>
-        Le contenu textuel est disponible sous la licence <em>Creative Commons</em> <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" title="Creative Commons — Attribution – Partage dans les mêmes conditions 4.0 International – CC BY-SA 4.0">CC By-SA 4.0</a>+ (<a href="https://github.com/mozfr/besogne/wiki/Licence" hreflang="fr">en savoir plus…</a>).
-    </p>
-
-    <p>
-        Le <a href="https://github.com/mozfr/www">code source</a> du site est disponible sous licence <a href="https://www.mozilla.org/en-US/MPL/2.0/">Mozilla Public License Version 2.0</a>.
-    </p>
-
-    <p>
-        Ce site est maintenu par des bénévoles et n’est pas un site officiel de la
-        <a href="https://www.mozilla.org/fr/">fondation Mozilla</a>.
-    </p>
-
-
-    <p>
-        Les sites mozfr sont hébergés gracieusement par <a href="https://gandi.net">Gandi</a>. <b>Merci&nbsp;!</b><img src="/img/propulse_par_gandi.svg" class="gandi">
-    </p>
-    </section>
-</div>
-
