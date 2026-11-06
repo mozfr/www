@@ -24,7 +24,7 @@ title: Participer
 
 Vous organisez un évènement et vous souhaiteriez une présence de MozFr (un conférencier, un stand, des *goodies*…) ?
 
-Contactez-nous via les liens ci-dessus ou par courriel à l’adresse *evenements*(à)*mozfr.org*.
+Contactez-nous via les liens ci-dessus ou par courriel à l’adresse *contact*(à)*mozfr.org*.
 
 </details>
 
